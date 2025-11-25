@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+}
+
+
+
+/* Navigation */
+#navBar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 99vw;
+    z-index: 999;
+}
+
+.navBarRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#searchBar {
+    height: 30px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#appName {
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+#filter, #add {
+    width: 71px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* Chips */
+.chips {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+
+}
+
+.chips::-webkit-scrollbar {
+    height: 6px;
+}
+
+.chips::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.chip {
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 4px solid #ddd;
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.chip:hover {
+
+    border-color: lightslategray;
+
+}
+
+.activeChip {
+    background-color: blueviolet;
+    border: 4px solid blueviolet;
+    color: white;
+    box-shadow: 0 0 8px rgba(137, 43, 226, 0.4);
+}
+
+/* Cards */
+.cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0rem 2rem 1rem 2rem;
+
+}
+
+.card {
+    width: 20rem;
+    height: 26rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 0.5px solid lightgray;
+}
+
+.receipeName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.p-dialog .p-dialog-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-toast .p-toast-message .p-toast-message-content {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.container {
+    padding: 0.625rem 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.receipesCatogery {
+    color: darkslategrey;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.nutrition div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.75rem 0.5rem 1rem;
+}
+
+
+.NotFound {
+    padding-left: 30rem;
+
+}
+
+
+
+
+/* view Recipe */
+.viewBody {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: lightcyan;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.ImageNutrition {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.backIcon {
+    font-size: 2rem;
+    color: #ff6b6b;
+
+}
+
+
+
+.recipeTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #333;
+}
+
+.imageContainer {
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.recipeImage {
+    width: 11rem;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.nutrition,
+.timeTaked,
+.ingredientsSteps {
+    margin-bottom: 2rem;
+}
+
+.nutrition h3,
+.timeTaked h3,
+.ingredients h3,
+.steps h3 {
+    font-size: 1.4rem;
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+}
+
+.nutrition ol,
+.ingredients ul,
+.steps ul,
+.timeTaked ul {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.ingredientsSteps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ingredients,
+.steps {
+    min-width: 300px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* new Receipe */
+.sidePanel {
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    overflow-y: auto;
+    height: 500px;
+
+}
+
+.closeButton {
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.newReceipe {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.tags {
+    width: 10rem;
+    height: 7vh;
+}
+
+.catogery {
+    width: 10rem;
+    height: 7vh;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableHeader b {
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+#ingredients, #steps {
+
+    resize: none;
+    height: 11vh;
+    width: 17rem;
+}
+
+.btnFooter {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#name, #url, #file, #preptime, #cookTime, #servings, #tags, #calories, #protein, #carbs, #fat {
+    width: 17rem;
+    height: 5vh;
+}
+
+.ingredients, .steps {
+    width: 28rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* sidePanel */
+
+
+
+
+
+.sidePanel {
+    width: 42vw;
+    height: 100vh;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.sidePanelHeader {
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    justify-content: space-between;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.form input,
+.form textarea,
+.form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonGroup button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonGroup button:hover {
+    background: #0056b3;
+}
+
+.ql-editor {
+    background-color: white;
+}
+
+
+
+
+
+/* Pagination */
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 6px;
+    margin-left: 5px;
+    flex-wrap: wrap;
+
+}
+
+.pageNumber {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid transparent;
+    color: black;
+
+
+}
+
+
+.pageNumber:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    border: 1px solid transparent;
+    height: 5vh;
+    padding: 8px 16px;
+    color: black;
+
+
+}
+
+.arrows:hover {
+    background-color: #ddd;
+}
+
+
+
+
+.active {
+    background-color: limegreen;
+    color: white;
+    border: 1px solid limegreen;
+}
+
+/* sideBar */
+.sideBarContainer {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: 90vh;
+
+
+
+}
+
+.favorate {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #0f0606;
+    padding-bottom: 1rem;
+
+
+
+}
+
+#favorateReceipes {
+    padding-left: 0.1rem;
+    color: dimgrey;
+    font-size: 0.9rem;
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    width: 17vw;
+    height: 50vh;
+    overflow-x: auto;
+
+
+
+
+
+
+}
+
+
+
+.receipeFavorate {
+    border: 1px solid transparent;
+    cursor: pointer;
+    list-style-type: none;
+
+}
+
+.receipeFavorate:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.sideBar {
+    width: 246px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    height: 60vh;
+}
+
+/* sideContainer */
+.sideContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Favorated {
+    background-color: red;
+    border-color: red;
+    border-radius: 50%;
+    border: 4px solid red;
+}
