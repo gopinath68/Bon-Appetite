@@ -68,10 +68,17 @@ function ViewReceipe() {
           </div>
           <div className="steps">
             <h3>Steps</h3>
-            {/* {JSON.parse(selectedRecipie.steps)} */}
-            <div
+            <ul>
+              {" "}
+              {selectedRecipie.steps.map((step, idx) => (
+                <li id="step" key={idx}>
+                  {step}
+                </li>
+              ))}
+            </ul>
+            {/* <div
               dangerouslySetInnerHTML={{ __html: selectedRecipie.steps }}
-            ></div>
+            ></div> */}
           </div>
         </div>
       </div>
