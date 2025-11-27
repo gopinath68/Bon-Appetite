@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Favoraties() {
+function FavorateReceipes() {
   const navigate = useNavigate();
   return (
     <div>
@@ -11,4 +11,4 @@ function Favoraties() {
   );
 }
 
-export default Favoraties;
+export default FavorateReceipes;
