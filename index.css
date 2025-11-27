@@ -360,7 +360,6 @@ li {
 }
 
 .ingredients, .steps {
-    width: 28rem;
     border-radius: 0.625rem;
     display: flex;
     flex-direction: column;
