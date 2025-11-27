@@ -9,7 +9,7 @@ import ViewReceipe from "./src/components/ViewReceipe.jsx";
 import { ReceipeContextProvider } from "./src/context/ReceipeContext.jsx";
 import ReceipeCards from "./src/components/ReceipeCards";
 import { PrimeReactProvider } from "primereact/api";
-import Favoraties from "./src/components/FavorateReceipes.jsx";
+import FavorateReceipes from "./src/components/FavorateReceipes.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const routes = createBrowserRouter([
   },
   {
     path: "/favoraties-recipies",
-    element: <Favoraties />,
+    element: <FavorateReceipes />,
   },
   {
     path: "/add-recipie",
