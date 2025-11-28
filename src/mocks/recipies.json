@@ -3,18 +3,12 @@
     {
       "id": "1",
       "name": "Apple Frangipan Tart",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg",
       "prepTime": 33,
       "cookTime": 46,
       "servings": 3,
-      "tags": [
-        "Tart",
-        "Baking",
-        "Fruity"
-      ],
+      "tags": ["Tart", "Baking", "Fruity"],
       "ingredients": [
         "175g/6oz digestive biscuits",
         "75g/3oz butter",
@@ -46,16 +40,12 @@
     {
       "id": "2",
       "name": "Apple & Blackberry Crumble",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg",
       "prepTime": 16,
       "cookTime": 50,
       "servings": 5,
-      "tags": [
-        "Pudding"
-      ],
+      "tags": ["Pudding"],
       "ingredients": [
         "120g Plain Flour",
         "60g Caster Sugar",
@@ -83,9 +73,7 @@
     {
       "id": "3",
       "name": "Apam balik",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
       "prepTime": 26,
       "cookTime": 16,
@@ -119,9 +107,7 @@
     {
       "id": "4",
       "name": "Ayam Percik",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/020z181619788503.jpg",
       "prepTime": 25,
       "cookTime": 22,
@@ -162,18 +148,12 @@
     {
       "id": "5",
       "name": "Bakewell tart",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/wyrqqq1468233628.jpg",
       "prepTime": 15,
       "cookTime": 42,
       "servings": 5,
-      "tags": [
-        "Tart",
-        "Baking",
-        "Alcoholic"
-      ],
+      "tags": ["Tart", "Baking", "Alcoholic"],
       "ingredients": [
         "175g/6oz plain flour",
         "75g/2½oz chilled butter",
@@ -206,17 +186,12 @@
     {
       "id": "6",
       "name": "Bread and Butter Pudding",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xqwwpy1483908697.jpg",
       "prepTime": 31,
       "cookTime": 16,
       "servings": 5,
-      "tags": [
-        "Pudding",
-        "Brunch"
-      ],
+      "tags": ["Pudding", "Brunch"],
       "ingredients": [
         "25g/1oz butter",
         "8 thin slices bread",
@@ -250,17 +225,12 @@
     {
       "id": "7",
       "name": "Beef Wellington",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/vvpprx1487325699.jpg",
       "prepTime": 17,
       "cookTime": 44,
       "servings": 3,
-      "tags": [
-        "Meat",
-        "Stew"
-      ],
+      "tags": ["Meat", "Stew"],
       "ingredients": [
         "400g mushrooms",
         "1-2tbsp English Mustard",
@@ -290,18 +260,12 @@
     {
       "id": "8",
       "name": "Baingan Bharta",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
       "prepTime": 17,
       "cookTime": 47,
       "servings": 2,
-      "tags": [
-        "Spicy",
-        "Bun",
-        "Calorific"
-      ],
+      "tags": ["Spicy", "Bun", "Calorific"],
       "ingredients": [
         "1 large Aubergine",
         "½ cup  Onion",
@@ -354,16 +318,12 @@
     {
       "id": "9",
       "name": "Beef Brisket Pot Roast",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
       "prepTime": 25,
       "cookTime": 53,
       "servings": 3,
-      "tags": [
-        "Meat"
-      ],
+      "tags": ["Meat"],
       "ingredients": [
         "4-5 pound Beef Brisket",
         "Dash Salt",
@@ -410,16 +370,12 @@
     {
       "id": "10",
       "name": "Beef Sunday Roast",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/ssrrrs1503664277.jpg",
       "prepTime": 20,
       "cookTime": 43,
       "servings": 5,
-      "tags": [
-        "MainMeal"
-      ],
+      "tags": ["MainMeal"],
       "ingredients": [
         "8 slices Beef",
         "12 florets Broccoli",
@@ -449,9 +405,7 @@
     {
       "id": "11",
       "name": "Braised Beef Chilli",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/uuqvwu1504629254.jpg",
       "prepTime": 20,
       "cookTime": 52,
@@ -494,9 +448,7 @@
     {
       "id": "12",
       "name": "Beef stroganoff",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/svprys1511176755.jpg",
       "prepTime": 20,
       "cookTime": 30,
@@ -530,9 +482,7 @@
     {
       "id": "13",
       "name": "Broccoli & Stilton soup",
-      "category": [
-        "Starter"
-      ],
+      "category": ["Starter"],
       "image": "https://www.themealdb.com/images/media/meals/tvvxpv1511191952.jpg",
       "prepTime": 18,
       "cookTime": 53,
@@ -566,9 +516,7 @@
     {
       "id": "14",
       "name": "Bean & Sausage Hotpot",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/vxuyrx1511302687.jpg",
       "prepTime": 17,
       "cookTime": 43,
@@ -596,18 +544,12 @@
     {
       "id": "15",
       "name": "Banana Pancakes",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg",
       "prepTime": 29,
       "cookTime": 23,
       "servings": 2,
-      "tags": [
-        "Breakfast",
-        "Desert",
-        "Sweet"
-      ],
+      "tags": ["Breakfast", "Desert", "Sweet"],
       "ingredients": [
         "1 large Banana",
         "2 medium Eggs",
@@ -632,17 +574,12 @@
     {
       "id": "16",
       "name": "Beef Dumpling Stew",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/uyqrrv1511553350.jpg",
       "prepTime": 21,
       "cookTime": 43,
       "servings": 5,
-      "tags": [
-        "Stew",
-        "Baking"
-      ],
+      "tags": ["Stew", "Baking"],
       "ingredients": [
         "2 tbs Olive Oil",
         "25g Butter",
@@ -688,17 +625,12 @@
     {
       "id": "17",
       "name": "Beef and Mustard Pie",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg",
       "prepTime": 26,
       "cookTime": 25,
       "servings": 4,
-      "tags": [
-        "Meat",
-        "Pie"
-      ],
+      "tags": ["Meat", "Pie"],
       "ingredients": [
         "1kg Beef",
         "2 tbs Plain Flour",
@@ -742,16 +674,12 @@
     {
       "id": "18",
       "name": "Beef and Oyster pie",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/wrssvt1511556563.jpg",
       "prepTime": 22,
       "cookTime": 22,
       "servings": 3,
-      "tags": [
-        "Pie"
-      ],
+      "tags": ["Pie"],
       "ingredients": [
         "900g Beef",
         "3 tbs Olive Oil",
@@ -790,19 +718,12 @@
     {
       "id": "19",
       "name": "Blackberry Fool",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/rpvptu1511641092.jpg",
       "prepTime": 28,
       "cookTime": 19,
       "servings": 3,
-      "tags": [
-        "Desert",
-        "Summer",
-        "Fruity",
-        "Dairy"
-      ],
+      "tags": ["Desert", "Summer", "Fruity", "Dairy"],
       "ingredients": [
         "50g Hazlenuts",
         "125g Butter",
@@ -842,17 +763,12 @@
     {
       "id": "20",
       "name": "Battenberg Cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/ywwrsp1511720277.jpg",
       "prepTime": 33,
       "cookTime": 42,
       "servings": 4,
-      "tags": [
-        "Cake",
-        "Sweet"
-      ],
+      "tags": ["Cake", "Sweet"],
       "ingredients": [
         "175g Butter",
         "175g Caster Sugar",
@@ -894,9 +810,7 @@
     {
       "id": "21",
       "name": "Beef Bourguignon",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/vtqxtu1511784197.jpg",
       "prepTime": 27,
       "cookTime": 27,
@@ -938,18 +852,12 @@
     {
       "id": "22",
       "name": "Brie wrapped in prosciutto & brioche",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/qqpwsy1511796276.jpg",
       "prepTime": 28,
       "cookTime": 35,
       "servings": 5,
-      "tags": [
-        "SideDish",
-        "Treat",
-        "Baking"
-      ],
+      "tags": ["SideDish", "Treat", "Baking"],
       "ingredients": [
         "375g Plain Flour",
         "50g Caster Sugar",
@@ -976,16 +884,12 @@
     {
       "id": "23",
       "name": "Boulangère Potatoes",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/qywups1511796761.jpg",
       "prepTime": 25,
       "cookTime": 28,
       "servings": 5,
-      "tags": [
-        "SideDish"
-      ],
+      "tags": ["SideDish"],
       "ingredients": [
         "2 finely chopped Onions",
         "sprigs of fresh Thyme",
@@ -1008,18 +912,12 @@
     {
       "id": "24",
       "name": "BeaverTails",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
       "prepTime": 34,
       "cookTime": 46,
       "servings": 2,
-      "tags": [
-        "Treat",
-        "Pudding",
-        "Speciality"
-      ],
+      "tags": ["Treat", "Pudding", "Speciality"],
       "ingredients": [
         "1/2 cup  Water",
         "2 parts  Yeast",
@@ -1054,16 +952,12 @@
     {
       "id": "25",
       "name": "Brown Stew Chicken",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg",
       "prepTime": 15,
       "cookTime": 54,
       "servings": 3,
-      "tags": [
-        "Stew"
-      ],
+      "tags": ["Stew"],
       "ingredients": [
         "1 whole Chicken",
         "1 chopped Tomato",
@@ -1098,9 +992,7 @@
     {
       "id": "26",
       "name": "Beef Lo Mein",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/1529444830.jpg",
       "prepTime": 18,
       "cookTime": 23,
@@ -1149,20 +1041,12 @@
     {
       "id": "27",
       "name": "Baked salmon with fennel & tomatoes",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg",
       "prepTime": 15,
       "cookTime": 49,
       "servings": 3,
-      "tags": [
-        "Paleo",
-        "Keto",
-        "HighFat",
-        "Baking",
-        "LowCarbs"
-      ],
+      "tags": ["Paleo", "Keto", "HighFat", "Baking", "LowCarbs"],
       "ingredients": [
         "2 medium Fennel",
         "2 tbs chopped Parsley",
@@ -1187,21 +1071,12 @@
     {
       "id": "28",
       "name": "Budino Di Ricotta",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/1549542877.jpg",
       "prepTime": 19,
       "cookTime": 48,
       "servings": 4,
-      "tags": [
-        "Cake",
-        "Baking",
-        "Desert",
-        "Sweet",
-        "Alcoholic",
-        "Calorific"
-      ],
+      "tags": ["Cake", "Baking", "Desert", "Sweet", "Alcoholic", "Calorific"],
       "ingredients": [
         "500g Ricotta",
         "4 large Eggs",
@@ -1227,17 +1102,12 @@
     {
       "id": "29",
       "name": "Breakfast Potatoes",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/1550441882.jpg",
       "prepTime": 18,
       "cookTime": 45,
       "servings": 2,
-      "tags": [
-        "Breakfast",
-        "Brunch"
-      ],
+      "tags": ["Breakfast", "Brunch"],
       "ingredients": [
         "3 Medium Potatoes",
         "1 tbs Olive Oil",
@@ -1272,18 +1142,12 @@
     {
       "id": "30",
       "name": "Bitterballen (Dutch meatballs)",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/lhqev81565090111.jpg",
       "prepTime": 21,
       "cookTime": 50,
       "servings": 2,
-      "tags": [
-        "DinnerParty",
-        "HangoverFood",
-        "Alcoholic"
-      ],
+      "tags": ["DinnerParty", "HangoverFood", "Alcoholic"],
       "ingredients": [
         "100g  Butter",
         "150g Flour",
@@ -1315,9 +1179,7 @@
     {
       "id": "31",
       "name": "BBQ Pork Sloppy Joes",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/atd5sh1583188467.jpg",
       "prepTime": 18,
       "cookTime": 45,
@@ -1363,9 +1225,7 @@
     {
       "id": "32",
       "name": "Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/z0ageb1583189517.jpg",
       "prepTime": 22,
       "cookTime": 39,
@@ -1405,9 +1265,7 @@
     {
       "id": "33",
       "name": "Big Mac",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",
       "prepTime": 19,
       "cookTime": 31,
@@ -1447,9 +1305,7 @@
     {
       "id": "34",
       "name": "Bigos (Hunters Stew)",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/md8w601593348504.jpg",
       "prepTime": 29,
       "cookTime": 29,
@@ -1496,9 +1352,7 @@
     {
       "id": "35",
       "name": "Boxty Breakfast",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/naqyel1608588563.jpg",
       "prepTime": 33,
       "cookTime": 33,
@@ -1538,9 +1392,7 @@
     {
       "id": "36",
       "name": "Beef Rendang",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/bc8v651619789840.jpg",
       "prepTime": 18,
       "cookTime": 20,
@@ -1576,17 +1428,12 @@
     {
       "id": "37",
       "name": "Burek",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
       "prepTime": 28,
       "cookTime": 32,
       "servings": 2,
-      "tags": [
-        "Streetfood",
-        "Onthego"
-      ],
+      "tags": ["Streetfood", "Onthego"],
       "ingredients": [
         "1 Packet Filo Pastry",
         "150g Minced Beef",
@@ -1609,17 +1456,12 @@
     {
       "id": "38",
       "name": "Beef Mechado",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/cgl60b1683206581.jpg",
       "prepTime": 28,
       "cookTime": 16,
       "servings": 4,
-      "tags": [
-        "Stew",
-        "Warming"
-      ],
+      "tags": ["Stew", "Warming"],
       "ingredients": [
         "3 cloves Garlic",
         "1 sliced Onion",
@@ -1653,9 +1495,7 @@
     {
       "id": "39",
       "name": "Bistek",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/4pqimk1683207418.jpg",
       "prepTime": 29,
       "cookTime": 54,
@@ -1692,9 +1532,7 @@
     {
       "id": "40",
       "name": "Beef Caldereta",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/41cxjh1683207682.jpg",
       "prepTime": 25,
       "cookTime": 47,
@@ -1737,9 +1575,7 @@
     {
       "id": "41",
       "name": "Beef Asado",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/pkopc31683207947.jpg",
       "prepTime": 34,
       "cookTime": 21,
@@ -1782,22 +1618,14 @@
     {
       "id": "42",
       "name": "Bread omelette",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/hqaejl1695738653.jpg",
       "prepTime": 17,
       "cookTime": 25,
       "servings": 3,
       "tags": [],
-      "ingredients": [
-        "2 Bread",
-        "2 Egg",
-        "0.5 Salt"
-      ],
-      "steps": [
-        "Make and enjoy"
-      ],
+      "ingredients": ["2 Bread", "2 Egg", "0.5 Salt"],
+      "steps": ["Make and enjoy"],
       "favorite": false,
       "nutrition": {
         "calories": 321,
@@ -1809,16 +1637,12 @@
     {
       "id": "43",
       "name": "Beetroot Soup (Borscht)",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/zadvgb1699012544.jpg",
       "prepTime": 24,
       "cookTime": 30,
       "servings": 3,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "3 Beetroot",
         "4 tbs Olive Oil",
@@ -1842,16 +1666,12 @@
     {
       "id": "44",
       "name": "Blini Pancakes",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/0206h11699013358.jpg",
       "prepTime": 17,
       "cookTime": 18,
       "servings": 5,
-      "tags": [
-        "Pancake"
-      ],
+      "tags": ["Pancake"],
       "ingredients": [
         "1/2 cup  Buckwheat",
         "2/3 Cup Flour",
@@ -1887,18 +1707,12 @@
     {
       "id": "45",
       "name": "Chicken Enchilada Casserole",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qtuwxu1468233098.jpg",
       "prepTime": 30,
       "cookTime": 25,
       "servings": 3,
-      "tags": [
-        "Casserole",
-        "Cheasy",
-        "Meat"
-      ],
+      "tags": ["Casserole", "Cheasy", "Meat"],
       "ingredients": [
         "14 oz jar Enchilada sauce",
         "3 Cups shredded Monterey Jack cheese",
@@ -1924,19 +1738,12 @@
     {
       "id": "46",
       "name": "Chocolate Gateau",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg",
       "prepTime": 32,
       "cookTime": 42,
       "servings": 3,
-      "tags": [
-        "Cake",
-        "Chocolate",
-        "Desert",
-        "Pudding"
-      ],
+      "tags": ["Cake", "Chocolate", "Desert", "Pudding"],
       "ingredients": [
         "250g Plain chocolate",
         "175g Butter",
@@ -1962,17 +1769,12 @@
     {
       "id": "47",
       "name": "Cream Cheese Tart",
-      "category": [
-        "Starter"
-      ],
+      "category": ["Starter"],
       "image": "https://www.themealdb.com/images/media/meals/wurrux1468416624.jpg",
       "prepTime": 19,
       "cookTime": 16,
       "servings": 5,
-      "tags": [
-        "Tart",
-        "Savory"
-      ],
+      "tags": ["Tart", "Savory"],
       "ingredients": [
         "250g Flour",
         "125g Butter",
@@ -2001,17 +1803,12 @@
     {
       "id": "48",
       "name": "Christmas Pudding Flapjack",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/vvusxs1483907034.jpg",
       "prepTime": 30,
       "cookTime": 32,
       "servings": 4,
-      "tags": [
-        "Snack",
-        "Cake"
-      ],
+      "tags": ["Snack", "Cake"],
       "ingredients": [
         "250g salted butter",
         "225g dark soft brown sugar",
@@ -2036,9 +1833,7 @@
     {
       "id": "49",
       "name": "Chicken Handi",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg",
       "prepTime": 16,
       "cookTime": 33,
@@ -2084,18 +1879,12 @@
     {
       "id": "50",
       "name": "Chicken Alfredo Primavera",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg",
       "prepTime": 29,
       "cookTime": 49,
       "servings": 4,
-      "tags": [
-        "Pasta",
-        "Meat",
-        "Dairy"
-      ],
+      "tags": ["Pasta", "Meat", "Dairy"],
       "ingredients": [
         "2 tablespoons Butter",
         "3 tablespoons Olive Oil",
@@ -2131,18 +1920,12 @@
     {
       "id": "51",
       "name": "Chicken Fajita Mac and Cheese",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
       "prepTime": 27,
       "cookTime": 23,
       "servings": 2,
-      "tags": [
-        "Pasta",
-        "Cheasy",
-        "Meat"
-      ],
+      "tags": ["Pasta", "Cheasy", "Meat"],
       "ingredients": [
         "500g macaroni",
         "2 cups chicken stock",
@@ -2174,17 +1957,12 @@
     {
       "id": "52",
       "name": "Cajun spiced fish tacos",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg",
       "prepTime": 25,
       "cookTime": 36,
       "servings": 3,
-      "tags": [
-        "Spicy",
-        "Fish"
-      ],
+      "tags": ["Spicy", "Fish"],
       "ingredients": [
         "2 tbsp cajun",
         "1 tsp cayenne pepper",
@@ -2217,9 +1995,7 @@
     {
       "id": "53",
       "name": "Crock Pot Chicken Baked Tacos",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg",
       "prepTime": 34,
       "cookTime": 22,
@@ -2267,9 +2043,7 @@
     {
       "id": "54",
       "name": "Chicken Karaage",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg",
       "prepTime": 26,
       "cookTime": 47,
@@ -2303,9 +2077,7 @@
     {
       "id": "55",
       "name": "Coq au vin",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qstyvs1505931190.jpg",
       "prepTime": 26,
       "cookTime": 16,
@@ -2350,9 +2122,7 @@
     {
       "id": "56",
       "name": "Chilli prawn linguine",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg",
       "prepTime": 33,
       "cookTime": 23,
@@ -2391,9 +2161,7 @@
     {
       "id": "57",
       "name": "Clam chowder",
-      "category": [
-        "Starter"
-      ],
+      "category": ["Starter"],
       "image": "https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg",
       "prepTime": 15,
       "cookTime": 46,
@@ -2428,16 +2196,12 @@
     {
       "id": "58",
       "name": "Creamy Tomato Soup",
-      "category": [
-        "Starter"
-      ],
+      "category": ["Starter"],
       "image": "https://www.themealdb.com/images/media/meals/stpuws1511191310.jpg",
       "prepTime": 21,
       "cookTime": 53,
       "servings": 5,
-      "tags": [
-        "Baking"
-      ],
+      "tags": ["Baking"],
       "ingredients": [
         "3 tbsp Olive Oil",
         "2 chopped Onions",
@@ -2469,9 +2233,7 @@
     {
       "id": "59",
       "name": "Chicken & mushroom Hotpot",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg",
       "prepTime": 32,
       "cookTime": 26,
@@ -2508,9 +2270,7 @@
     {
       "id": "60",
       "name": "Chicken Couscous",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg",
       "prepTime": 32,
       "cookTime": 36,
@@ -2543,9 +2303,7 @@
     {
       "id": "61",
       "name": "Chocolate Avocado Mousse",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/uttuxy1511382180.jpg",
       "prepTime": 29,
       "cookTime": 41,
@@ -2578,19 +2336,12 @@
     {
       "id": "62",
       "name": "Choc Chip Pecan Pie",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg",
       "prepTime": 30,
       "cookTime": 29,
       "servings": 3,
-      "tags": [
-        "Pie",
-        "Desert",
-        "Sweet",
-        "Nutty"
-      ],
+      "tags": ["Pie", "Desert", "Sweet", "Nutty"],
       "ingredients": [
         "300g Plain Flour",
         "75g Butter",
@@ -2622,18 +2373,12 @@
     {
       "id": "63",
       "name": "Chocolate Raspberry Brownies",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
       "prepTime": 32,
       "cookTime": 35,
       "servings": 3,
-      "tags": [
-        "Chocolate",
-        "Desert",
-        "Snack"
-      ],
+      "tags": ["Chocolate", "Desert", "Snack"],
       "ingredients": [
         "200g Dark Chocolate",
         "100g  Milk Chocolate",
@@ -2659,16 +2404,12 @@
     {
       "id": "64",
       "name": "Chickpea Fajitas",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/tvtxpq1511464705.jpg",
       "prepTime": 34,
       "cookTime": 33,
       "servings": 3,
-      "tags": [
-        "Vegetarian"
-      ],
+      "tags": ["Vegetarian"],
       "ingredients": [
         "400g Chickpeas",
         "1 tblsp  Olive Oil",
@@ -2701,17 +2442,12 @@
     {
       "id": "65",
       "name": "Chicken Ham and Leek Pie",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg",
       "prepTime": 23,
       "cookTime": 28,
       "servings": 5,
-      "tags": [
-        "Pie",
-        "Meat"
-      ],
+      "tags": ["Pie", "Meat"],
       "ingredients": [
         "450ml Chicken Stock",
         "3 Chicken Breast",
@@ -2754,17 +2490,12 @@
     {
       "id": "66",
       "name": "Chicken Parmentier",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/uwvxpv1511557015.jpg",
       "prepTime": 29,
       "cookTime": 36,
       "servings": 2,
-      "tags": [
-        "Meat",
-        "Dairy"
-      ],
+      "tags": ["Meat", "Dairy"],
       "ingredients": [
         "1.5kg Potatoes",
         "30g Butter",
@@ -2801,18 +2532,12 @@
     {
       "id": "67",
       "name": "Carrot Cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg",
       "prepTime": 20,
       "cookTime": 27,
       "servings": 5,
-      "tags": [
-        "Cake",
-        "Treat",
-        "Sweet"
-      ],
+      "tags": ["Cake", "Treat", "Sweet"],
       "ingredients": [
         "450ml Vegetable Oil",
         "400g Plain Flour",
@@ -2844,18 +2569,12 @@
     {
       "id": "68",
       "name": "Chelsea Buns",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/vqpwrv1511723001.jpg",
       "prepTime": 18,
       "cookTime": 33,
       "servings": 3,
-      "tags": [
-        "Bun",
-        "Baking",
-        "Treat"
-      ],
+      "tags": ["Bun", "Baking", "Treat"],
       "ingredients": [
         "500g White Flour",
         "1 tsp  Salt",
@@ -2896,19 +2615,12 @@
     {
       "id": "69",
       "name": "Chocolate Souffle",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/twspvx1511784937.jpg",
       "prepTime": 24,
       "cookTime": 50,
       "servings": 2,
-      "tags": [
-        "DinnerParty",
-        "Desert",
-        "Pudding",
-        "Chocolate"
-      ],
+      "tags": ["DinnerParty", "Desert", "Pudding", "Chocolate"],
       "ingredients": [
         "142ml Single Cream",
         "25g Caster Sugar",
@@ -2940,17 +2652,12 @@
     {
       "id": "70",
       "name": "Chinon Apple Tarts",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/qtqwwu1511792650.jpg",
       "prepTime": 33,
       "cookTime": 53,
       "servings": 3,
-      "tags": [
-        "Tart",
-        "Baking"
-      ],
+      "tags": ["Tart", "Baking"],
       "ingredients": [
         "320g Puff Pastry",
         "4 tbs Dark Brown Soft Sugar",
@@ -2977,9 +2684,7 @@
     {
       "id": "71",
       "name": "Chicken Marengo",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qpxvuq1511798906.jpg",
       "prepTime": 28,
       "cookTime": 22,
@@ -3009,19 +2714,12 @@
     {
       "id": "72",
       "name": "Canadian Butter Tarts",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/wpputp1511812960.jpg",
       "prepTime": 23,
       "cookTime": 47,
       "servings": 3,
-      "tags": [
-        "Speciality",
-        "Snack",
-        "Desert",
-        "Pudding"
-      ],
+      "tags": ["Speciality", "Snack", "Desert", "Pudding"],
       "ingredients": [
         "375g Shortcrust Pastry",
         "2 large Eggs",
@@ -3048,16 +2746,12 @@
     {
       "id": "73",
       "name": "Chicken Basquaise",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg",
       "prepTime": 24,
       "cookTime": 33,
       "servings": 2,
-      "tags": [
-        "Meat"
-      ],
+      "tags": ["Meat"],
       "ingredients": [
         "1.5kg Chicken",
         "25g Butter",
@@ -3096,16 +2790,12 @@
     {
       "id": "74",
       "name": "Callaloo Jamaican Style",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/ussyxw1515364536.jpg",
       "prepTime": 16,
       "cookTime": 47,
       "servings": 2,
-      "tags": [
-        "Savory"
-      ],
+      "tags": ["Savory"],
       "ingredients": [
         "1  bunch Kale",
         "2 strips Bacon",
@@ -3143,9 +2833,7 @@
     {
       "id": "75",
       "name": "Chicken Congee",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/1529446352.jpg",
       "prepTime": 20,
       "cookTime": 52,
@@ -3187,21 +2875,12 @@
     {
       "id": "76",
       "name": "Chocolate Caramel Crispy",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/1550442508.jpg",
       "prepTime": 20,
       "cookTime": 43,
       "servings": 5,
-      "tags": [
-        "Sweet",
-        "Snack",
-        "Treat",
-        "Tart",
-        "Alcoholic",
-        "BBQ"
-      ],
+      "tags": ["Sweet", "Snack", "Treat", "Tart", "Alcoholic", "BBQ"],
       "ingredients": [
         "6 chopped Mars Bar",
         "150g Butter",
@@ -3226,9 +2905,7 @@
     {
       "id": "77",
       "name": "Chakchouka ",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/gpz67p1560458984.jpg",
       "prepTime": 23,
       "cookTime": 45,
@@ -3261,9 +2938,7 @@
     {
       "id": "78",
       "name": "Cashew Ghoriba Biscuits",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/t3r3ka1560461972.jpg",
       "prepTime": 25,
       "cookTime": 28,
@@ -3294,16 +2969,12 @@
     {
       "id": "79",
       "name": "Corba",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg",
       "prepTime": 32,
       "cookTime": 28,
       "servings": 4,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "1 cup  Lentils",
         "1 large Onion",
@@ -3339,16 +3010,12 @@
     {
       "id": "80",
       "name": "Classic Christmas pudding",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/1d85821576790598.jpg",
       "prepTime": 29,
       "cookTime": 32,
       "servings": 5,
-      "tags": [
-        "Christmas"
-      ],
+      "tags": ["Christmas"],
       "ingredients": [
         "50g Almonds",
         "2 large Bramley Apples",
@@ -3383,16 +3050,12 @@
     {
       "id": "81",
       "name": "Christmas Pudding Trifle",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/r33cud1576791081.jpg",
       "prepTime": 21,
       "cookTime": 40,
       "servings": 5,
-      "tags": [
-        "Christmas"
-      ],
+      "tags": ["Christmas"],
       "ingredients": [
         "3 Orange",
         "1 tbs Demerara Sugar",
@@ -3421,16 +3084,12 @@
     {
       "id": "82",
       "name": "Christmas cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg",
       "prepTime": 28,
       "cookTime": 32,
       "servings": 4,
-      "tags": [
-        "Christmas"
-      ],
+      "tags": ["Christmas"],
       "ingredients": [
         "200g Butter",
         "200g Muscovado Sugar",
@@ -3465,16 +3124,12 @@
     {
       "id": "83",
       "name": "Corned Beef and Cabbage",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg",
       "prepTime": 20,
       "cookTime": 27,
       "servings": 5,
-      "tags": [
-        "Cheap"
-      ],
+      "tags": ["Cheap"],
       "ingredients": [
         "3 Lbs Beef Brisket",
         "10 Small Potatoes",
@@ -3500,9 +3155,7 @@
     {
       "id": "84",
       "name": "Crispy Sausages and Greens",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/st1ifa1583267248.jpg",
       "prepTime": 19,
       "cookTime": 49,
@@ -3534,9 +3187,7 @@
     {
       "id": "85",
       "name": "Chicken Quinoa Greek Salad",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg",
       "prepTime": 24,
       "cookTime": 20,
@@ -3571,9 +3222,7 @@
     {
       "id": "86",
       "name": "Chick-Fil-A Sandwich",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/sbx7n71587673021.jpg",
       "prepTime": 20,
       "cookTime": 53,
@@ -3617,9 +3266,7 @@
     {
       "id": "87",
       "name": "Coddled pork with cider",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/7vpsfp1608588991.jpg",
       "prepTime": 30,
       "cookTime": 47,
@@ -3656,16 +3303,12 @@
     {
       "id": "88",
       "name": "Cevapi Sausages",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/vc08jn1628769553.jpg",
       "prepTime": 20,
       "cookTime": 38,
       "servings": 4,
-      "tags": [
-        "Sausages"
-      ],
+      "tags": ["Sausages"],
       "ingredients": [
         "500g Minced Beef",
         "250g Minced Pork",
@@ -3698,9 +3341,7 @@
     {
       "id": "89",
       "name": "Croatian lamb peka",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/pn59o51628769837.jpg",
       "prepTime": 33,
       "cookTime": 41,
@@ -3754,18 +3395,12 @@
     {
       "id": "90",
       "name": "Croatian Bean Stew",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/tnwy8m1628770384.jpg",
       "prepTime": 16,
       "cookTime": 48,
       "servings": 3,
-      "tags": [
-        "Warming",
-        "Soup",
-        "Beans"
-      ],
+      "tags": ["Warming", "Soup", "Beans"],
       "ingredients": [
         "2 cans Cannellini Beans",
         "3 tbs Vegetable Oil",
@@ -3789,9 +3424,7 @@
     {
       "id": "91",
       "name": "Chivito uruguayo",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/n7qnkb1630444129.jpg",
       "prepTime": 16,
       "cookTime": 54,
@@ -3824,9 +3457,7 @@
     {
       "id": "92",
       "name": "Crispy Eggplant",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/c7lzrl1683208757.jpg",
       "prepTime": 26,
       "cookTime": 51,
@@ -3859,16 +3490,12 @@
     {
       "id": "93",
       "name": "Cabbage Soup (Shchi)",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/60oc3k1699009846.jpg",
       "prepTime": 19,
       "cookTime": 37,
       "servings": 3,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "3 tbs Unsalted Butter",
         "1 large Onion",
@@ -3902,18 +3529,12 @@
     {
       "id": "94",
       "name": "Dal fry",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg",
       "prepTime": 21,
       "cookTime": 15,
       "servings": 5,
-      "tags": [
-        "Curry",
-        "Vegetarian",
-        "Cake"
-      ],
+      "tags": ["Curry", "Vegetarian", "Cake"],
       "ingredients": [
         "1 cup Toor dal",
         "2-1/2 cups Water",
@@ -3952,18 +3573,12 @@
     {
       "id": "95",
       "name": "Dundee cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/wxyvqq1511723401.jpg",
       "prepTime": 30,
       "cookTime": 17,
       "servings": 3,
-      "tags": [
-        "heavy",
-        "Nutty",
-        "Fruity"
-      ],
+      "tags": ["heavy", "Nutty", "Fruity"],
       "ingredients": [
         "100g  Almonds",
         "180g Butter",
@@ -4001,9 +3616,7 @@
     {
       "id": "96",
       "name": "Duck Confit",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/wvpvsu1511786158.jpg",
       "prepTime": 21,
       "cookTime": 53,
@@ -4034,20 +3647,12 @@
     {
       "id": "97",
       "name": "Eton Mess",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg",
       "prepTime": 31,
       "cookTime": 19,
       "servings": 5,
-      "tags": [
-        "Dairy",
-        "Fruity",
-        "Desert",
-        "Treat",
-        "Speciality"
-      ],
+      "tags": ["Dairy", "Fruity", "Desert", "Treat", "Speciality"],
       "ingredients": [
         "500g strawberries",
         "400ml double cream",
@@ -4071,17 +3676,12 @@
     {
       "id": "98",
       "name": "Eccles Cakes",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/wtqrqw1511639627.jpg",
       "prepTime": 17,
       "cookTime": 52,
       "servings": 2,
-      "tags": [
-        "Snack",
-        "Treat"
-      ],
+      "tags": ["Snack", "Treat"],
       "ingredients": [
         "250g Butter",
         "350g Plain Flour",
@@ -4115,16 +3715,12 @@
     {
       "id": "99",
       "name": "English Breakfast",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/utxryw1511721587.jpg",
       "prepTime": 17,
       "cookTime": 50,
       "servings": 5,
-      "tags": [
-        "Breakfast"
-      ],
+      "tags": ["Breakfast"],
       "ingredients": [
         "2 Sausages",
         "3 Bacon",
@@ -4156,19 +3752,12 @@
     {
       "id": "100",
       "name": "Escovitch Fish",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/1520084413.jpg",
       "prepTime": 15,
       "cookTime": 36,
       "servings": 4,
-      "tags": [
-        "Seafood",
-        "Spicy",
-        "Speciality",
-        "Easter"
-      ],
+      "tags": ["Seafood", "Spicy", "Speciality", "Easter"],
       "ingredients": [
         "2 Pounds Red Snapper",
         "1/2 cup  Vegetable Oil",
@@ -4206,18 +3795,12 @@
     {
       "id": "101",
       "name": "Egg Drop Soup",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/1529446137.jpg",
       "prepTime": 30,
       "cookTime": 25,
       "servings": 4,
-      "tags": [
-        "Soup",
-        "Baking",
-        "Calorific"
-      ],
+      "tags": ["Soup", "Baking", "Calorific"],
       "ingredients": [
         "3 cups  Chicken Stock",
         "1/4 tsp Salt",
@@ -4249,9 +3832,7 @@
     {
       "id": "102",
       "name": "Egyptian Fatteh",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/rlwcc51598734603.jpg",
       "prepTime": 27,
       "cookTime": 31,
@@ -4295,9 +3876,7 @@
     {
       "id": "103",
       "name": "Eggplant Adobo",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/y7h0lq1683208991.jpg",
       "prepTime": 15,
       "cookTime": 46,
@@ -4335,19 +3914,12 @@
     {
       "id": "104",
       "name": "Fish pie",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg",
       "prepTime": 31,
       "cookTime": 23,
       "servings": 2,
-      "tags": [
-        "Fish",
-        "Pie",
-        "Breakfast",
-        "Baking"
-      ],
+      "tags": ["Fish", "Pie", "Breakfast", "Baking"],
       "ingredients": [
         "900g Floury Potatoes",
         "2 tbsp Olive Oil",
@@ -4383,16 +3955,12 @@
     {
       "id": "105",
       "name": "French Lentils With Garlic and Thyme",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/vwwspt1487394060.jpg",
       "prepTime": 19,
       "cookTime": 18,
       "servings": 5,
-      "tags": [
-        "Pulse"
-      ],
+      "tags": ["Pulse"],
       "ingredients": [
         "3 tablespoons Olive Oil",
         "1 Onion",
@@ -4421,9 +3989,7 @@
     {
       "id": "106",
       "name": "Fettucine alfredo",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/uquqtu1511178042.jpg",
       "prepTime": 18,
       "cookTime": 16,
@@ -4455,9 +4021,7 @@
     {
       "id": "107",
       "name": "Full English Breakfast",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/sqrtwu1511721265.jpg",
       "prepTime": 25,
       "cookTime": 33,
@@ -4502,16 +4066,12 @@
     {
       "id": "108",
       "name": "French Onion Soup",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg",
       "prepTime": 29,
       "cookTime": 27,
       "servings": 4,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "50g Butter",
         "1 tbs Olive Oil",
@@ -4540,16 +4100,12 @@
     {
       "id": "109",
       "name": "Flamiche",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wssvvs1511785879.jpg",
       "prepTime": 17,
       "cookTime": 24,
       "servings": 2,
-      "tags": [
-        "Tart"
-      ],
+      "tags": ["Tart"],
       "ingredients": [
         "75g Butter",
         "1kg Leek",
@@ -4582,16 +4138,12 @@
     {
       "id": "110",
       "name": "French Omelette",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/yvpuuy1511797244.jpg",
       "prepTime": 26,
       "cookTime": 49,
       "servings": 3,
-      "tags": [
-        "Egg"
-      ],
+      "tags": ["Egg"],
       "ingredients": [
         "3 Eggs",
         "2 knobs Butter",
@@ -4617,18 +4169,12 @@
     {
       "id": "111",
       "name": "Fish Stew with Rouille",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/vptqpw1511798500.jpg",
       "prepTime": 20,
       "cookTime": 44,
       "servings": 5,
-      "tags": [
-        "Fish",
-        "Seafood",
-        "Shellfish"
-      ],
+      "tags": ["Fish", "Seafood", "Shellfish"],
       "ingredients": [
         "6 large Prawns",
         "3 tbs Olive Oil",
@@ -4668,17 +4214,12 @@
     {
       "id": "112",
       "name": "Fennel Dauphinoise",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/ytttsv1511798734.jpg",
       "prepTime": 21,
       "cookTime": 27,
       "servings": 2,
-      "tags": [
-        "Pie",
-        "SideDish"
-      ],
+      "tags": ["Pie", "SideDish"],
       "ingredients": [
         "225g Potatoes",
         "1 small Fennel",
@@ -4703,17 +4244,12 @@
     {
       "id": "113",
       "name": "Fruit and Cream Cheese Breakfast Pastries",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/1543774956.jpg",
       "prepTime": 21,
       "cookTime": 39,
       "servings": 4,
-      "tags": [
-        "Breakfast",
-        "Summer"
-      ],
+      "tags": ["Breakfast", "Summer"],
       "ingredients": [
         "1 1/4 oz  Cream Cheese",
         "1 1/4 cup Sugar",
@@ -4744,9 +4280,7 @@
     {
       "id": "114",
       "name": "French Onion Chicken with Roasted Carrots & Mashed Potatoes",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg",
       "prepTime": 29,
       "cookTime": 35,
@@ -4791,9 +4325,7 @@
     {
       "id": "115",
       "name": "Ful Medames",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/lvn2d51598732465.jpg",
       "prepTime": 22,
       "cookTime": 52,
@@ -4833,9 +4365,7 @@
     {
       "id": "116",
       "name": "Feteer Meshaltet",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/9f4z6v1598734293.jpg",
       "prepTime": 29,
       "cookTime": 43,
@@ -4876,9 +4406,7 @@
     {
       "id": "117",
       "name": "Fish fofos",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg",
       "prepTime": 16,
       "cookTime": 45,
@@ -4919,16 +4447,12 @@
     {
       "id": "118",
       "name": "Fresh sardines",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/nv5lf31628771380.jpg",
       "prepTime": 26,
       "cookTime": 38,
       "servings": 5,
-      "tags": [
-        "Fresh"
-      ],
+      "tags": ["Fresh"],
       "ingredients": [
         "500g Sardines",
         "Dash Vegetable Oil",
@@ -4949,9 +4473,7 @@
     {
       "id": "119",
       "name": "Fettuccine Alfredo",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg",
       "prepTime": 22,
       "cookTime": 33,
@@ -4979,16 +4501,12 @@
     {
       "id": "120",
       "name": "Fish Soup (Ukha)",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg",
       "prepTime": 33,
       "cookTime": 22,
       "servings": 5,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "2 tbs Olive Oil",
         "1 sliced Onion",
@@ -5017,17 +4535,12 @@
     {
       "id": "121",
       "name": "Garides Saganaki",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg",
       "prepTime": 20,
       "cookTime": 20,
       "servings": 3,
-      "tags": [
-        "Seafood",
-        "Shellfish"
-      ],
+      "tags": ["Seafood", "Shellfish"],
       "ingredients": [
         "500g Raw king prawns",
         "3 tablespoons Olive oil",
@@ -5056,9 +4569,7 @@
     {
       "id": "122",
       "name": "Grilled Mac and Cheese Sandwich",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg",
       "prepTime": 23,
       "cookTime": 37,
@@ -5109,9 +4620,7 @@
     {
       "id": "123",
       "name": "General Tsos Chicken",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/1529444113.jpg",
       "prepTime": 29,
       "cookTime": 34,
@@ -5165,9 +4674,7 @@
     {
       "id": "124",
       "name": "Gigantes Plaki",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/b79r6f1585566277.jpg",
       "prepTime": 29,
       "cookTime": 38,
@@ -5200,9 +4707,7 @@
     {
       "id": "125",
       "name": "Golabki (cabbage roll)",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/q8sp3j1593349686.jpg",
       "prepTime": 18,
       "cookTime": 32,
@@ -5241,9 +4746,7 @@
     {
       "id": "126",
       "name": "Grilled Portuguese sardines",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg",
       "prepTime": 22,
       "cookTime": 28,
@@ -5275,9 +4778,7 @@
     {
       "id": "127",
       "name": "Grilled eggplant with coconut milk",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/bopa2i1683209167.jpg",
       "prepTime": 26,
       "cookTime": 49,
@@ -5308,18 +4809,12 @@
     {
       "id": "128",
       "name": "Honey Teriyaki Salmon",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg",
       "prepTime": 19,
       "cookTime": 53,
       "servings": 3,
-      "tags": [
-        "Fish",
-        "Breakfast",
-        "DateNight"
-      ],
+      "tags": ["Fish", "Breakfast", "DateNight"],
       "ingredients": [
         "1 lb Salmon",
         "1 tablespoon Olive oil",
@@ -5343,17 +4838,12 @@
     {
       "id": "129",
       "name": "Hot Chocolate Fudge",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xrysxr1483568462.jpg",
       "prepTime": 28,
       "cookTime": 22,
       "servings": 4,
-      "tags": [
-        "Snack",
-        "Chocolate"
-      ],
+      "tags": ["Snack", "Chocolate"],
       "ingredients": [
         "2 cups Chocolate Chips",
         "2 tbs Heavy Cream",
@@ -5385,16 +4875,12 @@
     {
       "id": "130",
       "name": "Hot and Sour Soup",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/1529445893.jpg",
       "prepTime": 32,
       "cookTime": 23,
       "servings": 4,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "1/3 cup Mushrooms",
         "1/3 cup Wood Ear Mushrooms",
@@ -5432,20 +4918,12 @@
     {
       "id": "131",
       "name": "Home-made Mandazi",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/thazgm1555350962.jpg",
       "prepTime": 23,
       "cookTime": 41,
       "servings": 2,
-      "tags": [
-        "Baking",
-        "Breakfast",
-        "Egg",
-        "Warm",
-        "Snack"
-      ],
+      "tags": ["Baking", "Breakfast", "Egg", "Warm", "Snack"],
       "ingredients": [
         "750g Self-raising Flour",
         "6 tablespoons Sugar",
@@ -5477,9 +4955,7 @@
     {
       "id": "132",
       "name": "Honey Balsamic Chicken with Crispy Broccoli & Potatoes",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
       "prepTime": 20,
       "cookTime": 26,
@@ -5517,9 +4993,7 @@
     {
       "id": "133",
       "name": "Honey Yogurt Cheesecake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/y2irzl1585563479.jpg",
       "prepTime": 32,
       "cookTime": 20,
@@ -5553,9 +5027,7 @@
     {
       "id": "134",
       "name": "Ham hock colcannon",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg",
       "prepTime": 30,
       "cookTime": 29,
@@ -5593,17 +5065,12 @@
     {
       "id": "135",
       "name": "Irish stew",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/sxxpst1468569714.jpg",
       "prepTime": 24,
       "cookTime": 38,
       "servings": 2,
-      "tags": [
-        "Stew",
-        "Meat"
-      ],
+      "tags": ["Stew", "Meat"],
       "ingredients": [
         "300g soaked overnight in water whole wheat",
         "2kg cut into 3cm cubes lamb loin chops",
@@ -5638,9 +5105,7 @@
     {
       "id": "136",
       "name": "Jam Roly-Poly",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/ysqupp1511640538.jpg",
       "prepTime": 27,
       "cookTime": 24,
@@ -5672,17 +5137,12 @@
     {
       "id": "137",
       "name": "Jerk chicken with rice & peas",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/tytyxu1515363282.jpg",
       "prepTime": 23,
       "cookTime": 47,
       "servings": 5,
-      "tags": [
-        "Chilli",
-        "Curry"
-      ],
+      "tags": ["Chilli", "Curry"],
       "ingredients": [
         "12 Chicken Thighs",
         "1/2  Lime",
@@ -5724,17 +5184,12 @@
     {
       "id": "138",
       "name": "Jamaican Beef Patties",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/wsqqsw1515364068.jpg",
       "prepTime": 17,
       "cookTime": 42,
       "servings": 4,
-      "tags": [
-        "Snack",
-        "Spicy"
-      ],
+      "tags": ["Snack", "Spicy"],
       "ingredients": [
         "4 cups  Plain Flour",
         "1 tsp  Salt",
@@ -5799,9 +5254,7 @@
     {
       "id": "139",
       "name": "Japanese gohan rice",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/kw92t41604181871.jpg",
       "prepTime": 33,
       "cookTime": 45,
@@ -5830,9 +5283,7 @@
     {
       "id": "140",
       "name": "Japanese Katsudon",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/d8f6qx1604182128.jpg",
       "prepTime": 16,
       "cookTime": 54,
@@ -5867,16 +5318,12 @@
     {
       "id": "141",
       "name": "Kapsalon",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/sxysrt1468240488.jpg",
       "prepTime": 20,
       "cookTime": 49,
       "servings": 3,
-      "tags": [
-        "Snack"
-      ],
+      "tags": ["Snack"],
       "ingredients": [
         "250 Grams Fries",
         "500 Grams Doner Meat",
@@ -5906,17 +5353,12 @@
     {
       "id": "142",
       "name": "Kentucky Fried Chicken",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg",
       "prepTime": 33,
       "cookTime": 37,
       "servings": 5,
-      "tags": [
-        "Meat",
-        "Spicy"
-      ],
+      "tags": ["Meat", "Spicy"],
       "ingredients": [
         "1 whole Chicken",
         "2 quarts neutral frying Oil",
@@ -5955,17 +5397,12 @@
     {
       "id": "143",
       "name": "Katsu Chicken curry",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/vwrpps1503068729.jpg",
       "prepTime": 22,
       "cookTime": 38,
       "servings": 2,
-      "tags": [
-        "Curry",
-        "Meat"
-      ],
+      "tags": ["Curry", "Meat"],
       "ingredients": [
         "4 pounded to 1cm thickness chicken breast",
         "2 tablespoons plain flour",
@@ -6004,20 +5441,12 @@
     {
       "id": "144",
       "name": "Key Lime Pie",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg",
       "prepTime": 25,
       "cookTime": 53,
       "servings": 4,
-      "tags": [
-        "Cake",
-        "Pie",
-        "Desert",
-        "Fruity",
-        "Sour"
-      ],
+      "tags": ["Cake", "Pie", "Desert", "Fruity", "Sour"],
       "ingredients": [
         "300g Digestive Biscuits",
         "150g Butter",
@@ -6044,16 +5473,12 @@
     {
       "id": "145",
       "name": "Kidney Bean Curry",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/sywrsu1511463066.jpg",
       "prepTime": 21,
       "cookTime": 50,
       "servings": 4,
-      "tags": [
-        "Curry"
-      ],
+      "tags": ["Curry"],
       "ingredients": [
         "1 tbls Vegetable Oil",
         "1 finely chopped  Onion",
@@ -6083,9 +5508,7 @@
     {
       "id": "146",
       "name": "Kedgeree",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg",
       "prepTime": 22,
       "cookTime": 41,
@@ -6120,9 +5543,7 @@
     {
       "id": "147",
       "name": "Kung Pao Chicken",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/1525872624.jpg",
       "prepTime": 15,
       "cookTime": 43,
@@ -6160,16 +5581,12 @@
     {
       "id": "148",
       "name": "Kung Po Prawns",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/1525873040.jpg",
       "prepTime": 17,
       "cookTime": 53,
       "servings": 3,
-      "tags": [
-        "BBQ"
-      ],
+      "tags": ["BBQ"],
       "ingredients": [
         "400g Prawns",
         "2 tbs Soy Sauce",
@@ -6200,9 +5617,7 @@
     {
       "id": "149",
       "name": "Kafteji",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/1bsv1q1560459826.jpg",
       "prepTime": 27,
       "cookTime": 26,
@@ -6238,9 +5653,7 @@
     {
       "id": "150",
       "name": "Keleya Zaara",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/8x09hy1560460923.jpg",
       "prepTime": 19,
       "cookTime": 52,
@@ -6271,16 +5684,12 @@
     {
       "id": "151",
       "name": "Kumpir",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg",
       "prepTime": 23,
       "cookTime": 23,
       "servings": 4,
-      "tags": [
-        "SideDish"
-      ],
+      "tags": ["SideDish"],
       "ingredients": [
         "2 large Potatoes",
         "2 tbs Butter",
@@ -6306,9 +5715,7 @@
     {
       "id": "152",
       "name": "Krispy Kreme Donut",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg",
       "prepTime": 26,
       "cookTime": 27,
@@ -6347,9 +5754,7 @@
     {
       "id": "153",
       "name": "Koshari",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg",
       "prepTime": 33,
       "cookTime": 30,
@@ -6385,16 +5790,12 @@
     {
       "id": "154",
       "name": "Lamb tomato and sweet spices",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/qtwtss1468572261.jpg",
       "prepTime": 30,
       "cookTime": 26,
       "servings": 4,
-      "tags": [
-        "Sweet"
-      ],
+      "tags": ["Sweet"],
       "ingredients": [
         "2 tbsp olive oil",
         "4cm piece finely chopped ginger",
@@ -6436,17 +5837,12 @@
     {
       "id": "155",
       "name": "Lamb Biryani",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg",
       "prepTime": 25,
       "cookTime": 26,
       "servings": 3,
-      "tags": [
-        "Curry",
-        "Meat"
-      ],
+      "tags": ["Curry", "Meat"],
       "ingredients": [
         "12 Cashew nuts",
         "½ tbsp Khus khus",
@@ -6497,18 +5893,12 @@
     {
       "id": "156",
       "name": "Lamb Rogan josh",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/vvstvq1487342592.jpg",
       "prepTime": 34,
       "cookTime": 19,
       "servings": 5,
-      "tags": [
-        "Curry",
-        "Spicy",
-        "Alcoholic"
-      ],
+      "tags": ["Curry", "Spicy", "Alcoholic"],
       "ingredients": [
         "2 quartered Onion",
         "4 tbsp Sunflower Oil",
@@ -6541,17 +5931,12 @@
     {
       "id": "157",
       "name": "Laksa King Prawn Noodles",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/rvypwy1503069308.jpg",
       "prepTime": 25,
       "cookTime": 16,
       "servings": 4,
-      "tags": [
-        "Shellfish",
-        "Seafood"
-      ],
+      "tags": ["Shellfish", "Seafood"],
       "ingredients": [
         "1 tbsp Olive Oil",
         "1 finely sliced Red Chilli",
@@ -6580,9 +5965,7 @@
     {
       "id": "158",
       "name": "Lamb Tagine",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/yuwtuu1511295751.jpg",
       "prepTime": 31,
       "cookTime": 49,
@@ -6622,9 +6005,7 @@
     {
       "id": "159",
       "name": "Lasagne",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg",
       "prepTime": 19,
       "cookTime": 54,
@@ -6665,16 +6046,12 @@
     {
       "id": "160",
       "name": "Lamb and Potato pie",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/sxrpws1511555907.jpg",
       "prepTime": 28,
       "cookTime": 32,
       "servings": 3,
-      "tags": [
-        "Pie"
-      ],
+      "tags": ["Pie"],
       "ingredients": [
         "500g Lamb Shoulder",
         "1 tbls Flour",
@@ -6708,9 +6085,7 @@
     {
       "id": "161",
       "name": "Lancashire hotpot",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/uttrxw1511637813.jpg",
       "prepTime": 34,
       "cookTime": 43,
@@ -6744,16 +6119,12 @@
     {
       "id": "162",
       "name": "Leblebi Soup",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/x2fw9e1560460636.jpg",
       "prepTime": 20,
       "cookTime": 41,
       "servings": 5,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "2 tbs Olive Oil",
         "1 medium finely diced Onion",
@@ -6784,16 +6155,12 @@
     {
       "id": "163",
       "name": "Lasagna Sandwiches",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg",
       "prepTime": 24,
       "cookTime": 17,
       "servings": 3,
-      "tags": [
-        "Sandwich"
-      ],
+      "tags": ["Sandwich"],
       "ingredients": [
         "1/4 cup Sour Cream",
         "2 tbs Chopped Onion",
@@ -6822,9 +6189,7 @@
     {
       "id": "164",
       "name": "Lamb and Lemon Souvlaki",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/rjhf741585564676.jpg",
       "prepTime": 17,
       "cookTime": 16,
@@ -6854,9 +6219,7 @@
     {
       "id": "165",
       "name": "Lamb Tzatziki Burgers",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/k420tj1585565244.jpg",
       "prepTime": 25,
       "cookTime": 37,
@@ -6891,9 +6254,7 @@
     {
       "id": "166",
       "name": "Lamb Pilaf (Plov)",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg",
       "prepTime": 26,
       "cookTime": 53,
@@ -6930,17 +6291,12 @@
     {
       "id": "167",
       "name": "Mediterranean Pasta Salad",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg",
       "prepTime": 22,
       "cookTime": 25,
       "servings": 4,
-      "tags": [
-        "Pasta",
-        "Baking"
-      ],
+      "tags": ["Pasta", "Baking"],
       "ingredients": [
         "200 g mozzarella balls",
         "250 g baby plum tomatoes",
@@ -6973,16 +6329,12 @@
     {
       "id": "168",
       "name": "Massaman Beef curry",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/tvttqv1504640475.jpg",
       "prepTime": 19,
       "cookTime": 50,
       "servings": 4,
-      "tags": [
-        "Curry"
-      ],
+      "tags": ["Curry"],
       "ingredients": [
         "85g Peanuts",
         "400ml can Coconut cream",
@@ -7014,17 +6366,12 @@
     {
       "id": "169",
       "name": "Mushroom & Chestnut Rotolo",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/ssyqwr1511451678.jpg",
       "prepTime": 34,
       "cookTime": 19,
       "servings": 2,
-      "tags": [
-        "Vegetarian",
-        "Nutty"
-      ],
+      "tags": ["Vegetarian", "Nutty"],
       "ingredients": [
         "30g Mushrooms",
         "240g Chestnuts",
@@ -7058,17 +6405,12 @@
     {
       "id": "170",
       "name": "Matar Paneer",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg",
       "prepTime": 28,
       "cookTime": 26,
       "servings": 5,
-      "tags": [
-        "Curry",
-        "Vegetarian"
-      ],
+      "tags": ["Curry", "Vegetarian"],
       "ingredients": [
         "1 tbls Sunflower Oil",
         "225g Paneer",
@@ -7098,17 +6440,12 @@
     {
       "id": "171",
       "name": "Minced Beef Pie",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/xwutvy1511555540.jpg",
       "prepTime": 34,
       "cookTime": 27,
       "servings": 5,
-      "tags": [
-        "Pie",
-        "Meat"
-      ],
+      "tags": ["Pie", "Meat"],
       "ingredients": [
         "2 tbs Vegetable Oil",
         "500g Minced Beef",
@@ -7141,16 +6478,12 @@
     {
       "id": "172",
       "name": "McSinghs Scotch pie",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/vssrtx1511557680.jpg",
       "prepTime": 34,
       "cookTime": 29,
       "servings": 5,
-      "tags": [
-        "Pie"
-      ],
+      "tags": ["Pie"],
       "ingredients": [
         "2 tsp Cumin",
         "1 tbs Rapeseed Oil",
@@ -7192,19 +6525,12 @@
     {
       "id": "173",
       "name": "Madeira Cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/urtqut1511723591.jpg",
       "prepTime": 20,
       "cookTime": 54,
       "servings": 5,
-      "tags": [
-        "Cake",
-        "Light",
-        "Baking",
-        "Desert"
-      ],
+      "tags": ["Cake", "Light", "Baking", "Desert"],
       "ingredients": [
         "175g Butter",
         "175g Caster Sugar",
@@ -7233,18 +6559,12 @@
     {
       "id": "174",
       "name": "Montreal Smoked Meat",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/uttupv1511815050.jpg",
       "prepTime": 19,
       "cookTime": 23,
       "servings": 2,
-      "tags": [
-        "Speciality",
-        "Snack",
-        "StrongFlavor"
-      ],
+      "tags": ["Speciality", "Snack", "StrongFlavor"],
       "ingredients": [
         "1 Beef Brisket",
         "3 tbs Salt",
@@ -7282,9 +6602,7 @@
     {
       "id": "175",
       "name": "Ma Po Tofu",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/1525874812.jpg",
       "prepTime": 27,
       "cookTime": 23,
@@ -7331,17 +6649,12 @@
     {
       "id": "176",
       "name": "Mbuzi Choma (Roasted Goat)",
-      "category": [
-        "Goat"
-      ],
+      "category": ["Goat"],
       "image": "https://www.themealdb.com/images/media/meals/cuio7s1555492979.jpg",
       "prepTime": 32,
       "cookTime": 40,
       "servings": 5,
-      "tags": [
-        "BBQ",
-        "Meat"
-      ],
+      "tags": ["BBQ", "Meat"],
       "ingredients": [
         "1 kg Goat Meat",
         "1 kg Corn Flour",
@@ -7373,16 +6686,12 @@
     {
       "id": "177",
       "name": "Mince Pies",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/qe8pf51576795532.jpg",
       "prepTime": 25,
       "cookTime": 39,
       "servings": 4,
-      "tags": [
-        "Christmas"
-      ],
+      "tags": ["Christmas"],
       "ingredients": [
         "225g Butter",
         "350g Plain Flour",
@@ -7412,9 +6721,7 @@
     {
       "id": "178",
       "name": "Moussaka",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg",
       "prepTime": 34,
       "cookTime": 50,
@@ -7445,9 +6752,7 @@
     {
       "id": "179",
       "name": "Mulukhiyah",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/x372ug1598733932.jpg",
       "prepTime": 18,
       "cookTime": 48,
@@ -7485,9 +6790,7 @@
     {
       "id": "180",
       "name": "Mustard champ",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/o7p9581608589317.jpg",
       "prepTime": 18,
       "cookTime": 25,
@@ -7520,9 +6823,7 @@
     {
       "id": "181",
       "name": "Moroccan Carrot Soup",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/jcr46d1614763831.jpg",
       "prepTime": 31,
       "cookTime": 50,
@@ -7565,9 +6866,7 @@
     {
       "id": "182",
       "name": "Mee goreng mamak",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg",
       "prepTime": 32,
       "cookTime": 50,
@@ -7610,17 +6909,12 @@
     {
       "id": "183",
       "name": "Mushroom soup with buckwheat",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/1ngcbf1628770793.jpg",
       "prepTime": 16,
       "cookTime": 44,
       "servings": 2,
-      "tags": [
-        "Warming",
-        "Soup"
-      ],
+      "tags": ["Warming", "Soup"],
       "ingredients": [
         "150g Mushrooms",
         "50g Buckwheat",
@@ -7647,9 +6941,7 @@
     {
       "id": "184",
       "name": "Migas",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/xd9aj21740432378.jpg",
       "prepTime": 23,
       "cookTime": 47,
@@ -7678,9 +6970,7 @@
     {
       "id": "185",
       "name": "Nutty Chicken Curry",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg",
       "prepTime": 33,
       "cookTime": 24,
@@ -7712,20 +7002,12 @@
     {
       "id": "186",
       "name": "New York cheesecake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/swttys1511385853.jpg",
       "prepTime": 28,
       "cookTime": 41,
       "servings": 4,
-      "tags": [
-        "Desert",
-        "Dairy",
-        "Pudding",
-        "Cake",
-        "Breakfast"
-      ],
+      "tags": ["Desert", "Dairy", "Pudding", "Cake", "Breakfast"],
       "ingredients": [
         "85g Butter",
         "140g Sour Cream",
@@ -7759,18 +7041,12 @@
     {
       "id": "187",
       "name": "Nanaimo Bars",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/vwuprt1511813703.jpg",
       "prepTime": 20,
       "cookTime": 23,
       "servings": 4,
-      "tags": [
-        "Treat",
-        "Snack",
-        "Dairy"
-      ],
+      "tags": ["Treat", "Snack", "Dairy"],
       "ingredients": [
         "125g Custard",
         "50g Caster Sugar",
@@ -7802,9 +7078,7 @@
     {
       "id": "188",
       "name": "Nasi lemak",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg",
       "prepTime": 24,
       "cookTime": 47,
@@ -7852,9 +7126,7 @@
     {
       "id": "189",
       "name": "Osso Buco alla Milanese",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/wwuqvt1487345467.jpg",
       "prepTime": 31,
       "cookTime": 44,
@@ -7905,18 +7177,12 @@
     {
       "id": "190",
       "name": "Oxtail with broad beans",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/1520083578.jpg",
       "prepTime": 25,
       "cookTime": 38,
       "servings": 5,
-      "tags": [
-        "Heavy",
-        "MainMeal",
-        "Speciality"
-      ],
+      "tags": ["Heavy", "MainMeal", "Speciality"],
       "ingredients": [
         "450g Oxtail",
         "1 chopped Onion",
@@ -7947,16 +7213,12 @@
     {
       "id": "191",
       "name": "Pad See Ew",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/uuuspp1468263334.jpg",
       "prepTime": 27,
       "cookTime": 19,
       "servings": 3,
-      "tags": [
-        "Pasta"
-      ],
+      "tags": ["Pasta"],
       "ingredients": [
         "6oz/180g rice stick noodles",
         "2 tbsp dark soy sauce",
@@ -7988,9 +7250,7 @@
     {
       "id": "192",
       "name": "Potato Gratin with Chicken",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qwrtut1468418027.jpg",
       "prepTime": 19,
       "cookTime": 26,
@@ -8022,18 +7282,12 @@
     {
       "id": "193",
       "name": "Poutine",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
       "prepTime": 29,
       "cookTime": 41,
       "servings": 4,
-      "tags": [
-        "UnHealthy",
-        "Speciality",
-        "HangoverFood"
-      ],
+      "tags": ["UnHealthy", "Speciality", "HangoverFood"],
       "ingredients": [
         "Dash Vegetable Oil",
         "1 Can Beef Gravy",
@@ -8059,9 +7313,7 @@
     {
       "id": "194",
       "name": "Pilchard puttanesca",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/vvtvtr1511180578.jpg",
       "prepTime": 18,
       "cookTime": 16,
@@ -8093,9 +7345,7 @@
     {
       "id": "195",
       "name": "Pork Cassoulet",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/wxuvuv1511299147.jpg",
       "prepTime": 32,
       "cookTime": 54,
@@ -8135,19 +7385,12 @@
     {
       "id": "196",
       "name": "Pancakes",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg",
       "prepTime": 26,
       "cookTime": 21,
       "servings": 3,
-      "tags": [
-        "Breakfast",
-        "Desert",
-        "Sweet",
-        "Fruity"
-      ],
+      "tags": ["Breakfast", "Desert", "Sweet", "Fruity"],
       "ingredients": [
         "100g  Flour",
         "2 large Eggs",
@@ -8173,18 +7416,12 @@
     {
       "id": "197",
       "name": "Pumpkin Pie",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/usuqtp1511385394.jpg",
       "prepTime": 30,
       "cookTime": 34,
       "servings": 2,
-      "tags": [
-        "Halloween",
-        "Pie",
-        "Desert"
-      ],
+      "tags": ["Halloween", "Pie", "Desert"],
       "ingredients": [
         "750g Pumpkin",
         "350g Shortcrust Pastry",
@@ -8215,20 +7452,12 @@
     {
       "id": "198",
       "name": "Peanut Butter Cheesecake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/qtuuys1511387068.jpg",
       "prepTime": 22,
       "cookTime": 29,
       "servings": 3,
-      "tags": [
-        "Cake",
-        "Desert",
-        "Treat",
-        "UnHealthy",
-        "Speciality"
-      ],
+      "tags": ["Cake", "Desert", "Treat", "UnHealthy", "Speciality"],
       "ingredients": [
         "50g Butter",
         "175g Peanut Cookies",
@@ -8260,18 +7489,12 @@
     {
       "id": "199",
       "name": "Peach & Blueberry Grunt",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/ssxvup1511387476.jpg",
       "prepTime": 20,
       "cookTime": 30,
       "servings": 2,
-      "tags": [
-        "Desert",
-        "Pudding",
-        "Fruity"
-      ],
+      "tags": ["Desert", "Pudding", "Fruity"],
       "ingredients": [
         "1 tsp  Corn Flour",
         "Juice of 2 Orange",
@@ -8302,16 +7525,12 @@
     {
       "id": "200",
       "name": "Parkin Cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/qxuqtt1511724269.jpg",
       "prepTime": 17,
       "cookTime": 15,
       "servings": 2,
-      "tags": [
-        "Caramel"
-      ],
+      "tags": ["Caramel"],
       "ingredients": [
         "200g Butter",
         "1 large Egg",
@@ -8339,18 +7558,12 @@
     {
       "id": "201",
       "name": "Pear Tarte Tatin",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/rxvxrr1511797671.jpg",
       "prepTime": 28,
       "cookTime": 42,
       "servings": 2,
-      "tags": [
-        "Tart",
-        "Glazed",
-        "Baking"
-      ],
+      "tags": ["Tart", "Glazed", "Baking"],
       "ingredients": [
         "8 Pears",
         "100g  Caster Sugar",
@@ -8380,16 +7593,12 @@
     {
       "id": "202",
       "name": "Provençal Omelette Cake",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/qwtrtp1511799242.jpg",
       "prepTime": 31,
       "cookTime": 36,
       "servings": 4,
-      "tags": [
-        "Egg"
-      ],
+      "tags": ["Egg"],
       "ingredients": [
         "10 Eggs",
         "1 tbs Olive Oil",
@@ -8422,19 +7631,12 @@
     {
       "id": "203",
       "name": "Prawn & Fennel Bisque",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/rtwwvv1511799504.jpg",
       "prepTime": 16,
       "cookTime": 17,
       "servings": 5,
-      "tags": [
-        "Soup",
-        "Warm",
-        "Seafood",
-        "Shellfish"
-      ],
+      "tags": ["Soup", "Warm", "Seafood", "Shellfish"],
       "ingredients": [
         "450g Tiger Prawns",
         "4 tbs Olive Oil",
@@ -8465,17 +7667,12 @@
     {
       "id": "204",
       "name": "Pate Chinois",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/yyrrxr1511816289.jpg",
       "prepTime": 28,
       "cookTime": 36,
       "servings": 2,
-      "tags": [
-        "MainMeal",
-        "Alcoholic"
-      ],
+      "tags": ["MainMeal", "Alcoholic"],
       "ingredients": [
         "4 cups  Potatoes",
         "60ml Butter",
@@ -8507,16 +7704,12 @@
     {
       "id": "205",
       "name": "Pouding chomeur",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/yqqqwu1511816912.jpg",
       "prepTime": 22,
       "cookTime": 51,
       "servings": 2,
-      "tags": [
-        "Pudding"
-      ],
+      "tags": ["Pudding"],
       "ingredients": [
         "½ cup  Butter",
         "1 cup  Sugar",
@@ -8553,23 +7746,13 @@
     {
       "id": "206",
       "name": "Peanut Butter Cookies",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/1544384070.jpg",
       "prepTime": 30,
       "cookTime": 50,
       "servings": 5,
-      "tags": [
-        "Breakfast",
-        "UnHealthy",
-        "BBQ"
-      ],
-      "ingredients": [
-        "1 cup  Peanut Butter",
-        "1/2 cup  Sugar",
-        "1 Egg"
-      ],
+      "tags": ["Breakfast", "UnHealthy", "BBQ"],
+      "ingredients": ["1 cup  Peanut Butter", "1/2 cup  Sugar", "1 Egg"],
       "steps": [
         "Preheat oven to 350ºF (180ºC).",
         "In a large bowl, mix together the peanut butter, sugar, and egg.",
@@ -8590,9 +7773,7 @@
     {
       "id": "207",
       "name": "Pizza Express Margherita",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
       "prepTime": 17,
       "cookTime": 24,
@@ -8636,9 +7817,7 @@
     {
       "id": "208",
       "name": "Paszteciki (Polish Pasties)",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/c9a3l31593261890.jpg",
       "prepTime": 17,
       "cookTime": 28,
@@ -8689,9 +7868,7 @@
     {
       "id": "209",
       "name": "Pierogi (Polish Dumplings)",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/45xxr21593348847.jpg",
       "prepTime": 16,
       "cookTime": 22,
@@ -8728,9 +7905,7 @@
     {
       "id": "210",
       "name": "Polskie Nalesniki (Polish Pancakes)",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/58bkyo1593350017.jpg",
       "prepTime": 33,
       "cookTime": 39,
@@ -8764,9 +7939,7 @@
     {
       "id": "211",
       "name": "Piri-piri chicken and slaw",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/hglsbl1614346998.jpg",
       "prepTime": 29,
       "cookTime": 47,
@@ -8808,9 +7981,7 @@
     {
       "id": "212",
       "name": "Portuguese prego with green piri-piri",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/ewcikl1614348364.jpg",
       "prepTime": 30,
       "cookTime": 23,
@@ -8853,9 +8024,7 @@
     {
       "id": "213",
       "name": "Portuguese barbecued pork (Febras assadas)",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/cybyue1614349443.jpg",
       "prepTime": 31,
       "cookTime": 50,
@@ -8897,9 +8066,7 @@
     {
       "id": "214",
       "name": "Portuguese fish stew (Caldeirada de peixe)",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/do7zps1614349775.jpg",
       "prepTime": 18,
       "cookTime": 21,
@@ -8942,9 +8109,7 @@
     {
       "id": "215",
       "name": "Portuguese custard tarts",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/vmz7gl1614350221.jpg",
       "prepTime": 16,
       "cookTime": 28,
@@ -9005,16 +8170,12 @@
     {
       "id": "216",
       "name": "Potato Salad (Olivier Salad)",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/ebvuir1699013665.jpg",
       "prepTime": 25,
       "cookTime": 25,
       "servings": 3,
-      "tags": [
-        "Salad"
-      ],
+      "tags": ["Salad"],
       "ingredients": [
         "4 Potatoes",
         "3 Carrots",
@@ -9049,16 +8210,12 @@
     {
       "id": "217",
       "name": "Rigatoni with fennel sausage sauce",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/qtqvys1468573168.jpg",
       "prepTime": 28,
       "cookTime": 42,
       "servings": 4,
-      "tags": [
-        "Pasta"
-      ],
+      "tags": ["Pasta"],
       "ingredients": [
         "2½ tbsp olive oil",
         "6 cut into 1.5cm-thick slices Italian fennel sausages",
@@ -9095,19 +8252,12 @@
     {
       "id": "218",
       "name": "Rocky Road Fudge",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/vtxyxv1483567157.jpg",
       "prepTime": 30,
       "cookTime": 24,
       "servings": 2,
-      "tags": [
-        "Chocolate",
-        "Snack",
-        "Sweet",
-        "Baking"
-      ],
+      "tags": ["Chocolate", "Snack", "Sweet", "Baking"],
       "ingredients": [
         "2 cups Miniature Marshmallows",
         "3 cups Chocolate Chips",
@@ -9138,17 +8288,12 @@
     {
       "id": "219",
       "name": "Recheado Masala Fish",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg",
       "prepTime": 18,
       "cookTime": 22,
       "servings": 5,
-      "tags": [
-        "Fish",
-        "Spicy"
-      ],
+      "tags": ["Fish", "Spicy"],
       "ingredients": [
         "4 Mackerel",
         "18 dried Red Chilli",
@@ -9194,16 +8339,12 @@
     {
       "id": "220",
       "name": "Ribollita",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg",
       "prepTime": 18,
       "cookTime": 36,
       "servings": 5,
-      "tags": [
-        "Vegetarian"
-      ],
+      "tags": ["Vegetarian"],
       "ingredients": [
         "5 tablespoons Olive Oil",
         "1 chopped Onion",
@@ -9237,18 +8378,12 @@
     {
       "id": "221",
       "name": "Roasted Eggplant With Tahini, Pine Nuts, and Lentils",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg",
       "prepTime": 20,
       "cookTime": 44,
       "servings": 5,
-      "tags": [
-        "Vegetarian",
-        "Pulse",
-        "Nutty"
-      ],
+      "tags": ["Vegetarian", "Pulse", "Nutty"],
       "ingredients": [
         "2 tablespoons Olive Oil",
         "2 small cut into chunks Carrots",
@@ -9284,17 +8419,12 @@
     {
       "id": "222",
       "name": "Rock Cakes",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/tqrrsq1511723764.jpg",
       "prepTime": 27,
       "cookTime": 52,
       "servings": 5,
-      "tags": [
-        "Baking",
-        "Cake"
-      ],
+      "tags": ["Baking", "Cake"],
       "ingredients": [
         "225g Self-raising Flour",
         "75g Caster Sugar",
@@ -9324,17 +8454,12 @@
     {
       "id": "223",
       "name": "Ratatouille",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg",
       "prepTime": 26,
       "cookTime": 53,
       "servings": 5,
-      "tags": [
-        "Vegetables",
-        "SideDish"
-      ],
+      "tags": ["Vegetables", "SideDish"],
       "ingredients": [
         "2 large Aubergine",
         "4 Courgettes",
@@ -9364,16 +8489,12 @@
     {
       "id": "224",
       "name": "Rappie Pie",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/ruwpww1511817242.jpg",
       "prepTime": 34,
       "cookTime": 23,
       "servings": 5,
-      "tags": [
-        "Pie"
-      ],
+      "tags": ["Pie"],
       "ingredients": [
         "2 tbs Butter",
         "2 chopped Onions",
@@ -9402,17 +8523,12 @@
     {
       "id": "225",
       "name": "Red Peas Soup",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/sqpqtp1515365614.jpg",
       "prepTime": 24,
       "cookTime": 42,
       "servings": 5,
-      "tags": [
-        "Soup",
-        "SideDish"
-      ],
+      "tags": ["Soup", "SideDish"],
       "ingredients": [
         "2 cups  Kidney Beans",
         "1 large Carrots",
@@ -9451,17 +8567,12 @@
     {
       "id": "226",
       "name": "Roast fennel and aubergine paella",
-      "category": [
-        "Vegan"
-      ],
+      "category": ["Vegan"],
       "image": "https://www.themealdb.com/images/media/meals/1520081754.jpg",
       "prepTime": 31,
       "cookTime": 41,
       "servings": 3,
-      "tags": [
-        "Vegan",
-        "Paella"
-      ],
+      "tags": ["Vegan", "Paella"],
       "ingredients": [
         "6 small Baby Aubergine",
         "4 small Fennel",
@@ -9496,9 +8607,7 @@
     {
       "id": "227",
       "name": "Rosol (Polish Chicken Soup)",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/lx1kkj1593349302.jpg",
       "prepTime": 15,
       "cookTime": 49,
@@ -9543,9 +8652,7 @@
     {
       "id": "228",
       "name": "Rogaliki (Polish Croissant Cookies)",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/7mxnzz1593350801.jpg",
       "prepTime": 26,
       "cookTime": 48,
@@ -9581,9 +8688,7 @@
     {
       "id": "229",
       "name": "Roti john",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/hx335q1619789561.jpg",
       "prepTime": 22,
       "cookTime": 45,
@@ -9619,17 +8724,12 @@
     {
       "id": "230",
       "name": "Spaghetti Bolognese",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg",
       "prepTime": 34,
       "cookTime": 45,
       "servings": 5,
-      "tags": [
-        "Pasta",
-        "Meat"
-      ],
+      "tags": ["Pasta", "Meat"],
       "ingredients": [
         "2 onions",
         "1tbsp olive oil",
@@ -9660,17 +8760,12 @@
     {
       "id": "231",
       "name": "Spicy Arrabiata Penne",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
       "prepTime": 24,
       "cookTime": 30,
       "servings": 3,
-      "tags": [
-        "Pasta",
-        "Curry"
-      ],
+      "tags": ["Pasta", "Curry"],
       "ingredients": [
         "1 pound penne rigate",
         "1/4 cup olive oil",
@@ -9697,16 +8792,12 @@
     {
       "id": "232",
       "name": "Smoky Lentil Chili with Squash",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/uwxqwy1483389553.jpg",
       "prepTime": 23,
       "cookTime": 18,
       "servings": 3,
-      "tags": [
-        "Pulse"
-      ],
+      "tags": ["Pulse"],
       "ingredients": [
         "1 tbls Olive Oil",
         "1 Onion",
@@ -9754,19 +8845,12 @@
     {
       "id": "233",
       "name": "Sticky Toffee Pudding Ultimate",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xrptpq1483909204.jpg",
       "prepTime": 20,
       "cookTime": 33,
       "servings": 5,
-      "tags": [
-        "Pudding",
-        "Desert",
-        "Cake",
-        "Dairy"
-      ],
+      "tags": ["Pudding", "Desert", "Cake", "Dairy"],
       "ingredients": [
         "225g Medjool dates",
         "175ml Boiling water",
@@ -9802,17 +8886,12 @@
     {
       "id": "234",
       "name": "Spicy North African Potato Salad",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/urtwux1486983078.jpg",
       "prepTime": 22,
       "cookTime": 36,
       "servings": 2,
-      "tags": [
-        "Vegetarian",
-        "Spicy"
-      ],
+      "tags": ["Vegetarian", "Spicy"],
       "ingredients": [
         "650g/1lb 8 oz Small Potatoes",
         "1 tsp Harissa Spice",
@@ -9847,16 +8926,12 @@
     {
       "id": "235",
       "name": "Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/yqwtvu1487426027.jpg",
       "prepTime": 18,
       "cookTime": 37,
       "servings": 4,
-      "tags": [
-        "Vegetarian"
-      ],
+      "tags": ["Vegetarian"],
       "ingredients": [
         "4 tablespoons Olive Oil",
         "6 small Egg Plants",
@@ -9885,16 +8960,12 @@
     {
       "id": "236",
       "name": "Salmon Prawn Risotto",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg",
       "prepTime": 17,
       "cookTime": 54,
       "servings": 2,
-      "tags": [
-        "Fish"
-      ],
+      "tags": ["Fish"],
       "ingredients": [
         "50g/2oz butter",
         "1 finely chopped  onion",
@@ -9928,9 +8999,7 @@
     {
       "id": "237",
       "name": "Salted Caramel Cheescake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xqrwyr1511133646.jpg",
       "prepTime": 15,
       "cookTime": 50,
@@ -9967,9 +9036,7 @@
     {
       "id": "238",
       "name": "Seafood fideuà",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg",
       "prepTime": 26,
       "cookTime": 23,
@@ -10009,9 +9076,7 @@
     {
       "id": "239",
       "name": "Spinach & Ricotta Cannelloni",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wspuvp1511303478.jpg",
       "prepTime": 22,
       "cookTime": 39,
@@ -10050,17 +9115,12 @@
     {
       "id": "240",
       "name": "Squash linguine",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wxswxy1511452625.jpg",
       "prepTime": 21,
       "cookTime": 36,
       "servings": 4,
-      "tags": [
-        "Pasta",
-        "Light"
-      ],
+      "tags": ["Pasta", "Light"],
       "ingredients": [
         "350g Butternut Squash",
         "3 parts  Garlic",
@@ -10083,17 +9143,12 @@
     {
       "id": "241",
       "name": "Spanish Tortilla",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/quuxsx1511476154.jpg",
       "prepTime": 31,
       "cookTime": 28,
       "servings": 5,
-      "tags": [
-        "Egg",
-        "Light"
-      ],
+      "tags": ["Egg", "Light"],
       "ingredients": [
         "1 sliced Onion",
         "4 tbsp Olive Oil",
@@ -10123,16 +9178,12 @@
     {
       "id": "242",
       "name": "Steak and Kidney Pie",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/qysyss1511558054.jpg",
       "prepTime": 19,
       "cookTime": 30,
       "servings": 5,
-      "tags": [
-        "Pie"
-      ],
+      "tags": ["Pie"],
       "ingredients": [
         "300g Puff Pastry",
         "Beaten Egg White",
@@ -10170,18 +9221,12 @@
     {
       "id": "243",
       "name": "Sticky Toffee Pudding",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xqqqtu1511637379.jpg",
       "prepTime": 15,
       "cookTime": 44,
       "servings": 5,
-      "tags": [
-        "Pudding",
-        "Cake",
-        "Desert"
-      ],
+      "tags": ["Pudding", "Cake", "Desert"],
       "ingredients": [
         "100g  Butter",
         "175g Muscovado Sugar",
@@ -10215,18 +9260,12 @@
     {
       "id": "244",
       "name": "Spotted Dick",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/xqvyqr1511638875.jpg",
       "prepTime": 16,
       "cookTime": 40,
       "servings": 5,
-      "tags": [
-        "Fruity",
-        "Pudding",
-        "Desert"
-      ],
+      "tags": ["Fruity", "Pudding", "Desert"],
       "ingredients": [
         "250g Self-raising Flour",
         "pinch Salt",
@@ -10256,16 +9295,12 @@
     {
       "id": "245",
       "name": "Summer Pudding",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/rsqwus1511640214.jpg",
       "prepTime": 21,
       "cookTime": 33,
       "servings": 4,
-      "tags": [
-        "Summer"
-      ],
+      "tags": ["Summer"],
       "ingredients": [
         "300g Strawberries",
         "250g Blackberries",
@@ -10291,9 +9326,7 @@
     {
       "id": "246",
       "name": "Summer Pistou",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/rqtxvr1511792990.jpg",
       "prepTime": 25,
       "cookTime": 16,
@@ -10326,17 +9359,12 @@
     {
       "id": "247",
       "name": "Split Pea Soup",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/xxtsvx1511814083.jpg",
       "prepTime": 16,
       "cookTime": 32,
       "servings": 3,
-      "tags": [
-        "Soup",
-        "Warm"
-      ],
+      "tags": ["Soup", "Warm"],
       "ingredients": [
         "1kg Ham",
         "200g (soaked overnight) Peas",
@@ -10363,17 +9391,12 @@
     {
       "id": "248",
       "name": "Sugar Pie",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/yrstur1511816601.jpg",
       "prepTime": 24,
       "cookTime": 41,
       "servings": 4,
-      "tags": [
-        "Pie",
-        "Desert"
-      ],
+      "tags": ["Pie", "Desert"],
       "ingredients": [
         "2 cups  Brown Sugar",
         "¼ cup Butter",
@@ -10399,20 +9422,12 @@
     {
       "id": "249",
       "name": "Steak Diane",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg",
       "prepTime": 30,
       "cookTime": 40,
       "servings": 4,
-      "tags": [
-        "DateNight",
-        "Expensive",
-        "Meat",
-        "MainMeal",
-        "Cheasy"
-      ],
+      "tags": ["DateNight", "Expensive", "Meat", "MainMeal", "Cheasy"],
       "ingredients": [
         "2 tbs Canola Oil",
         "4 Beef Fillet",
@@ -10446,16 +9461,12 @@
     {
       "id": "250",
       "name": "Saltfish and Ackee",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/vytypy1511883765.jpg",
       "prepTime": 26,
       "cookTime": 44,
       "servings": 2,
-      "tags": [
-        "Speciality"
-      ],
+      "tags": ["Speciality"],
       "ingredients": [
         "450g Salt Cod",
         "400g Ackee",
@@ -10499,16 +9510,12 @@
     {
       "id": "251",
       "name": "Sweet and Sour Pork",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/1529442316.jpg",
       "prepTime": 33,
       "cookTime": 27,
       "servings": 5,
-      "tags": [
-        "Sweet"
-      ],
+      "tags": ["Sweet"],
       "ingredients": [
         "200g Pork",
         "1 Egg",
@@ -10548,9 +9555,7 @@
     {
       "id": "252",
       "name": "Szechuan Beef",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/1529443236.jpg",
       "prepTime": 22,
       "cookTime": 28,
@@ -10601,9 +9606,7 @@
     {
       "id": "253",
       "name": "Shrimp Chow Fun",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/1529445434.jpg",
       "prepTime": 15,
       "cookTime": 25,
@@ -10656,9 +9659,7 @@
     {
       "id": "254",
       "name": "Salmon Avocado Salad",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/1549542994.jpg",
       "prepTime": 29,
       "cookTime": 25,
@@ -10697,17 +9698,12 @@
     {
       "id": "255",
       "name": "Salmon Eggs Eggs Benedict",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/1550440197.jpg",
       "prepTime": 34,
       "cookTime": 40,
       "servings": 3,
-      "tags": [
-        "Bun",
-        "Brunch"
-      ],
+      "tags": ["Bun", "Brunch"],
       "ingredients": [
         "4 Eggs",
         "2 tbs White Wine Vinegar",
@@ -10735,18 +9731,12 @@
     {
       "id": "256",
       "name": "Shakshuka",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg",
       "prepTime": 21,
       "cookTime": 21,
       "servings": 4,
-      "tags": [
-        "Egg",
-        "Brunch",
-        "Breakfast"
-      ],
+      "tags": ["Egg", "Brunch", "Breakfast"],
       "ingredients": [
         "1 tbs Olive Oil",
         "2 chopped Red Onions",
@@ -10773,18 +9763,12 @@
     {
       "id": "257",
       "name": "Smoked Haddock Kedgeree",
-      "category": [
-        "Breakfast"
-      ],
+      "category": ["Breakfast"],
       "image": "https://www.themealdb.com/images/media/meals/1550441275.jpg",
       "prepTime": 31,
       "cookTime": 33,
       "servings": 5,
-      "tags": [
-        "Brunch",
-        "Fish",
-        "Fusion"
-      ],
+      "tags": ["Brunch", "Fish", "Fusion"],
       "ingredients": [
         "50g Butter",
         "1 chopped Onion",
@@ -10821,17 +9805,12 @@
     {
       "id": "258",
       "name": "Stamppot",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/hyarod1565090529.jpg",
       "prepTime": 26,
       "cookTime": 53,
       "servings": 2,
-      "tags": [
-        "Savory",
-        "Breakfast"
-      ],
+      "tags": ["Savory", "Breakfast"],
       "ingredients": [
         "1.5kg Potatoes",
         "2 leaves Bay Leaf",
@@ -10867,17 +9846,12 @@
     {
       "id": "259",
       "name": "Snert (Dutch Split Pea Soup)",
-      "category": [
-        "Side"
-      ],
+      "category": ["Side"],
       "image": "https://www.themealdb.com/images/media/meals/9ptx0a1565090843.jpg",
       "prepTime": 26,
       "cookTime": 26,
       "servings": 2,
-      "tags": [
-        "Soup",
-        "Cake"
-      ],
+      "tags": ["Soup", "Cake"],
       "ingredients": [
         "2L Water",
         "300g Peas",
@@ -10912,18 +9886,12 @@
     {
       "id": "260",
       "name": "Spaghetti alla Carbonara",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
       "prepTime": 26,
       "cookTime": 19,
       "servings": 4,
-      "tags": [
-        "Pasta",
-        "BBQ",
-        "Breakfast"
-      ],
+      "tags": ["Pasta", "BBQ", "Breakfast"],
       "ingredients": [
         "320g Spaghetti",
         "6 Egg Yolks",
@@ -10969,9 +9937,7 @@
     {
       "id": "261",
       "name": "Soy-Glazed Meatloaves with Wasabi Mashed Potatoes & Roasted Carrots",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/o2wb6p1581005243.jpg",
       "prepTime": 29,
       "cookTime": 29,
@@ -11012,9 +9978,7 @@
     {
       "id": "262",
       "name": "Skillet Apple Pork Chops with Roasted Sweet Potatoes & Zucchini",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/h3ijwo1581013377.jpg",
       "prepTime": 20,
       "cookTime": 44,
@@ -11058,20 +10022,12 @@
     {
       "id": "263",
       "name": "Strawberry Rhubarb Pie",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/178z5o1585514569.jpg",
       "prepTime": 16,
       "cookTime": 46,
       "servings": 4,
-      "tags": [
-        "Pudding",
-        "Pie",
-        "Baking",
-        "Fruity",
-        "Glazed"
-      ],
+      "tags": ["Pudding", "Pie", "Baking", "Fruity", "Glazed"],
       "ingredients": [
         "350g Flour",
         "1 tsp  Salt",
@@ -11112,9 +10068,7 @@
     {
       "id": "264",
       "name": "Stuffed Lamb Tomatoes",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/u55lbp1585564013.jpg",
       "prepTime": 18,
       "cookTime": 34,
@@ -11151,9 +10105,7 @@
     {
       "id": "265",
       "name": "Sledz w Oleju (Polish Herrings)",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/7ttta31593350374.jpg",
       "prepTime": 23,
       "cookTime": 23,
@@ -11185,9 +10137,7 @@
     {
       "id": "266",
       "name": "Shawarma",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/kcv6hj1598733479.jpg",
       "prepTime": 18,
       "cookTime": 26,
@@ -11233,9 +10183,7 @@
     {
       "id": "267",
       "name": "Spring onion and prawn empanadas",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg",
       "prepTime": 16,
       "cookTime": 36,
@@ -11274,9 +10222,7 @@
     {
       "id": "268",
       "name": "Seri muka kuih",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/6ut2og1619790195.jpg",
       "prepTime": 29,
       "cookTime": 48,
@@ -11318,9 +10264,7 @@
     {
       "id": "269",
       "name": "Sushi",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg",
       "prepTime": 30,
       "cookTime": 52,
@@ -11370,9 +10314,7 @@
     {
       "id": "270",
       "name": "Stuffed Bell Peppers with Quinoa and Black Beans",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/b66myb1683207208.jpg",
       "prepTime": 22,
       "cookTime": 48,
@@ -11415,16 +10357,12 @@
     {
       "id": "271",
       "name": "Strawberries Romanoff",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/oe8rg51699014028.jpg",
       "prepTime": 15,
       "cookTime": 16,
       "servings": 5,
-      "tags": [
-        "Fruity"
-      ],
+      "tags": ["Fruity"],
       "ingredients": [
         "2 pint  Strawberries",
         "4 tbs Sugar",
@@ -11449,17 +10387,12 @@
     {
       "id": "272",
       "name": "Teriyaki Chicken Casserole",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
       "prepTime": 24,
       "cookTime": 33,
       "servings": 5,
-      "tags": [
-        "Meat",
-        "Casserole"
-      ],
+      "tags": ["Meat", "Casserole"],
       "ingredients": [
         "3/4 cup soy sauce",
         "1/2 cup water",
@@ -11490,17 +10423,12 @@
     {
       "id": "273",
       "name": "Tandoori chicken",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg",
       "prepTime": 19,
       "cookTime": 21,
       "servings": 3,
-      "tags": [
-        "Spicy",
-        "Meat"
-      ],
+      "tags": ["Spicy", "Meat"],
       "ingredients": [
         "2 Juice lemons",
         "4 tsp paprika",
@@ -11531,17 +10459,12 @@
     {
       "id": "274",
       "name": "Thai Green Curry",
-      "category": [
-        "Chicken"
-      ],
+      "category": ["Chicken"],
       "image": "https://www.themealdb.com/images/media/meals/sstssx1487349585.jpg",
       "prepTime": 34,
       "cookTime": 26,
       "servings": 3,
-      "tags": [
-        "Curry",
-        "Mild"
-      ],
+      "tags": ["Curry", "Mild"],
       "ingredients": [
         "225g new Potatoes",
         "100g  green beans",
@@ -11573,9 +10496,7 @@
     {
       "id": "275",
       "name": "Toad In The Hole",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/ytuvwr1503070420.jpg",
       "prepTime": 34,
       "cookTime": 24,
@@ -11607,16 +10528,12 @@
     {
       "id": "276",
       "name": "Turkey Meatloaf",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/ypuxtw1511297463.jpg",
       "prepTime": 18,
       "cookTime": 42,
       "servings": 4,
-      "tags": [
-        "Baking"
-      ],
+      "tags": ["Baking"],
       "ingredients": [
         "1 tblsp  Olive Oil",
         "1 large Onion",
@@ -11647,9 +10564,7 @@
     {
       "id": "277",
       "name": "Tuna Nicoise",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg",
       "prepTime": 28,
       "cookTime": 37,
@@ -11682,16 +10597,12 @@
     {
       "id": "278",
       "name": "Tahini Lentils",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/vpxyqt1511464175.jpg",
       "prepTime": 23,
       "cookTime": 47,
       "servings": 5,
-      "tags": [
-        "Pulse"
-      ],
+      "tags": ["Pulse"],
       "ingredients": [
         "50g Tahini",
         "zest and juice of 1 Lemon",
@@ -11720,19 +10631,12 @@
     {
       "id": "279",
       "name": "Three Fish Pie",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg",
       "prepTime": 19,
       "cookTime": 34,
       "servings": 5,
-      "tags": [
-        "Fish",
-        "Seafood",
-        "Dairy",
-        "Pie"
-      ],
+      "tags": ["Fish", "Seafood", "Dairy", "Pie"],
       "ingredients": [
         "1kg Potatoes",
         "Knob Butter",
@@ -11768,16 +10672,12 @@
     {
       "id": "280",
       "name": "Treacle Tart",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/wprvrw1511641295.jpg",
       "prepTime": 25,
       "cookTime": 37,
       "servings": 4,
-      "tags": [
-        "Tart"
-      ],
+      "tags": ["Tart"],
       "ingredients": [
         "250g Plain Flour",
         "135g Butter",
@@ -11814,19 +10714,12 @@
     {
       "id": "281",
       "name": "Tarte Tatin",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/ryspuw1511786688.jpg",
       "prepTime": 25,
       "cookTime": 27,
       "servings": 3,
-      "tags": [
-        "Treat",
-        "Tart",
-        "Desert",
-        "DinnerParty"
-      ],
+      "tags": ["Treat", "Tart", "Desert", "DinnerParty"],
       "ingredients": [
         "300g Puff Pastry",
         "Dusting Plain Flour",
@@ -11853,16 +10746,12 @@
     {
       "id": "282",
       "name": "Three-cheese souffles",
-      "category": [
-        "Miscellaneous"
-      ],
+      "category": ["Miscellaneous"],
       "image": "https://www.themealdb.com/images/media/meals/sxwquu1511793428.jpg",
       "prepTime": 31,
       "cookTime": 49,
       "servings": 3,
-      "tags": [
-        "Baking"
-      ],
+      "tags": ["Baking"],
       "ingredients": [
         "50g Butter",
         "25g Parmesan",
@@ -11898,19 +10787,12 @@
     {
       "id": "283",
       "name": "Tourtiere",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/ytpstt1511814614.jpg",
       "prepTime": 21,
       "cookTime": 42,
       "servings": 5,
-      "tags": [
-        "Pie",
-        "MainMeal",
-        "BBQ",
-        "Cake"
-      ],
+      "tags": ["Pie", "MainMeal", "BBQ", "Cake"],
       "ingredients": [
         "1 medium Potatoes",
         "1 tsp  Sunflower Oil",
@@ -11940,17 +10822,12 @@
     {
       "id": "284",
       "name": "Timbits",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg",
       "prepTime": 17,
       "cookTime": 53,
       "servings": 3,
-      "tags": [
-        "Snack",
-        "Treat"
-      ],
+      "tags": ["Snack", "Treat"],
       "ingredients": [
         "2 cups  Flour",
         "1/3 cup Sugar",
@@ -11980,9 +10857,7 @@
     {
       "id": "285",
       "name": "Tunisian Orange Cake",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/y4jpgq1560459207.jpg",
       "prepTime": 30,
       "cookTime": 23,
@@ -12015,16 +10890,12 @@
     {
       "id": "286",
       "name": "Tunisian Lamb Soup",
-      "category": [
-        "Lamb"
-      ],
+      "category": ["Lamb"],
       "image": "https://www.themealdb.com/images/media/meals/t8mn9g1560460231.jpg",
       "prepTime": 30,
       "cookTime": 23,
       "servings": 3,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "500g Lamb Mince",
         "2 cloves minced Garlic",
@@ -12057,9 +10928,7 @@
     {
       "id": "287",
       "name": "Tuna and Egg Briks",
-      "category": [
-        "Seafood"
-      ],
+      "category": ["Seafood"],
       "image": "https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg",
       "prepTime": 34,
       "cookTime": 38,
@@ -12098,9 +10967,7 @@
     {
       "id": "288",
       "name": "Tamiya",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg",
       "prepTime": 28,
       "cookTime": 49,
@@ -12135,9 +11002,7 @@
     {
       "id": "289",
       "name": "Tonkatsu pork",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/lwsnkl1604181187.jpg",
       "prepTime": 27,
       "cookTime": 46,
@@ -12175,16 +11040,12 @@
     {
       "id": "290",
       "name": "Traditional Croatian Goulash",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/n1hcou1628770088.jpg",
       "prepTime": 17,
       "cookTime": 38,
       "servings": 2,
-      "tags": [
-        "Soup"
-      ],
+      "tags": ["Soup"],
       "ingredients": [
         "500g Beef",
         "2 chopped Onions",
@@ -12219,9 +11080,7 @@
     {
       "id": "291",
       "name": "Tortang Talong",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/va668f1683209318.jpg",
       "prepTime": 26,
       "cookTime": 16,
@@ -12254,17 +11113,12 @@
     {
       "id": "292",
       "name": "Vegan Lasagna",
-      "category": [
-        "Vegan"
-      ],
+      "category": ["Vegan"],
       "image": "https://www.themealdb.com/images/media/meals/rvxxuy1468312893.jpg",
       "prepTime": 20,
       "cookTime": 51,
       "servings": 5,
-      "tags": [
-        "Vegan",
-        "Pasta"
-      ],
+      "tags": ["Vegan", "Pasta"],
       "ingredients": [
         "1 cups green red lentils",
         "1 Carrots",
@@ -12298,18 +11152,12 @@
     {
       "id": "293",
       "name": "Vegan Chocolate Cake",
-      "category": [
-        "Vegan"
-      ],
+      "category": ["Vegan"],
       "image": "https://www.themealdb.com/images/media/meals/qxutws1486978099.jpg",
       "prepTime": 18,
       "cookTime": 24,
       "servings": 4,
-      "tags": [
-        "Vegan",
-        "Chocolate",
-        "Cake"
-      ],
+      "tags": ["Vegan", "Chocolate", "Cake"],
       "ingredients": [
         "1 1/4 cup Self-raising Flour",
         "1/2 cup coco sugar",
@@ -12334,9 +11182,7 @@
     {
       "id": "294",
       "name": "Vietnamese Grilled Pork (bun-thit-nuong)",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/qqwypw1504642429.jpg",
       "prepTime": 30,
       "cookTime": 40,
@@ -12375,9 +11221,7 @@
     {
       "id": "295",
       "name": "Venetian Duck Ragu",
-      "category": [
-        "Pasta"
-      ],
+      "category": ["Pasta"],
       "image": "https://www.themealdb.com/images/media/meals/qvrwpt1511181864.jpg",
       "prepTime": 20,
       "cookTime": 37,
@@ -12416,17 +11260,12 @@
     {
       "id": "296",
       "name": "Vegetarian Casserole",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/vptwyt1511450962.jpg",
       "prepTime": 27,
       "cookTime": 19,
       "servings": 3,
-      "tags": [
-        "Casserole",
-        "Vegetarian"
-      ],
+      "tags": ["Casserole", "Vegetarian"],
       "ingredients": [
         "1 Rapeseed Oil",
         "1 Onion",
@@ -12461,16 +11300,12 @@
     {
       "id": "297",
       "name": "Vegetarian Chilli",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wqurxy1511453156.jpg",
       "prepTime": 31,
       "cookTime": 33,
       "servings": 3,
-      "tags": [
-        "Chilli"
-      ],
+      "tags": ["Chilli"],
       "ingredients": [
         "400g Roasted Vegetables",
         "1 can  Kidney Beans",
@@ -12491,16 +11326,12 @@
     {
       "id": "298",
       "name": "Vegetable Shepherds Pie",
-      "category": [
-        "Beef"
-      ],
+      "category": ["Beef"],
       "image": "https://www.themealdb.com/images/media/meals/w8umt11583268117.jpg",
       "prepTime": 20,
       "cookTime": 51,
       "servings": 2,
-      "tags": [
-        "Baking"
-      ],
+      "tags": ["Baking"],
       "ingredients": [
         "3 Lbs Potatoes",
         "3 Lbs Small Potatoes",
@@ -12549,18 +11380,12 @@
     {
       "id": "299",
       "name": "White chocolate creme brulee",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/uryqru1511798039.jpg",
       "prepTime": 22,
       "cookTime": 54,
       "servings": 4,
-      "tags": [
-        "Desert",
-        "DinnerParty",
-        "Pudding"
-      ],
+      "tags": ["Desert", "DinnerParty", "Pudding"],
       "ingredients": [
         "568ml Double Cream",
         "100g  White Chocolate Chips",
@@ -12585,16 +11410,12 @@
     {
       "id": "300",
       "name": "Wontons",
-      "category": [
-        "Pork"
-      ],
+      "category": ["Pork"],
       "image": "https://www.themealdb.com/images/media/meals/1525876468.jpg",
       "prepTime": 18,
       "cookTime": 42,
       "servings": 3,
-      "tags": [
-        "MainMeal"
-      ],
+      "tags": ["MainMeal"],
       "ingredients": [
         "1lb Pork",
         "3 chopped Garlic Clove",
@@ -12629,16 +11450,12 @@
     {
       "id": "301",
       "name": "Walnut Roll Gužvara",
-      "category": [
-        "Dessert"
-      ],
+      "category": ["Dessert"],
       "image": "https://www.themealdb.com/images/media/meals/u9l7k81628771647.jpg",
       "prepTime": 24,
       "cookTime": 52,
       "servings": 2,
-      "tags": [
-        "Nutty"
-      ],
+      "tags": ["Nutty"],
       "ingredients": [
         "450g Flour",
         "55g Caster Sugar",
@@ -12670,16 +11487,12 @@
     {
       "id": "302",
       "name": "Yaki Udon",
-      "category": [
-        "Vegetarian"
-      ],
+      "category": ["Vegetarian"],
       "image": "https://www.themealdb.com/images/media/meals/wrustq1511475474.jpg",
       "prepTime": 22,
       "cookTime": 24,
       "servings": 4,
-      "tags": [
-        "LowCalorie"
-      ],
+      "tags": ["LowCalorie"],
       "ingredients": [
         "250g Udon Noodles",
         "2 tbs Sesame Seed Oil",
