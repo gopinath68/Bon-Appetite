@@ -360,10 +360,6 @@ li {
 }
 
 .ingredients, .steps {
-<<<<<<< HEAD
-    width: 28rem;
-=======
->>>>>>> origin/main
     border-radius: 0.625rem;
     display: flex;
     flex-direction: column;
@@ -518,10 +514,6 @@ li {
     font-size: 0.9rem;
     font-family: 'Kumbh Sans';
     font-weight: 400;
-<<<<<<< HEAD
-    width: 17vw;
-=======
->>>>>>> origin/main
     height: 50vh;
     overflow-x: auto;
 
@@ -565,9 +557,6 @@ li {
     border-color: red;
     border-radius: 50%;
     border: 4px solid red;
-<<<<<<< HEAD
-}
-=======
 }
 
 /* Hover Animation */
@@ -684,4 +673,3 @@ img {
 }
 
 /* End of index.css */
->>>>>>> origin/main
