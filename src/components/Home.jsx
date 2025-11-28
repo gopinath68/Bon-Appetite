@@ -155,9 +155,15 @@ function Home() {
         </div>
       )}
 
+<<<<<<< HEAD
       <button onClick={() => navigate("/recent-recipies")}>
         Go to Recents
       </button>
+=======
+      {/* <button onClick={() => navigate("/recent-recipies")}>
+        Go to Recents
+      </button> */}
+>>>>>>> origin/main
       <div className="sideContainer">
         <SideBar recipes={recipesRef} catogoriesData={catogoriesData} />
         <ReceipeCards recipes={paginatedRecipes} />

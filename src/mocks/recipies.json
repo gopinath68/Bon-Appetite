@@ -239,7 +239,11 @@
         "Preheat the oven to 180C/355F/Gas 4.",
         "Place the dish into the oven and bake for 30-40 minutes, or until the custard has set and the top is golden-brown."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 526,
         "protein": "20g",
@@ -519,7 +523,11 @@
         "Heat the olive oil in a non-stick frying pan then add the sliced onion and cook on a medium heat until completely softened, so around 15 mins, adding a little splash of water if they start to stick at all. Crush in the garlic and cook for a 2-3 mins further, then add the butter. Once the butter is foaming a little, add the mushrooms and cook for around 5 mins until completely softened. Season everything well, then tip onto a plate.",
         "Tip the flour into a bowl with a big pinch of salt and pepper, then toss the steak in the seasoned flour. Add the steak pieces to the pan, splashing in a little oil if the pan looks particularly dry, and fry for 3-4 mins, until well coloured. Tip the onions and mushrooms back into the pan. Whisk the crème fraîche, mustard and beef stock together, then pour into the pan. Cook over a medium heat for around 5 mins. Scatter with parsley, then serve with pappardelle or rice."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 302,
         "protein": "17g",
@@ -997,7 +1005,11 @@
         "Heat oven to 200C/fan 180C/gas 6. Fry the onions and thyme sprigs in the oil until softened and lightly coloured (about 5 mins).",
         "Spread a layer of potatoes over the base of a 1.5-litre oiled gratin dish. Sprinkle over a few onions (see picture, above) and continue layering, finishing with a layer of potatoes. Pour over the stock and bake for 50-60 mins until the potatoes are cooked and the top is golden and crisp."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 321,
         "protein": "14g",
@@ -1598,7 +1610,11 @@
       "steps": [
         "Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a round baking tray and put a layer of pastry in it. Cover with a thin layer of filling and cover this with another layer of filo pastry which must be well coated in oil. Put another layer of filling and cover with pastry. When you have five or six layers, cover with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 344,
         "protein": "17g",
@@ -3132,7 +3148,11 @@
         "As the plantains brown, continue to add more cooking oil spray, salt and pepper (if needed) until they have reached the desired color and texture.",
         "Remove and serve with kale"
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 617,
         "protein": "13g",
@@ -3328,7 +3348,11 @@
         "After the soup has cooked and the lentils are tender, blend the soup either in a blender or simply use a hand blender to reach the consistency you desire. Taste for seasoning and add more salt if necessary.",
         "Serve with crushed-up crackers, torn up bread, or something else to add some extra thickness.  You could also use a traditional thickener (like cornstarch or flour), but I prefer to add crackers for some texture and saltiness.  Makes great leftovers, stays good in the fridge for about a week."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 680,
         "protein": "11g",
@@ -5819,7 +5843,11 @@
         "STEP 2",
         "Tip the rinsed rice into a saucepan with 400ml water, or 200ml dashi and 200ml water, bring to the boil, then turn down the heat to a low simmer, cover with a tight-fitting lid with a steam hole and cook for 15 mins. Remove from the heat and leave to sit for another 15 mins, then stir through the mirin. Remove the lid and give it a good stir. Serve with any or all of the optional toppings."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 359,
         "protein": "14g",
@@ -6295,7 +6323,11 @@
         "Finely chop one onion and one sweet red pepper.",
         "Put these ingredients into a large bowl with a good sprinkling of salt and pepper, chilli flakes (optional)."
       ],
+<<<<<<< HEAD
       "favorite": false,
+=======
+      "favorite": true,
+>>>>>>> origin/main
       "nutrition": {
         "calories": 442,
         "protein": "21g",
@@ -12703,6 +12735,7 @@
         "carbs": "45g",
         "fat": "6g"
       }
+<<<<<<< HEAD
     },
     {
       "id": "1759987713640",
@@ -12749,6 +12782,8 @@
         "carbs": "",
         "fat": ""
       }
+=======
+>>>>>>> origin/main
     }
   ],
   "categories": [

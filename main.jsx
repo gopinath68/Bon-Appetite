@@ -11,36 +11,39 @@ import ReceipeCards from "./src/components/ReceipeCards";
 import { PrimeReactProvider } from "primereact/api";
 import FavorateReceipes from "./src/components/FavorateReceipes.jsx";
 
-const routes = createBrowserRouter([
-  {
-    path: "/",
-    index: true,
-    element: <Home />,
-  },
-  {
-    path: "/recent-recipies",
-    element: <Recents />,
-  },
-  {
-    path: "/favoraties-recipies",
-    element: <FavorateReceipes />,
-  },
-  {
-    path: "/add-recipie",
-    element: <NewReceipe />,
-  },
-  {
-    path: "/recipie/:recipie",
-    element: <ViewReceipe />,
-  },
-  {
-    path: "/recipies",
-    element: <ReceipeCards />,
-  },
-]);
+const routes = createBrowserRouter(
+  [
+    {
+      path: "/",
+      index: true,
+      element: <Home />,
+    },
+    {
+      path: "/recent-recipies",
+      element: <Recents />,
+    },
+    {
+      path: "/favoraties-recipies",
+      element: <FavorateReceipes />,
+    },
+    {
+      path: "/add-recipie",
+      element: <NewReceipe />,
+    },
+    {
+      path: "/recipie/:recipie",
+      element: <ViewReceipe />,
+    },
+    {
+      path: "/recipies",
+      element: <ReceipeCards />,
+    },
+  ],
+  { basename: "/Bon-Appetite" }
+);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <PrimeReactProvider>
+    <PrimeReactProvider basename="/Bon-Appetite">
       <ReceipeContextProvider>
         <RouterProvider router={routes} />
       </ReceipeContextProvider>
