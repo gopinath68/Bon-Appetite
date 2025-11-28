@@ -23,7 +23,7 @@ function SideBar() {
                   selectedRecipie?.id === item.id ? "activeFav" : ""
                 }`}
                 key={item.id}
-                style={{ animationDelay: `${index * 0.12}s` }} // stagger fade
+                style={{ animationDelay: `${index * 0.12}s` }}
                 onClick={() => viewFavoratiesHandler(item)}
               >
                 {item.name}

@@ -261,10 +261,9 @@ function ReceipeCards({ recipes }) {
             >
               <div>
                 <img
-                  className="image"
+                  className={`"image"${recipie.image ? "" : " loader"}`}
                   src={recipie.image}
                   alt={recipie.name || "Receipe image"}
-                  loading="lazy"
                   onClick={() => viewReceipeHandler(recipie)}
                   style={{ cursor: opLoading ? "not-allowed" : "pointer" }}
                 />

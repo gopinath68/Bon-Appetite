@@ -514,7 +514,6 @@ li {
     font-size: 0.9rem;
     font-family: 'Kumbh Sans';
     font-weight: 400;
-    width: 17vw;
     height: 50vh;
     overflow-x: auto;
 
@@ -561,6 +560,12 @@ li {
 }
 
 /* Hover Animation */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 .receipeFavorate {
     cursor: pointer;
     padding: 8px 12px;
@@ -570,7 +575,7 @@ li {
 }
 
 .receipeFavorate:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     color: #ff6f00;
 }
 
@@ -581,3 +586,90 @@ li {
     font-weight: bold;
     border-left: 3px solid #ff6f00;
 }
+
+/* Scrollbar Styling */
+#favorateReceipes {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+#favorateReceipes::-webkit-scrollbar {
+    width: 6px;
+}
+
+#favorateReceipes::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.noImagePlaceholder {
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sideBarContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #favorateReceipes {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .sideBar {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.loader {
+    animation: pulse 1.5s infinite;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    --d: 22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #25b09b;
+    box-shadow:
+        calc(1*var(--d)) calc(0*var(--d)) 0 0,
+        calc(0.707*var(--d)) calc(0.707*var(--d)) 0 1px,
+        calc(0*var(--d)) calc(1*var(--d)) 0 2px,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+        calc(-1*var(--d)) calc(0*var(--d)) 0 4px,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+        calc(0*var(--d)) calc(-1*var(--d)) 0 6px;
+    animation: l27 1s infinite steps(8);
+}
+
+@keyframes l27 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+/* End of index.css */
