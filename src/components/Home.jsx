@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
+import mockData from "../mocks/recipies.json";
 import { TbFilter } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { ReceipeContext } from "../context/ReceipeContext";
@@ -37,25 +38,27 @@ function Home() {
   const paginatedRecipes = recipies.slice(start, end);
 
   useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch("http://localhost:3003/categories");
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const result = await response.json();
-        catogeryRef.current = result;
-        setCatogoriesData(result);
-        setSlicedCatogerys(result.slice(0, 8));
-      } catch (err) {
-        setError(err);
-      } finally {
-        setLoading(false);
-      }
-    };
+    // Read categories from mock data (offline friendly)
+    const result = mockData.categories || [];
+    catogeryRef.current = result;
+    setCatogoriesData(result);
+    setSlicedCatogerys(result.slice(0, 8));
+    setLoading(false);
+  }, []);
 
-    fetchCategories();
+  useEffect(() => {
+    // Basic SEO for home
+    document.title = "Bon Appetite - Home";
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute(
+      "content",
+      "Discover recipes, add your favorites, and manage recipes locally with Bon Appetite.",
+    );
   }, []);
   const handleMoreCatogery = () => {
     if (click == true) {
@@ -70,7 +73,7 @@ function Home() {
 
   const filterCategorys = (selectedRecipie) => {
     const filteredRecipes = recipesRef.filter((recipe) =>
-      recipe.category.includes(selectedRecipie)
+      recipe.category.includes(selectedRecipie),
     );
     setRecipies(structuredClone(filteredRecipes));
     setPageAt(0);
@@ -88,7 +91,7 @@ function Home() {
       const SearchedRecipes = recipesRef.filter(
         (recipe) =>
           recipe.name.toLowerCase().includes(value.toLowerCase()) ||
-          recipe.category[0].toLowerCase().includes(value.toLowerCase())
+          recipe.category[0].toLowerCase().includes(value.toLowerCase()),
       );
       setRecipies(SearchedRecipes);
     } else if (value.length < 2) {

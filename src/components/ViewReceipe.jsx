@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useContext } from "react";
 import { ReceipeContext } from "../context/ReceipeContext";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -7,6 +7,22 @@ import { IoIosArrowDropleftCircle } from "react-icons/io";
 
 function ViewReceipe() {
   const { selectedRecipie, setSelectedRecipie } = useContext(ReceipeContext);
+
+  useEffect(() => {
+    if (selectedRecipie) {
+      document.title = `Bon Appetite - ${selectedRecipie.name}`;
+      let meta = document.querySelector('meta[name="description"]');
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute("name", "description");
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute(
+        "content",
+        `${selectedRecipie.name} recipe - ${selectedRecipie.category?.[0] || ""}`,
+      );
+    }
+  }, [selectedRecipie]);
 
   if (!selectedRecipie) {
     return <Navigate to="/" replace />;

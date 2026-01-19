@@ -11,6 +11,7 @@ import { Toast } from "primereact/toast";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 import { isEquals } from "../utils/Comparison";
+import { useEffect } from "react";
 
 function NewReceipe({ catogeries }) {
   const navigate = useNavigate();
@@ -47,7 +48,8 @@ function NewReceipe({ catogeries }) {
     isSidePanelOpen,
     setIsSidePanelOpen,
     recipies,
-    setRecipies,
+    addRecipe,
+    updateRecipe,
   } = useContext(ReceipeContext);
 
   const toggleSidebar = () => {
@@ -100,49 +102,62 @@ function NewReceipe({ catogeries }) {
         ...addReceipe.nutrition,
         calories: Number(addReceipe.nutrition.calories),
       },
-      id: Date.now().toString(),
+      id: addReceipe?.id || Date.now().toString(),
     };
-    if (addReceipe.id != "") {
-      try {
-        const res = await fetch(
-          `http://localhost:3003/receipes/${addReceipe.id}`,
-          {
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(addReceipe),
-          }
-        )
-          .then((res) => res.json())
-          .then((updated) => {
-            console.log("Updated receipe:", updated);
-            toast.current.show({
-              severity: "Success",
-              summary: "Success",
-              detail: "receipe updated successfully",
-            });
-            const updateReceipe = recipies.map((item) =>
-              item.id === addReceipe.id ? updated : item
-            );
-            setRecipies(updateReceipe);
-            setIsSidePanelOpen(false);
-          });
-        navigate("/");
-      } catch (err) {
-        console.error(err);
-      }
-    }
-    try {
-      const res = await fetch("http://localhost:3003/receipes", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formatted),
+    // If addReceipe has an id and exists in list -> update, otherwise add new
+    if (addReceipe?.id) {
+      // update existing
+      const updatedReceipe = { ...addReceipe, ...formatted };
+      updateRecipe(updatedReceipe);
+      toast.current.show({
+        severity: "success",
+        summary: "Success",
+        detail: "Receipe updated successfully",
       });
-      if (!res.ok) throw new Error("Failed to add recipe");
+      setIsSidePanelOpen(false);
+      navigate("/");
+      return;
+    }
+
+    // add new
+    try {
+      addRecipe(formatted);
+      toast.current.show({
+        severity: "success",
+        summary: "Success",
+        detail: "Receipe added successfully",
+      });
+      setIsSidePanelOpen(false);
+      setAddReceipe(blankRecipe);
       navigate("/");
     } catch (err) {
       console.error(err);
+      toast.current.show({
+        severity: "error",
+        summary: "Error",
+        detail: "Failed to save receipe",
+      });
     }
   };
+
+  useEffect(() => {
+    // Basic SEO: update page title and description
+    document.title = addReceipe?.id
+      ? "Bon Appetite - Edit Recipe"
+      : "Bon Appetite - Add Recipe";
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute(
+      "content",
+      addReceipe?.id
+        ? `Edit recipe ${addReceipe.name || ""} on Bon Appetite`
+        : "Add a new recipe on Bon Appetite",
+    );
+  }, [addReceipe]);
 
   const accept = () => {
     console.log("keep edit");

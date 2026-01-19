@@ -555,7 +555,7 @@
         "Pour in the stock and add any chunky bits of broccoli stalk. Cook for 10 – 15 minutes until all the vegetables are soft.",
         "Add the rest of the broccoli and cook for a further 5 minutes. Carefully transfer to a blender and blitz until smooth. Stir in the stilton, allowing a few lumps to remain. Season with black pepper and serve."
       ],
-      "favorite": false,
+      "favorite": true,
       "nutrition": {
         "calories": 402,
         "protein": "16g",
@@ -965,7 +965,7 @@
         "Mix the flour, 1 tsp salt, caster sugar, yeast, milk and eggs together in a mixer using the dough attachment for 5 mins until the dough is smooth. Add the butter and mix for a further 4 mins on medium speed. Scrape the dough bowl and mix again for 1 min. Place the dough in a container, cover with cling film and leave in the fridge for at least 6 hrs before using.",
         "Wrap the Brie in the prosciutto and set aside. Turn out the dough onto a lightly floured surface. Roll into a 25cm circle. Place the wrapped Brie in the middle of the circle and fold the edges in neatly. Put the parcel onto a baking tray lined with baking parchment and brush with beaten egg. Chill in the fridge for 30 mins, then brush again with beaten egg and chill for a further 30 mins. Leave to rise for 1 hr at room temperature. Heat oven to 200C/180C fan/gas 6, then bake for 22 mins. Serve warm."
       ],
-      "favorite": false,
+      "favorite": true,
       "nutrition": {
         "calories": 684,
         "protein": "23g",
@@ -1003,52 +1003,6 @@
         "protein": "14g",
         "carbs": "61g",
         "fat": "7g"
-      }
-    },
-    {
-      "id": "24",
-      "name": "BeaverTails",
-      "category": [
-        "Dessert"
-      ],
-      "image": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
-      "prepTime": 34,
-      "cookTime": 46,
-      "servings": 2,
-      "tags": [
-        "Treat",
-        "Pudding",
-        "Speciality"
-      ],
-      "ingredients": [
-        "1/2 cup  Water",
-        "2 parts  Yeast",
-        "1/2 cup  Sugar",
-        "1/2 cup  Milk",
-        "6 tblsp Butter",
-        "2 Eggs",
-        "1 ½ tsp Salt",
-        "2-1/2 cups Flour",
-        "for frying Oil",
-        "garnish Lemon",
-        "garnish Sugar",
-        "garnish Cinnamon"
-      ],
-      "steps": [
-        "In the bowl of a stand mixer, add warm water, a big pinch of sugar and yeast. Allow to sit until frothy.",
-        "Into the same bowl, add 1/2 cup sugar, warm milk, melted butter, eggs and salt, and whisk until combined.",
-        "Place a dough hook on the mixer, add the flour with the machine on, until a smooth but slightly sticky dough forms.",
-        "Place dough in a bowl, cover with plastic wrap, and allow to proof for 1 1/2 hours.",
-        "Cut dough into 12 pieces, and roll out into long oval-like shapes about 1/4 inch thick that resemble a beaver’s tail.",
-        "In a large, deep pot, heat oil to 350 degrees. Gently place beavertail dough into hot oil and cook for 30 to 45 seconds on each side until golden brown.",
-        "Drain on paper towels, and garnish as desired. Toss in cinnamon sugar, in white sugar with a squeeze of lemon, or with a generous slathering of Nutella and a handful of toasted almonds. Enjoy!"
-      ],
-      "favorite": false,
-      "nutrition": {
-        "calories": 338,
-        "protein": "12g",
-        "carbs": "65g",
-        "fat": "6g"
       }
     },
     {
@@ -9485,7 +9439,7 @@
         "3 Stir in the peas, add some seasoning, then gently mix in the roasted veg. Pour over the remaining stock, arrange the lemon wedges on top and cover with a lid or some aluminium foil. Cook for a further 10 minutes.",
         "4 To ensure you get the classic layer of toasted rice at the bottom of the pan, increase the heat to high until you hear a slight crackle. Remove from the heat and sit for 5 minutes before sprinkling over the parsley and serving."
       ],
-      "favorite": false,
+      "favorite": true,
       "nutrition": {
         "calories": 352,
         "protein": "18g",
