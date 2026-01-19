@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState, useRef } from "react";
+﻿import React, { useEffect, useContext, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { ReceipeContext } from "../context/ReceipeContext";
 import styled from "styled-components";
@@ -8,13 +8,10 @@ import { MdDelete } from "react-icons/md";
 import UpdateReceipe from "./Updatereceipe";
 import { Toast } from "primereact/toast";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
-<<<<<<< HEAD
-import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
-
-=======
 import { ConfirmDialog } from "primereact/confirmdialog";
 
-/* Styled IconButton kept nearly same as your original */
+/* ================= styled ================= */
+
 export const IconButton = styled.button`
   background: none;
   border: none;
@@ -34,21 +31,17 @@ export const IconButton = styled.button`
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-<<<<<<< HEAD
-=======
   &:disabled {
     cursor: not-allowed;
     opacity: 0.6;
   }
 
->>>>>>> origin/main
   svg {
     font-size: 20px;
     color: #333;
   }
 `;
 
-/* Loader overlay / spinner */
 const PageLoader = styled.div`
   position: fixed;
   inset: 0;
@@ -86,7 +79,18 @@ const SmallOverlay = styled.div`
   justify-content: center;
 `;
 
-/* Keep existing markup structure but show loader states appropriately */
+/* simple CSS for skeleton shimmer - using inline style below */
+const skeletonStyle = {
+  width: "100%",
+  height: 180,
+  borderRadius: 6,
+  background: "linear-gradient(90deg, #f2f2f2 25%, #e9e9e9 37%, #f2f2f2 63%)",
+  backgroundSize: "400% 100%",
+  animation: "shimmer 1.2s ease-in-out infinite",
+};
+
+/* ================= component ================= */
+
 function ReceipeCards({ recipes }) {
   const navigate = useNavigate();
   const toast = useRef(null);
@@ -100,20 +104,12 @@ function ReceipeCards({ recipes }) {
     setIsDeleteRecipieConfirmDialogOpen,
   ] = useState(false);
 
-  const { addReceipe, setAddReceipe, isSidePanelOpen, setIsSidePanelOpen } =
-    useContext(ReceipeContext);
-
-  // Local loading flags:
-  // - pageLoading: when recipes prop is null/undefined (parent fetching)
-  // - opLoading: during delete / patch network operations
-  const [pageLoading, setPageLoading] = useState(recipes == null);
-  const [opLoading, setOpLoading] = useState(false);
+  const [pageLoading, setPageLoading] = useState(recipes === null);
 
   useEffect(() => {
     setPageLoading(recipes === null);
   }, [recipes]);
 
->>>>>>> origin/main
   useEffect(() => {
     if (selectedRecipie) {
       navigate(`/recipie/${selectedRecipie.name}`);
@@ -121,112 +117,38 @@ function ReceipeCards({ recipes }) {
   }, [selectedRecipie, navigate]);
 
   const viewReceipeHandler = (recipie) => {
-<<<<<<< HEAD
-    console.log(recipie);
-
-    setSelectedRecipie(recipie);
-  };
-  const handleReceipeDelete = (recipie) => {
-=======
     setSelectedRecipie(recipie);
   };
 
-  const handleReceipeDelete = (recipie) => {
-    if (!recipie) return;
-    setOpLoading(true);
-    fetch(`http://localhost:3003/receipes/${recipie.id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          // update local list (context)
-          const updatedReceipes = recipies.filter(
-            (item) => item.id !== recipie.id
-          );
-          toast.current.show({
-            severity: "success",
-            summary: "Deletion",
-            detail: "Receipe has been deleted",
-            life: 3000,
-          });
-          setRecipies(updatedReceipes);
-        } else {
-          console.error("Failed to delete resource:", response.statusText);
-          throw new Error("Failed to delete resource");
-        }
-      })
-      .catch((error) => {
-        console.error("Error during DELETE request:", error);
+  /* ================= card ================= */
+
+  const RecipeCard = ({ recipie }) => {
+    const [imgLoaded, setImgLoaded] = useState(false);
+    const [imgError, setImgError] = useState(false);
+    const [opLoading, setOpLoading] = useState(false);
+
+    // Ensure image shows a placeholder for at least minPlaceholderMs to avoid flicker
+    const imgLoadStartRef = useRef(0);
+    const minPlaceholderMs = 220;
+
+    useEffect(() => {
+      // reset when the card changes (either id or image url)
+      setImgLoaded(false);
+      setImgError(!recipie?.image);
+      imgLoadStartRef.current = Date.now();
+    }, [recipie?.id, recipie?.image]);
+
+    const favorateHandler = () => {
+      setOpLoading(true);
+      try {
+        updateRecipe({ ...recipie, favorite: !recipie.favorite });
         toast.current.show({
-          severity: "error",
-          summary: "Error",
-          detail: "Failed to delete receipe",
-          life: 3000,
-        });
-      })
-      .finally(() => {
-        setOpLoading(false);
-      });
-
-    setIsDeleteRecipieConfirmDialogOpen(false);
-  };
-
-  const reject = () => {
-    setIsDeleteRecipieConfirmDialogOpen(false);
-    toast.current.show({
-      severity: "warn",
-      summary: "Rejected",
-      detail: "You have rejected",
-      life: 3000,
-    });
-  };
-
-  const onReceipeDelete = (recipie) => {
-    setIsDeleteRecipieConfirmDialogOpen(true);
-    setDeleteReceipe(recipie);
-  };
-
-  const favorateHandler = (receipe) => {
-    if (!receipe) return;
-    setOpLoading(true);
-    fetch(`http://localhost:3003/receipes/${receipe.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ favorite: !receipe.favorite }),
-    })
-      .then((res) => res.json())
-      .then((updated) => {
-        const updateFavorite = recipies.map((item) =>
-          item.id === receipe.id ? updated : item
-        );
-        toast.current.show({
-<<<<<<< HEAD
-          severity: "Info",
-          summary: "Info",
-          detail: updated.favorite === true ? "favorated" : "unfavorated",
-=======
           severity: "info",
           summary: "Info",
-          detail: updated.favorite === true ? "favorited" : "unfavorited",
+          detail: recipie.favorite ? "unfavorited" : "favorited",
           life: 3000,
         });
-        setRecipies(updateFavorite);
-      })
-      .catch((err) => {
-        console.error("Error updating favorite", err);
-        toast.current.show({
-          severity: "error",
-          summary: "Error",
-          detail: "Failed to update favorite",
-          life: 3000,
-        });
-      })
-      .finally(() => {
+      } finally {
         setOpLoading(false);
       }
     };
@@ -247,89 +169,79 @@ function ReceipeCards({ recipes }) {
     };
 
     return (
-      <>
-        <Toast ref={toast} />
-        <PageLoader aria-live="polite">
-          <Spinner />
-          <div>Loading recipes…</div>
-        </PageLoader>
-      </>
-    );
-  }
+      <div className="card" style={{ position: "relative" }}>
+        <div>
+          <div style={{ position: "relative" }}>
+            {/* skeleton shimmer while loading */}
+            {!imgLoaded && !imgError && (
+              <div style={skeletonStyle} aria-hidden />
+            )}
 
-  return (
-    <div style={{ position: "relative" }}>
-      <Toast ref={toast} />
-      <ConfirmDialog
-        {...{
-          message: (
-            <span>
-              Are you sure you want to delete{" "}
-              <h4 style={{ color: "black" }}>{deleteReceipe?.name}?</h4>
-            </span>
-          ),
-          header: "Confirmation",
-          icon: "pi pi-exclamation-triangle",
-          defaultFocus: "accept",
-          accept: () => handleReceipeDelete(deleteReceipe),
-          reject,
-          visible: isDeleteRecipieConfirmDialogOpen,
-        }}
-      />
+            {imgError ? (
+              <div
+                style={{
+                  width: "100%",
+                  height: 180,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "#f2f2f2",
+                  borderRadius: 6,
+                }}
+              >
+                Image unavailable
+              </div>
+            ) : (
+              <img
+                key={`${recipie.id}-${recipie.image}`}
+                src={recipie.image}
+                loading="lazy"
+                alt={recipie.name || "Receipe image"}
+                onClick={() => viewReceipeHandler(recipie)}
+                onLoad={handleImgLoad}
+                onError={handleImgError}
+                style={{
+                  cursor: opLoading ? "not-allowed" : "pointer",
+                  opacity: imgLoaded ? 1 : 0,
+                  transition: "opacity 0.28s ease",
+                  width: "100%",
+                  height: 180,
+                  objectFit: "cover",
+                  borderRadius: 6,
+                  display: imgLoaded ? "block" : "block",
+                }}
+              />
+            )}
 
-      {/* Show small overlay spinner during any network operation */}
-      {opLoading && (
-        <SmallOverlay aria-hidden={false}>
-          <Spinner />
-        </SmallOverlay>
-      )}
-
-      {recipes && recipes.length > 0 ? (
-        <div className="cards">
-          {recipes.map((recipie) => (
-            <div
-              key={recipie.id}
-              className="card"
-              style={{ position: "relative" }}
-            >
-              <div>
-                <img
-                  className={`"image"${recipie.image ? "" : " loader"}`}
-                  src={recipie.image}
-                  alt={recipie.name || "Receipe image"}
-                  onClick={() => viewReceipeHandler(recipie)}
-                  style={{ cursor: opLoading ? "not-allowed" : "pointer" }}
-                />
-                <div className="container">
-                  <b className="receipeName">{recipie.name}</b>
-                  <div className="receipesCatogery">
-                    <b>{recipie.category?.[0] || ""}</b>
-                  </div>
-                  <div className="nutrition">
-                    <b>Nutritions</b>
-                    <div>
-                      <span>Calories: {recipie.nutrition.calories}</span>
-                      <span>Protein: {recipie.nutrition.protein}</span>
-                    </div>
-                    <div>
-                      <span>Carbs: {recipie.nutrition.carbs}</span>
-                      <span>Fat: {recipie.nutrition.fat}</span>
-                    </div>
-                  </div>
+            <div className="container">
+              <b className="receipeName">{recipie.name}</b>
+              <div className="receipesCatogery">
+                <b>{recipie.category?.[0] || ""}</b>
+              </div>
+              <div className="nutrition">
+                <b>Nutritions</b>
+                <div>
+                  <span>Calories: {recipie.nutrition?.calories ?? "-"}</span>
+                  <span>Protein: {recipie.nutrition?.protein ?? "-"}</span>
                 </div>
-                <div className="cardFooter" style={{ display: "flex", gap: 8 }}>
-                  <IconButton
-                    onClick={() => favorateHandler(recipie)}
-                    disabled={opLoading}
-                    aria-label="favorite"
-                  >
-                    <FaRegHeart
-                      color={recipie.favorite ? "white" : "black"}
-                      className={`"favorities" ${
-                        recipie.favorite ? "Favorated" : ""
-                      }`}
-                    />
-                  </IconButton>
+                <div>
+                  <span>Carbs: {recipie.nutrition?.carbs ?? "-"}</span>
+                  <span>Fat: {recipie.nutrition?.fat ?? "-"}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="cardFooter" style={{ display: "flex", gap: 8 }}>
+            <IconButton
+              onClick={favorateHandler}
+              disabled={opLoading}
+              aria-label="favorite"
+            >
+              <FaRegHeart
+                className={`favorities ${recipie.favorite ? "Favorated" : ""}`}
+              />
+            </IconButton>
 
             <UpdateReceipe receipe={recipie} disabled={opLoading} />
 
@@ -340,16 +252,51 @@ function ReceipeCards({ recipes }) {
               <GrFormView />
             </IconButton>
 
-                  <IconButton
-                    onClick={() => onReceipeDelete(recipie)}
-                    disabled={opLoading}
-                    aria-label="delete"
-                  >
-                    <MdDelete />
-                  </IconButton>
-                </div>
-              </div>
-            </div>
+            <IconButton
+              onClick={() => {
+                setDeleteReceipe(recipie);
+                setIsDeleteRecipieConfirmDialogOpen(true);
+              }}
+              disabled={opLoading}
+            >
+              <MdDelete />
+            </IconButton>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  /* ================= render ================= */
+
+  if (pageLoading) {
+    return (
+      <>
+        <Toast ref={toast} />
+        <PageLoader>
+          <Spinner />
+          <div>Loading recipes…</div>
+        </PageLoader>
+      </>
+    );
+  }
+
+  return (
+    <div style={{ position: "relative" }}>
+      <Toast ref={toast} />
+
+      <ConfirmDialog
+        visible={isDeleteRecipieConfirmDialogOpen}
+        message={`Delete ${deleteReceipe?.name}?`}
+        header="Confirmation"
+        accept={() => deleteRecipe(deleteReceipe.id)}
+        reject={() => setIsDeleteRecipieConfirmDialogOpen(false)}
+      />
+
+      {recipes && recipes.length > 0 ? (
+        <div className="cards">
+          {recipes.map((recipie) => (
+            <RecipeCard key={recipie.id} recipie={recipie} />
           ))}
         </div>
       ) : (

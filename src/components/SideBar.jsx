@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+﻿import React, { useContext } from "react";
 import { ReceipeContext } from "../context/ReceipeContext";
 
-<<<<<<< HEAD
 function SideBar({ recipes }) {
   const { selectedRecipie, setSelectedRecipie, recipies, setRecipies } =
     useContext(ReceipeContext);
@@ -33,36 +32,6 @@ function SideBar({ recipes }) {
                 </li>
               )
           )}
-=======
-function SideBar() {
-  const { selectedRecipie, setSelectedRecipie, recipies } =
-    useContext(ReceipeContext);
-
-  const viewFavoratiesHandler = (recipie) => {
-    setSelectedRecipie(recipie);
-  };
-
-  return (
-    <div className="sideBarContainer">
-      <aside className="sideBar animatedSidebar">
-        <h5 className="favorate fadeIn">Favorites</h5>
-
-        <ul id="favorateReceipes">
-          {recipies
-            .filter((item) => item.favorite === true)
-            .map((item, index) => (
-              <li
-                className={`receipeFavorate listItemFade ${
-                  selectedRecipie?.id === item.id ? "activeFav" : ""
-                }`}
-                key={item.id}
-                style={{ animationDelay: `${index * 0.12}s` }}
-                onClick={() => viewFavoratiesHandler(item)}
-              >
-                {item.name}
-              </li>
-            ))}
->>>>>>> origin/main
         </ul>
       </aside>
     </div>
@@ -70,3 +39,4 @@ function SideBar() {
 }
 
 export default SideBar;
+
