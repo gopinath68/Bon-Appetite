@@ -9,14 +9,13 @@ import { IconButton } from "./ReceipeCards";
 import { IoCloseSharp } from "react-icons/io5";
 import { Toast } from "primereact/toast";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
-import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
+import { ConfirmDialog } from "primereact/confirmdialog";
 import { isEquals } from "../utils/Comparison";
 import { useEffect } from "react";
 
 function NewReceipe({ catogeries }) {
   const navigate = useNavigate();
-  const [incredientsText, setIncredientsText] = useState("");
-  const [stepsText, setStepsText] = useState("");
+  // ingredient/steps editor text state removed (unused)
   const toast = useRef(null);
   const blankRecipe = {
     name: "",
@@ -47,7 +46,6 @@ function NewReceipe({ catogeries }) {
     setAddReceipe,
     isSidePanelOpen,
     setIsSidePanelOpen,
-    recipies,
     addRecipe,
     updateRecipe,
   } = useContext(ReceipeContext);
@@ -62,20 +60,13 @@ function NewReceipe({ catogeries }) {
     if (name === "tags") {
       setAddReceipe({
         ...addReceipe,
-        tags: value.split(",").map(t),
+        tags: value.split(",").map((t) => t.trim()),
       });
     } else {
       setAddReceipe({ ...addReceipe, [name]: value });
     }
   };
-
-  const handleIngredientsSteps = (e) => {
-    const { name, value } = e.target;
-    setAddReceipe({
-      ...addReceipe,
-      [name]: value.split(",").map(i),
-    });
-  };
+  
 
   const handleNutrition = (e) => {
     const { name, value } = e.target;
@@ -85,7 +76,7 @@ function NewReceipe({ catogeries }) {
     });
   };
 
-  const handleImagePreview = (e, receipe) => {
+  const handleImagePreview = (e) => {
     const url = e.target.value;
     setAddReceipe({ ...addReceipe, image: url });
   };
@@ -213,7 +204,7 @@ function NewReceipe({ catogeries }) {
         position="right"
         onHide={() => setIsSidePanelOpen(false)}
         className="sidePanel"
-        content={({ closeIconRef, hide }) => (
+  content={() => (
           <div>
             <div className="sidePanelHeader">
               <h5>{addReceipe.id ? "Update Receipe" : "Add New Receipe"}</h5>

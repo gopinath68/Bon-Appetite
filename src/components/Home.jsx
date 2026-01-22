@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import mockData from "../mocks/recipies.json";
 import { TbFilter } from "react-icons/tb";
-import { useNavigate } from "react-router-dom";
 import { ReceipeContext } from "../context/ReceipeContext";
 import ReceipeCards from "./ReceipeCards";
 import NewReceipe from "./NewReceipe";
@@ -9,7 +8,7 @@ import Pagination from "./Pagination";
 import SideBar from "./SideBar";
 
 function Home() {
-  const navigate = useNavigate();
+  // navigate not needed in this component currently
   const [searchData, setSearchData] = useState("");
   const catogeryRef = useRef([]);
 
@@ -21,17 +20,13 @@ function Home() {
     recipesRef,
     pageSize,
     isSidePanelOpen,
-    setIsSidePanelOpen,
   } = useContext(ReceipeContext);
 
   const [catogoriesData, setCatogoriesData] = useState([]);
   const [click, setClick] = useState(true);
   const [slicedCatogerys, setSlicedCatogerys] = useState([]);
   const [selectedCategoryId, setSelectedCategoryId] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [toggledButton, setToggledbutton] = useState(false);
-  const [more, setMore] = useState([]);
+  // loading / error / more states not currently required
 
   const start = pageAt * pageSize;
   const end = start + pageSize;
@@ -43,7 +38,6 @@ function Home() {
     catogeryRef.current = result;
     setCatogoriesData(result);
     setSlicedCatogerys(result.slice(0, 8));
-    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -99,9 +93,7 @@ function Home() {
     }
     setPageAt(0);
   }
-  function togglebutton() {
-    setToggledbutton(!toggledButton);
-  }
+  // togglebutton not used — keep for future UI hook
 
   return (
     <div className={`home ${isSidePanelOpen == true ? "opacity" : ""}`}>

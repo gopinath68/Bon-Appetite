@@ -1,8 +1,8 @@
 ﻿import React, { useContext } from "react";
 import { ReceipeContext } from "../context/ReceipeContext";
 
-function SideBar({ recipes }) {
-  const { selectedRecipie, setSelectedRecipie, recipies, setRecipies } =
+function SideBar() {
+  const { setSelectedRecipie, recipies } =
     useContext(ReceipeContext);
   const viewFavoratiesHandler = (recipie) => {
     setSelectedRecipie(recipie);

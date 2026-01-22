@@ -12,9 +12,6 @@ server.get('/receipes', (req, res) => {
   const db = router.db; // lowdb instance
   let data = db.get('receipes').value();
 
-  const ciContains = (hay, needle) =>
-    String(hay || '').toLowerCase().includes(String(needle || '').toLowerCase());
-
   // full-text search ?q=...
   if (req.query.q) {
     const q = req.query.q.toLowerCase();

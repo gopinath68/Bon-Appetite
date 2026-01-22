@@ -1,0 +1,10 @@
+# Ignore build and generated files
+my-react-app/build/
+build/
+public/
+src/my-react-app/build/
+node_modules/
+
+# Ignore local env files
+.env
+.env.*
