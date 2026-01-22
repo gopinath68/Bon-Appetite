@@ -79,6 +79,12 @@ const SmallOverlay = styled.div`
   justify-content: center;
 `;
 
+const SmallSpinner = styled(Spinner)`
+  width: 32px;
+  height: 32px;
+  border-width: 4px;
+`;
+
 /* simple CSS for skeleton shimmer - using inline style below */
 const skeletonStyle = {
   width: "100%",
@@ -270,14 +276,57 @@ function ReceipeCards({ recipes }) {
   /* ================= render ================= */
 
   if (pageLoading) {
+    // Show a grid of skeleton card placeholders while data is loading
+    const placeholders = Array.from({ length: 12 });
     return (
-      <>
+      <div className="cards">
         <Toast ref={toast} />
-        <PageLoader>
-          <Spinner />
-          <div>Loading recipes…</div>
-        </PageLoader>
-      </>
+        {placeholders.map((_, idx) => (
+          <div
+            key={`ph-${idx}`}
+            className="card"
+            style={{ position: "relative" }}
+          >
+            <div>
+              <div style={{ position: "relative" }}>
+                <div style={skeletonStyle} aria-hidden />
+                <SmallOverlay aria-hidden>
+                  <SmallSpinner />
+                </SmallOverlay>
+                <div className="container">
+                  <b className="receipeName">Loading…</b>
+                  <div className="receipesCatogery">
+                    <b>—</b>
+                  </div>
+                  <div className="nutrition">
+                    <b>Nutritions</b>
+                    <div>
+                      <span>Calories: —</span>
+                      <span>Protein: —</span>
+                    </div>
+                    <div>
+                      <span>Carbs: —</span>
+                      <span>Fat: —</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cardFooter" style={{ display: "flex", gap: 8 }}>
+                <IconButton disabled aria-label="favorite">
+                  <FaRegHeart />
+                </IconButton>
+                <IconButton disabled aria-label="view">
+                  <GrFormView />
+                </IconButton>
+                <IconButton disabled aria-label="delete">
+                  <MdDelete />
+                </IconButton>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     );
   }
 
