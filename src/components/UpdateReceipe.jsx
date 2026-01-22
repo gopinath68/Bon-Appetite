@@ -5,8 +5,7 @@ import { ReceipeContext } from "../context/ReceipeContext";
 import { IconButton } from "./ReceipeCards";
 
 function UpdateReceipe({ receipe }) {
-  const { setIsSidePanelOpen, setAddReceipe } =
-    useContext(ReceipeContext);
+  const { setIsSidePanelOpen, setAddReceipe } = useContext(ReceipeContext);
 
   const editReceipeHandler = (recipie) => {
     console.log(recipie);

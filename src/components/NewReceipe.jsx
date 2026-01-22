@@ -66,7 +66,6 @@ function NewReceipe({ catogeries }) {
       setAddReceipe({ ...addReceipe, [name]: value });
     }
   };
-  
 
   const handleNutrition = (e) => {
     const { name, value } = e.target;
@@ -204,7 +203,7 @@ function NewReceipe({ catogeries }) {
         position="right"
         onHide={() => setIsSidePanelOpen(false)}
         className="sidePanel"
-  content={() => (
+        content={() => (
           <div>
             <div className="sidePanelHeader">
               <h5>{addReceipe.id ? "Update Receipe" : "Add New Receipe"}</h5>

@@ -2,8 +2,7 @@
 import { ReceipeContext } from "../context/ReceipeContext";
 
 function SideBar() {
-  const { setSelectedRecipie, recipies } =
-    useContext(ReceipeContext);
+  const { setSelectedRecipie, recipies } = useContext(ReceipeContext);
   const viewFavoratiesHandler = (recipie) => {
     setSelectedRecipie(recipie);
   };
@@ -30,7 +29,7 @@ function SideBar() {
                 >
                   {item.name}
                 </li>
-              )
+              ),
           )}
         </ul>
       </aside>
@@ -39,4 +38,3 @@ function SideBar() {
 }
 
 export default SideBar;
-
