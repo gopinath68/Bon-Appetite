@@ -103,17 +103,14 @@
 
 /* Cards */
 .cards {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     padding: 2rem;
     margin: 0rem 2rem 1rem 2rem;
-
 }
 
 .card {
-    width: 20rem;
     height: 26rem;
     border-radius: 0.625rem;
     display: flex;
@@ -638,6 +635,25 @@ img {
     .card {
         width: 100%;
         height: auto;
+    }
+
+    .sideBarContainer {
+        display: none;
+    }
+
+    #navBar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navBarRight {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #searchBar {
+        width: 100%;
+        margin: 5px 0;
     }
 }
 
