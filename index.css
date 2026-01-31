@@ -16,10 +16,14 @@
     border: none;
     cursor: pointer;
     color: #333;
-    padding: 5px;
+    padding: 8px;
     font-size: 24px;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 .mobileMenuToggle:hover {
@@ -134,7 +138,7 @@
 /* Cards */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 2rem;
     margin: 0rem 2rem 1rem 2rem;
@@ -645,7 +649,7 @@ img {
 
     /* Large Tablets & Small Desktops */
     .cards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         padding: 1.5rem;
         margin: 0.5rem 1rem 0.5rem 1rem;
         gap: 0.8rem;
@@ -684,7 +688,7 @@ img {
 
     /* Tablets */
     .cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         padding: 1rem;
         margin: 0.5rem 0.5rem 0.5rem 0.5rem;
         gap: 0.7rem;
@@ -900,6 +904,8 @@ img {
 
     .mobileMenuToggle {
         display: flex;
+        order: 2;
+        margin-left: auto;
     }
 
     .mobileOverlay {
@@ -952,25 +958,31 @@ img {
     #navBar {
         width: 100vw;
         flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 8px 0;
+        flex-wrap: wrap;
+        padding: 8px 5px;
         gap: 5px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #appName {
         font-size: 16px;
-        width: 100%;
+        width: auto;
+        flex: 1;
         text-align: center;
-        flex-basis: 100%;
         padding: 5px;
+        margin: 0;
     }
 
     .navBarRight {
         width: 100%;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 5px;
         justify-content: stretch;
-        align-items: stretch;
+        align-items: center;
+        order: 3;
     }
 
     #searchBar {
