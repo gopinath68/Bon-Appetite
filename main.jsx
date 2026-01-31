@@ -1,17 +1,26 @@
-import { StrictMode } from "react";
+import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Home from "./src/components/Home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Recents from "./src/components/Recents.jsx";
-import NewReceipe from "./src/components/NewReceipe.jsx";
-import ViewReceipe from "./src/components/ViewReceipe.jsx";
 import { ReceipeContextProvider } from "./src/context/ReceipeContext.jsx";
-import ReceipeCards from "./src/components/ReceipeCards";
 import { PrimeReactProvider } from "primereact/api";
-import FavorateReceipes from "./src/components/FavorateReceipes.jsx";
 import ErrorBoundary from "./src/components/ErrorBoundary.jsx";
 import NotFound from "./src/components/NotFound.jsx";
+
+// Lazy load heavy/non-critical components
+const Recents = lazy(() => import("./src/components/Recents.jsx"));
+const NewReceipe = lazy(() => import("./src/components/NewReceipe.jsx"));
+const ViewReceipe = lazy(() => import("./src/components/ViewReceipe.jsx"));
+const ReceipeCards = lazy(() => import("./src/components/ReceipeCards.jsx"));
+const FavorateReceipes = lazy(() => import("./src/components/FavorateReceipes.jsx"));
+
+// Loading fallback component
+const LoadingFallback = () => (
+  <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh", fontSize: "18px" }}>
+    Loading...
+  </div>
+);
 
 const base = import.meta.env.BASE_URL || "/";
 const routes = createBrowserRouter(
@@ -23,23 +32,43 @@ const routes = createBrowserRouter(
     },
     {
       path: "/recent-recipies",
-      element: <Recents />,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <Recents />
+        </Suspense>
+      ),
     },
     {
       path: "/favoraties-recipies",
-      element: <FavorateReceipes />,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <FavorateReceipes />
+        </Suspense>
+      ),
     },
     {
       path: "/add-recipie",
-      element: <NewReceipe />,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <NewReceipe />
+        </Suspense>
+      ),
     },
     {
       path: "/recipie/:recipie",
-      element: <ViewReceipe />,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <ViewReceipe />
+        </Suspense>
+      ),
     },
     {
       path: "/recipies",
-      element: <ReceipeCards />,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <ReceipeCards />
+        </Suspense>
+      ),
     },
     {
       path: "*",

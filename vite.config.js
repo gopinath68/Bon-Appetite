@@ -6,4 +6,8 @@ export default defineConfig({
   plugins: [react()],
   // Use VITE_BASE_PATH when set, otherwise default to root for Vercel
   base: process.env.VITE_BASE_PATH || "/",
+  build: {
+    // Increase chunk size warning threshold for large dependencies
+    chunkSizeWarningLimit: 600,
+  },
 });
