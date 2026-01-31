@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import mockData from "../mocks/recipies.json";
 import { TbFilter } from "react-icons/tb";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 import { ReceipeContext } from "../context/ReceipeContext";
 import ReceipeCards from "./ReceipeCards";
 import NewReceipe from "./NewReceipe";
@@ -10,6 +12,7 @@ import SideBar from "./SideBar";
 function Home() {
   // navigate not needed in this component currently
   const [searchData, setSearchData] = useState("");
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   const catogeryRef = useRef([]);
 
   const {
@@ -109,6 +112,17 @@ function Home() {
           />
           {/* <TbFilter id="filter" /> */}
           <NewReceipe catogeries={catogoriesData} />
+          <button
+            className="mobileMenuToggle"
+            onClick={() => setIsMobileSidebarOpen(!isMobileSidebarOpen)}
+            title={isMobileSidebarOpen ? "Close menu" : "Open menu"}
+          >
+            {isMobileSidebarOpen ? (
+              <MdClose size={24} />
+            ) : (
+              <GiHamburgerMenu size={24} />
+            )}
+          </button>
         </div>
       </nav>
 
@@ -150,7 +164,16 @@ function Home() {
         </div>
       )}
       <div className="sideContainer">
-        <SideBar recipes={recipesRef} catogoriesData={catogoriesData} />
+        {/* Mobile sidebar overlay */}
+        {isMobileSidebarOpen && (
+          <div
+            className="mobileOverlay"
+            onClick={() => setIsMobileSidebarOpen(false)}
+          />
+        )}
+        <div className={`sideBarWrapper ${isMobileSidebarOpen ? "open" : ""}`}>
+          <SideBar recipes={recipesRef} catogoriesData={catogoriesData} />
+        </div>
         <ReceipeCards recipes={paginatedRecipes} />
       </div>
 
