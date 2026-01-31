@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { FaRegHeart } from "react-icons/fa6";
 import { GrFormView } from "react-icons/gr";
 import { MdDelete } from "react-icons/md";
-import UpdateReceipe from "./Updatereceipe";
+import UpdateReceipe from "./UpdateReceipe";
 import { Toast } from "primereact/toast";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { ConfirmDialog } from "primereact/confirmdialog";
