@@ -28,7 +28,7 @@ class ErrorBoundary extends React.Component {
               <pre style={styles.pre}>{this.state.error?.toString()}</pre>
             </details>
             <button
-              onClick={() => (window.location.href = "/Bon-Appetite")}
+              onClick={() => (window.location.href = import.meta.env.BASE_URL || "/")}
               style={styles.button}
             >
               Go Back Home

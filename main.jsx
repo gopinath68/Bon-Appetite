@@ -13,6 +13,7 @@ import FavorateReceipes from "./src/components/FavorateReceipes.jsx";
 import ErrorBoundary from "./src/components/ErrorBoundary.jsx";
 import NotFound from "./src/components/NotFound.jsx";
 
+const base = import.meta.env.BASE_URL || "/";
 const routes = createBrowserRouter(
   [
     {
@@ -46,7 +47,7 @@ const routes = createBrowserRouter(
     },
   ],
   {
-    basename: "/Bon-Appetite",
+    basename: base,
   },
 );
 createRoot(document.getElementById("root")).render(

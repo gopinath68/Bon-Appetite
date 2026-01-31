@@ -4,5 +4,6 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH || "/Bon-Appetite",
+  // Use VITE_BASE_PATH when set, otherwise default to root for Vercel
+  base: process.env.VITE_BASE_PATH || "/",
 });
