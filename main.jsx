@@ -13,11 +13,21 @@ const Recents = lazy(() => import("./src/components/Recents.jsx"));
 const NewReceipe = lazy(() => import("./src/components/NewReceipe.jsx"));
 const ViewReceipe = lazy(() => import("./src/components/ViewReceipe.jsx"));
 const ReceipeCards = lazy(() => import("./src/components/ReceipeCards.jsx"));
-const FavorateReceipes = lazy(() => import("./src/components/FavorateReceipes.jsx"));
+const FavorateReceipes = lazy(
+  () => import("./src/components/FavorateReceipes.jsx"),
+);
 
 // Loading fallback component
 const LoadingFallback = () => (
-  <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh", fontSize: "18px" }}>
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      minHeight: "100vh",
+      fontSize: "18px",
+    }}
+  >
     Loading...
   </div>
 );
