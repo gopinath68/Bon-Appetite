@@ -224,11 +224,11 @@ const RecipeCard = memo(function RecipeCard({
 
 /* ================= Main Component ================= */
 
-function ReceipeCards({ recipes }) {
+function ReceipeCards({ recipes: propsRecipes }) {
   const navigate = useNavigate();
   const toast = useRef(null);
 
-  const { selectedRecipie, setSelectedRecipie, deleteRecipe, updateRecipe } =
+  const { recipies, selectedRecipie, setSelectedRecipie, deleteRecipe, updateRecipe } =
     useContext(ReceipeContext);
 
   const [deleteReceipe, setDeleteReceipe] = useState(null);
@@ -237,7 +237,9 @@ function ReceipeCards({ recipes }) {
     setIsDeleteRecipieConfirmDialogOpen,
   ] = useState(false);
 
-  const pageLoading = recipes === null;
+  // Use context data (always available from mock data) or fallback to props
+  const recipes = propsRecipes !== undefined ? propsRecipes : recipies;
+  const pageLoading = false; // Never show loading since mock data loads instantly
 
   useEffect(() => {
     if (selectedRecipie) {
