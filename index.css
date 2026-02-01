@@ -680,6 +680,32 @@ img {
     }
 
     .form {
+        @media (max-width: 480px) {
+            #navBar {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            #appName {
+                flex: 1;
+                width: auto;
+            }
+
+            .navBarRight {
+                width: 100%;
+                flex-direction: row;
+                order: 3;
+            }
+
+            .mobileMenuToggle {
+                display: flex;
+                order: 2;
+                margin-left: auto;
+            }
+        }
+
         max-width: 100%;
     }
 }
