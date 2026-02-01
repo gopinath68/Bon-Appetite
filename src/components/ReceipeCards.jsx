@@ -228,8 +228,13 @@ function ReceipeCards({ recipes: propsRecipes }) {
   const navigate = useNavigate();
   const toast = useRef(null);
 
-  const { recipies, selectedRecipie, setSelectedRecipie, deleteRecipe, updateRecipe } =
-    useContext(ReceipeContext);
+  const {
+    recipies,
+    selectedRecipie,
+    setSelectedRecipie,
+    deleteRecipe,
+    updateRecipe,
+  } = useContext(ReceipeContext);
 
   const [deleteReceipe, setDeleteReceipe] = useState(null);
   const [
