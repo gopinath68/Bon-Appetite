@@ -1,4 +1,11 @@
-﻿import React, { useEffect, useContext, useState, useRef, memo, useMemo } from "react";
+﻿import React, {
+  useEffect,
+  useContext,
+  useState,
+  useRef,
+  memo,
+  useMemo,
+} from "react";
 import { useNavigate } from "react-router-dom";
 import { ReceipeContext } from "../context/ReceipeContext";
 import styled from "styled-components";
@@ -125,9 +132,7 @@ const RecipeCard = memo(function RecipeCard({
     <div className="card" style={{ position: "relative" }}>
       <div>
         <div style={{ position: "relative" }}>
-          {!imgLoaded && !imgError && (
-            <div style={skeletonStyle} aria-hidden />
-          )}
+          {!imgLoaded && !imgError && <div style={skeletonStyle} aria-hidden />}
 
           {imgError ? (
             <div
@@ -227,8 +232,10 @@ function ReceipeCards({ recipes }) {
     useContext(ReceipeContext);
 
   const [deleteReceipe, setDeleteReceipe] = useState(null);
-  const [isDeleteRecipieConfirmDialogOpen, setIsDeleteRecipieConfirmDialogOpen] =
-    useState(false);
+  const [
+    isDeleteRecipieConfirmDialogOpen,
+    setIsDeleteRecipieConfirmDialogOpen,
+  ] = useState(false);
 
   const pageLoading = recipes === null;
 
