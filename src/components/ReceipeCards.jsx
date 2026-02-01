@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useContext, useState, useRef } from "react";
+﻿import React, { useEffect, useContext, useState, useRef, memo, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { ReceipeContext } from "../context/ReceipeContext";
 import styled from "styled-components";
@@ -42,33 +42,6 @@ export const IconButton = styled.button`
   }
 `;
 
-const PageLoader = styled.div`
-  position: fixed;
-  inset: 0;
-  z-index: 1200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.85);
-  flex-direction: column;
-  gap: 12px;
-`;
-
-const Spinner = styled.div`
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: 6px solid rgba(0, 0, 0, 0.12);
-  border-top-color: rgba(0, 0, 0, 0.65);
-  animation: spin 0.9s linear infinite;
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-`;
-
 const SmallOverlay = styled.div`
   position: absolute;
   inset: 0;
@@ -79,13 +52,21 @@ const SmallOverlay = styled.div`
   justify-content: center;
 `;
 
-const SmallSpinner = styled(Spinner)`
+const Spinner = styled.div`
   width: 32px;
   height: 32px;
-  border-width: 4px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 0, 0, 0.12);
+  border-top-color: rgba(0, 0, 0, 0.65);
+  animation: spin 0.9s linear infinite;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 `;
 
-/* simple CSS for skeleton shimmer - using inline style below */
 const skeletonStyle = {
   width: "100%",
   height: 180,
@@ -95,7 +76,148 @@ const skeletonStyle = {
   animation: "shimmer 1.2s ease-in-out infinite",
 };
 
-/* ================= component ================= */
+/* ================= Memoized Recipe Card ================= */
+
+const RecipeCard = memo(function RecipeCard({
+  recipie,
+  onFavorite,
+  onView,
+  onDelete,
+  onUpdate,
+}) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
+  const [opLoading, setOpLoading] = useState(false);
+  const imgLoadStartRef = useRef(0);
+  const minPlaceholderMs = 220;
+
+  useEffect(() => {
+    setImgLoaded(false);
+    setImgError(!recipie?.image);
+    imgLoadStartRef.current = Date.now();
+  }, [recipie?.id, recipie?.image]);
+
+  const favorateHandler = () => {
+    setOpLoading(true);
+    try {
+      onFavorite({ ...recipie, favorite: !recipie.favorite });
+    } finally {
+      setOpLoading(false);
+    }
+  };
+
+  const handleImgLoad = () => {
+    const elapsed = Date.now() - imgLoadStartRef.current;
+    const remaining = Math.max(0, minPlaceholderMs - elapsed);
+    if (remaining > 0) {
+      setTimeout(() => setImgLoaded(true), remaining);
+    } else {
+      setImgLoaded(true);
+    }
+  };
+
+  const handleImgError = () => {
+    setImgError(true);
+    setImgLoaded(false);
+  };
+
+  return (
+    <div className="card" style={{ position: "relative" }}>
+      <div>
+        <div style={{ position: "relative" }}>
+          {!imgLoaded && !imgError && (
+            <div style={skeletonStyle} aria-hidden />
+          )}
+
+          {imgError ? (
+            <div
+              style={{
+                width: "100%",
+                height: 180,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "#f2f2f2",
+                borderRadius: 6,
+              }}
+            >
+              Image unavailable
+            </div>
+          ) : (
+            <img
+              key={`${recipie.id}-${recipie.image}`}
+              src={recipie.image}
+              loading="lazy"
+              alt={recipie.name || "Recipe image"}
+              onClick={() => onView(recipie)}
+              onLoad={handleImgLoad}
+              onError={handleImgError}
+              style={{
+                cursor: opLoading ? "not-allowed" : "pointer",
+                opacity: imgLoaded ? 1 : 0,
+                transition: "opacity 0.28s ease",
+                width: "100%",
+                height: 180,
+                objectFit: "cover",
+                borderRadius: 6,
+              }}
+            />
+          )}
+
+          <div className="container">
+            <b className="receipeName">{recipie.name}</b>
+            <div className="receipesCatogery">
+              <b>{recipie.category?.[0] || ""}</b>
+            </div>
+            <div className="nutrition">
+              <b>Nutritions</b>
+              <div>
+                <span>Calories: {recipie.nutrition?.calories ?? "-"}</span>
+                <span>Protein: {recipie.nutrition?.protein ?? "-"}</span>
+              </div>
+              <div>
+                <span>Carbs: {recipie.nutrition?.carbs ?? "-"}</span>
+                <span>Fat: {recipie.nutrition?.fat ?? "-"}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="cardFooter" style={{ display: "flex", gap: 8 }}>
+          <IconButton
+            onClick={favorateHandler}
+            disabled={opLoading}
+            aria-label="favorite"
+          >
+            <FaRegHeart
+              className={`favorities ${recipie.favorite ? "Favorated" : ""}`}
+            />
+          </IconButton>
+
+          <UpdateReceipe receipe={recipie} disabled={opLoading} />
+
+          <IconButton
+            onClick={() => onView(recipie)}
+            disabled={opLoading}
+            aria-label="view"
+          >
+            <GrFormView />
+          </IconButton>
+
+          <IconButton
+            onClick={() => onDelete(recipie.id)}
+            disabled={opLoading}
+            aria-label="delete"
+          >
+            <MdDelete />
+          </IconButton>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+/* ================= Main Component ================= */
 
 function ReceipeCards({ recipes }) {
   const navigate = useNavigate();
@@ -105,16 +227,10 @@ function ReceipeCards({ recipes }) {
     useContext(ReceipeContext);
 
   const [deleteReceipe, setDeleteReceipe] = useState(null);
-  const [
-    isDeleteRecipieConfirmDialogOpen,
-    setIsDeleteRecipieConfirmDialogOpen,
-  ] = useState(false);
+  const [isDeleteRecipieConfirmDialogOpen, setIsDeleteRecipieConfirmDialogOpen] =
+    useState(false);
 
-  const [pageLoading, setPageLoading] = useState(recipes === null);
-
-  useEffect(() => {
-    setPageLoading(recipes === null);
-  }, [recipes]);
+  const pageLoading = recipes === null;
 
   useEffect(() => {
     if (selectedRecipie) {
@@ -126,157 +242,24 @@ function ReceipeCards({ recipes }) {
     setSelectedRecipie(recipie);
   };
 
-  /* ================= card ================= */
-
-  const RecipeCard = ({ recipie }) => {
-    const [imgLoaded, setImgLoaded] = useState(false);
-    const [imgError, setImgError] = useState(false);
-    const [opLoading, setOpLoading] = useState(false);
-
-    // Ensure image shows a placeholder for at least minPlaceholderMs to avoid flicker
-    const imgLoadStartRef = useRef(0);
-    const minPlaceholderMs = 220;
-
-    useEffect(() => {
-      // reset when the card changes (either id or image url)
-      setImgLoaded(false);
-      setImgError(!recipie?.image);
-      imgLoadStartRef.current = Date.now();
-    }, [recipie?.id, recipie?.image]);
-
-    const favorateHandler = () => {
-      setOpLoading(true);
-      try {
-        updateRecipe({ ...recipie, favorite: !recipie.favorite });
-        toast.current.show({
-          severity: "info",
-          summary: "Info",
-          detail: recipie.favorite ? "unfavorited" : "favorited",
-          life: 3000,
-        });
-      } finally {
-        setOpLoading(false);
-      }
-    };
-
-    const handleImgLoad = () => {
-      const elapsed = Date.now() - imgLoadStartRef.current;
-      const remaining = Math.max(0, minPlaceholderMs - elapsed);
-      if (remaining > 0) {
-        setTimeout(() => setImgLoaded(true), remaining);
-      } else {
-        setImgLoaded(true);
-      }
-    };
-
-    const handleImgError = () => {
-      setImgError(true);
-      setImgLoaded(false);
-    };
-
-    return (
-      <div className="card" style={{ position: "relative" }}>
-        <div>
-          <div style={{ position: "relative" }}>
-            {/* skeleton shimmer while loading */}
-            {!imgLoaded && !imgError && (
-              <div style={skeletonStyle} aria-hidden />
-            )}
-
-            {imgError ? (
-              <div
-                style={{
-                  width: "100%",
-                  height: 180,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  background: "#f2f2f2",
-                  borderRadius: 6,
-                }}
-              >
-                Image unavailable
-              </div>
-            ) : (
-              <img
-                key={`${recipie.id}-${recipie.image}`}
-                src={recipie.image}
-                loading="lazy"
-                alt={recipie.name || "Receipe image"}
-                onClick={() => viewReceipeHandler(recipie)}
-                onLoad={handleImgLoad}
-                onError={handleImgError}
-                style={{
-                  cursor: opLoading ? "not-allowed" : "pointer",
-                  opacity: imgLoaded ? 1 : 0,
-                  transition: "opacity 0.28s ease",
-                  width: "100%",
-                  height: 180,
-                  objectFit: "cover",
-                  borderRadius: 6,
-                  display: imgLoaded ? "block" : "block",
-                }}
-              />
-            )}
-
-            <div className="container">
-              <b className="receipeName">{recipie.name}</b>
-              <div className="receipesCatogery">
-                <b>{recipie.category?.[0] || ""}</b>
-              </div>
-              <div className="nutrition">
-                <b>Nutritions</b>
-                <div>
-                  <span>Calories: {recipie.nutrition?.calories ?? "-"}</span>
-                  <span>Protein: {recipie.nutrition?.protein ?? "-"}</span>
-                </div>
-                <div>
-                  <span>Carbs: {recipie.nutrition?.carbs ?? "-"}</span>
-                  <span>Fat: {recipie.nutrition?.fat ?? "-"}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="cardFooter" style={{ display: "flex", gap: 8 }}>
-            <IconButton
-              onClick={favorateHandler}
-              disabled={opLoading}
-              aria-label="favorite"
-            >
-              <FaRegHeart
-                className={`favorities ${recipie.favorite ? "Favorated" : ""}`}
-              />
-            </IconButton>
-
-            <UpdateReceipe receipe={recipie} disabled={opLoading} />
-
-            <IconButton
-              onClick={() => viewReceipeHandler(recipie)}
-              disabled={opLoading}
-            >
-              <GrFormView />
-            </IconButton>
-
-            <IconButton
-              onClick={() => {
-                setDeleteReceipe(recipie);
-                setIsDeleteRecipieConfirmDialogOpen(true);
-              }}
-              disabled={opLoading}
-            >
-              <MdDelete />
-            </IconButton>
-          </div>
-        </div>
-      </div>
-    );
+  const handleFavorite = (recipe) => {
+    updateRecipe(recipe);
+    toast.current?.show({
+      severity: "info",
+      summary: "Info",
+      detail: recipe.favorite ? "favorited" : "unfavorited",
+      life: 3000,
+    });
   };
 
-  /* ================= render ================= */
+  const handleDelete = (id) => {
+    setDeleteReceipe(recipes?.find((r) => r.id === id));
+    setIsDeleteRecipieConfirmDialogOpen(true);
+  };
+
+  const memoizedRecipes = useMemo(() => recipes, [recipes]);
 
   if (pageLoading) {
-    // Show a grid of skeleton card placeholders while data is loading
     const placeholders = Array.from({ length: 12 });
     return (
       <div className="cards">
@@ -291,7 +274,7 @@ function ReceipeCards({ recipes }) {
               <div style={{ position: "relative" }}>
                 <div style={skeletonStyle} aria-hidden />
                 <SmallOverlay aria-hidden>
-                  <SmallSpinner />
+                  <Spinner />
                 </SmallOverlay>
                 <div className="container">
                   <b className="receipeName">Loading…</b>
@@ -338,19 +321,29 @@ function ReceipeCards({ recipes }) {
         visible={isDeleteRecipieConfirmDialogOpen}
         message={`Delete ${deleteReceipe?.name}?`}
         header="Confirmation"
-        accept={() => deleteRecipe(deleteReceipe.id)}
+        accept={() => {
+          deleteRecipe(deleteReceipe.id);
+          setIsDeleteRecipieConfirmDialogOpen(false);
+        }}
         reject={() => setIsDeleteRecipieConfirmDialogOpen(false)}
       />
 
-      {recipes && recipes.length > 0 ? (
+      {memoizedRecipes && memoizedRecipes.length > 0 ? (
         <div className="cards">
-          {recipes.map((recipie) => (
-            <RecipeCard key={recipie.id} recipie={recipie} />
+          {memoizedRecipes.map((recipie) => (
+            <RecipeCard
+              key={recipie.id}
+              recipie={recipie}
+              onFavorite={handleFavorite}
+              onView={viewReceipeHandler}
+              onDelete={handleDelete}
+              onUpdate={updateRecipe}
+            />
           ))}
         </div>
       ) : (
         <div className="NotFound">
-          <h3>Receipes Not Found</h3>
+          <h3>Recipes Not Found</h3>
         </div>
       )}
     </div>
