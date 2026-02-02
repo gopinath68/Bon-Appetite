@@ -1,94 +1,80 @@
 import React, { useContext } from "react";
 import { ReceipeContext } from "../context/ReceipeContext";
-import { ConfirmDialog } from "primereact/confirmdialog";
 
 function Pagination({ totalItems }) {
   const { pageAt, setPageAt, pageSize } = useContext(ReceipeContext);
-  const noOfPages = Math.ceil(totalItems / pageSize);
-  const maxPagesToShow = 5; // Show maximum 5 page buttons
 
-  const goToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const totalPages = Math.ceil(totalItems / pageSize);
+  const siblingCount = 2; // pages on each side of current
 
-  const handlePageChange = (n) => {
-    setPageAt(n);
-    goToTop();
+  const goToPage = (page) => {
+    setPageAt(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const goToNextPage = () => {
-    if (pageAt < noOfPages - 1) {
-      setPageAt(pageAt + 1);
+  if (totalPages <= 1) return null;
+
+  const getPaginationRange = () => {
+    const range = [];
+
+    const start = Math.max(1, pageAt + 1 - siblingCount);
+    const end = Math.min(totalPages, pageAt + 1 + siblingCount);
+
+    // Always show first page
+    if (start > 1) {
+      range.push(1);
+      if (start > 2) range.push("...");
     }
-    goToTop();
-  };
 
-  const goToPrevPage = () => {
-    if (pageAt > 0) {
-      setPageAt(pageAt - 1);
+    for (let i = start; i <= end; i++) {
+      range.push(i);
     }
-    goToTop();
+
+    // Always show last page
+    if (end < totalPages) {
+      if (end < totalPages - 1) range.push("...");
+      range.push(totalPages);
+    }
+
+    return range;
   };
 
-  // Calculate which pages to show
-  let startPage = Math.max(0, pageAt - Math.floor(maxPagesToShow / 2));
-  let endPage = Math.min(noOfPages, startPage + maxPagesToShow);
+  const pages = getPaginationRange();
 
-  if (endPage - startPage < maxPagesToShow) {
-    startPage = Math.max(0, endPage - maxPagesToShow);
-  }
-
-  const pagesToShow = [...Array(endPage - startPage).keys()].map(
-    (i) => startPage + i,
-  );
-
-  return totalItems ? (
+  return (
     <div className="paginationContainer">
-      <button disabled={pageAt === 0} className="arrows" onClick={goToPrevPage}>
+      <button
+        className="arrows"
+        disabled={pageAt === 0}
+        onClick={() => goToPage(pageAt - 1)}
+      >
         &laquo;
       </button>
 
-      {startPage > 0 && (
-        <>
-          <button className="pageNumber" onClick={() => handlePageChange(0)}>
-            1
-          </button>
-          {startPage > 1 && <span className="paginationEllipsis">...</span>}
-        </>
-      )}
-
-      {pagesToShow.map((n) => (
-        <button
-          key={n}
-          className={`pageNumber ${n === pageAt ? "active" : ""}`}
-          onClick={() => handlePageChange(n)}
-        >
-          {n + 1}
-        </button>
-      ))}
-
-      {endPage < noOfPages && (
-        <>
-          {endPage < noOfPages - 1 && (
-            <span className="paginationEllipsis">...</span>
-          )}
+      {pages.map((page, index) =>
+        page === "..." ? (
+          <span key={index} className="paginationEllipsis">
+            …
+          </span>
+        ) : (
           <button
-            className="pageNumber"
-            onClick={() => handlePageChange(noOfPages - 1)}
+            key={page}
+            className={`pageNumber ${pageAt === page - 1 ? "active" : ""}`}
+            onClick={() => goToPage(page - 1)}
           >
-            {noOfPages}
+            {page}
           </button>
-        </>
+        ),
       )}
 
       <button
-        disabled={pageAt === noOfPages - 1}
         className="arrows"
-        onClick={goToNextPage}
+        disabled={pageAt === totalPages - 1}
+        onClick={() => goToPage(pageAt + 1)}
       >
         &raquo;
       </button>
     </div>
-  ) : (
-    <></>
   );
 }
 
