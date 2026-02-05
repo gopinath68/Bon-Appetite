@@ -13,13 +13,11 @@ import { PrimeReactProvider } from "primereact/api";
 /* =====================================================
    LAZY LOADED COMPONENTS
 ===================================================== */
-const Recents = lazy(() => import("./src/components/Recents.jsx"));
-const NewReceipe = lazy(() => import("./src/components/NewReceipe.jsx"));
-const ViewReceipe = lazy(() => import("./src/components/ViewReceipe.jsx"));
-const ReceipeCards = lazy(() => import("./src/components/ReceipeCards.jsx"));
-const FavorateReceipes = lazy(
-  () => import("./src/components/FavorateReceipes.jsx"),
-);
+const Recents = import("./src/components/Recents.jsx");
+const NewReceipe = import("./src/components/NewReceipe.jsx");
+const ViewReceipe = import("./src/components/ViewReceipe.jsx");
+const ReceipeCards = import("./src/components/ReceipeCards.jsx");
+const FavorateReceipes = import("./src/components/FavorateReceipes.jsx");
 
 /* =====================================================
    LOADING FALLBACK
