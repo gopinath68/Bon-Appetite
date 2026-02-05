@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { useContext } from "react";
 import { ReceipeContext } from "../context/ReceipeContext";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { IconButton } from "./ReceipeCards";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 
 function ViewReceipe() {
   const { selectedRecipie, setSelectedRecipie } = useContext(ReceipeContext);
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (selectedRecipie) {
@@ -26,7 +25,7 @@ function ViewReceipe() {
   }, [selectedRecipie]);
 
   if (!selectedRecipie) {
-    navigate("/");
+    return <Navigate to="/" replace />;
   }
 
   console.log("selectedRecipie: ", selectedRecipie);
