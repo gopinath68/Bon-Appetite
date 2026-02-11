@@ -24,7 +24,8 @@ export const IconButton = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 111, 0, 0.1);
+    color: #ff6f00;
   }
 
   &:active {
@@ -89,7 +90,7 @@ const SmallSpinner = styled(Spinner)`
 const skeletonStyle = {
   width: "100%",
   height: 180,
-  borderRadius: 6,
+  borderRadius: 16,
   background: "linear-gradient(90deg, #f2f2f2 25%, #e9e9e9 37%, #f2f2f2 63%)",
   backgroundSize: "400% 100%",
   animation: "shimmer 1.2s ease-in-out infinite",

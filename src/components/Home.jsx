@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import mockData from "../mocks/recipies.json";
-import { TbFilter } from "react-icons/tb";
 import { ReceipeContext } from "../context/ReceipeContext";
 import ReceipeCards from "./ReceipeCards";
 import NewReceipe from "./NewReceipe";
 import Pagination from "./Pagination";
-import SideBar from "./SideBar";
+import Hero from "./Hero";
+import FavoritesStrip from "./FavoritesStrip";
 
 function Home() {
   // navigate not needed in this component currently
@@ -19,7 +19,6 @@ function Home() {
     setPageAt,
     recipesRef,
     pageSize,
-    isSidePanelOpen,
   } = useContext(ReceipeContext);
 
   const [catogoriesData, setCatogoriesData] = useState([]);
@@ -96,7 +95,7 @@ function Home() {
   // togglebutton not used — keep for future UI hook
 
   return (
-    <div className={`home ${isSidePanelOpen == true ? "opacity" : ""}`}>
+    <div className="home">
       <nav id="navBar">
         <h1 id="appName">Bon Appetite</h1>
         <div className="navBarRight">
@@ -112,6 +111,8 @@ function Home() {
         </div>
       </nav>
 
+      <Hero />
+      
       {catogoriesData.length > 0 && (
         <div className="chips">
           <button
@@ -125,6 +126,26 @@ function Home() {
           >
             All
           </button>
+          
+          <button
+            className={`chip ${
+              selectedCategoryId === "FAVORITES" ? "activeChip" : ""
+            }`}
+            onClick={() => {
+              if (selectedCategoryId !== "FAVORITES") {
+                setSelectedCategoryId("FAVORITES");
+                const favRecipes = recipesRef.filter((r) => r.favorite);
+                setRecipies(favRecipes);
+                setPageAt(0);
+              } else {
+                setSelectedCategoryId(null);
+                allCatogeriesReceipes();
+              }
+            }}
+          >
+            Favorites
+          </button>
+
           {slicedCatogerys?.map((category) => (
             <button
               className={`chip ${
@@ -149,9 +170,21 @@ function Home() {
           </button>
         </div>
       )}
-      <div className="sideContainer">
-        <SideBar recipes={recipesRef} catogoriesData={catogoriesData} />
-        <ReceipeCards recipes={paginatedRecipes} />
+
+      <div className="favorites-section">
+          <h3>Your Favorites</h3>
+          <FavoritesStrip />
+      </div>
+
+      <div className="main-content">
+        {paginatedRecipes.length > 0 ? (
+          <ReceipeCards recipes={paginatedRecipes} />
+        ) : (
+          <div className="NotFound">
+             <h3>No recipes found</h3>
+             <p>Try searching for something else or clear your filters.</p>
+          </div>
+        )}
       </div>
 
       <Pagination totalItems={recipies.length} />
