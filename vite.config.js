@@ -4,5 +4,10 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Bon-Appetite",
+  // Use VITE_BASE_PATH when set, otherwise default to root for Vercel
+  base: process.env.VITE_BASE_PATH || "/",
+  build: {
+    // Increase chunk size warning threshold for large dependencies
+    chunkSizeWarningLimit: 600,
+  },
 });

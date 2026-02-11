@@ -5,50 +5,44 @@ function Pagination({ totalItems }) {
   const { pageAt, setPageAt, pageSize } = useContext(ReceipeContext);
 
   const totalPages = Math.ceil(totalItems / pageSize);
-  const siblingCount = 2; // pages shown on each side
-
-  const goToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const siblingCount = 2; // pages on each side of current
 
   const goToPage = (page) => {
-    if (page < 0 || page >= totalPages) return;
     setPageAt(page);
-    goToTop();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  if (!totalItems || totalPages <= 1) return null;
+  if (totalPages <= 1) return null;
 
-  const getPages = () => {
-    const pages = [];
-    const current = pageAt + 1;
+  const getPaginationRange = () => {
+    const range = [];
 
-    const start = Math.max(2, current - siblingCount);
-    const end = Math.min(totalPages - 1, current + siblingCount);
+    const start = Math.max(1, pageAt + 1 - siblingCount);
+    const end = Math.min(totalPages, pageAt + 1 + siblingCount);
 
-    // First page
-    pages.push(1);
-
-    // Left dots
-    if (start > 2) pages.push("...");
-
-    // Middle pages
-    for (let i = start; i <= end; i++) {
-      pages.push(i);
+    // Always show first page
+    if (start > 1) {
+      range.push(1);
+      if (start > 2) range.push("...");
     }
 
-    // Right dots
-    if (end < totalPages - 1) pages.push("...");
+    for (let i = start; i <= end; i++) {
+      range.push(i);
+    }
 
-    // Last page
-    if (totalPages > 1) pages.push(totalPages);
+    // Always show last page
+    if (end < totalPages) {
+      if (end < totalPages - 1) range.push("...");
+      range.push(totalPages);
+    }
 
-    return pages;
+    return range;
   };
 
-  const pages = getPages();
+  const pages = getPaginationRange();
 
   return (
     <div className="paginationContainer">
-      {/* Previous */}
       <button
         className="arrows"
         disabled={pageAt === 0}
@@ -59,7 +53,9 @@ function Pagination({ totalItems }) {
 
       {pages.map((page, index) =>
         page === "..." ? (
-          <span key={`dots-${index}`} className="dots" style={{padding: '0 0.5rem', color: '#888', fontSize: '1.2rem'}}>...</span>
+          <span key={index} className="paginationEllipsis">
+            …
+          </span>
         ) : (
           <button
             key={page}
@@ -68,10 +64,9 @@ function Pagination({ totalItems }) {
           >
             {page}
           </button>
-        )
+        ),
       )}
 
-      {/* Next */}
       <button
         className="arrows"
         disabled={pageAt === totalPages - 1}

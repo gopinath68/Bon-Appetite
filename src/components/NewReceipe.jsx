@@ -10,7 +10,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { Toast } from "primereact/toast";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { ConfirmDialog } from "primereact/confirmdialog";
-import { isEquals } from "../utils/Comparison";
+import { isEquals } from "../utils/comparison";
 import { useEffect } from "react";
 
 function NewReceipe({ catogeries }) {
