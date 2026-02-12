@@ -9,7 +9,7 @@
 import { useNavigate } from "react-router-dom";
 import { ReceipeContext } from "../context/ReceipeContext";
 import styled from "styled-components";
-import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import { GrFormView } from "react-icons/gr";
 import { MdDelete } from "react-icons/md";
 import UpdateReceipe from "./UpdateReceipe";
@@ -96,13 +96,10 @@ const RecipeCard = memo(function RecipeCard({
   const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
   const [opLoading, setOpLoading] = useState(false);
-  const imgLoadStartRef = useRef(0);
-  const minPlaceholderMs = 220;
 
   useEffect(() => {
     setImgLoaded(false);
     setImgError(!recipie?.image);
-    imgLoadStartRef.current = Date.now();
   }, [recipie?.id, recipie?.image]);
 
   const favorateHandler = () => {
@@ -115,13 +112,7 @@ const RecipeCard = memo(function RecipeCard({
   };
 
   const handleImgLoad = () => {
-    const elapsed = Date.now() - imgLoadStartRef.current;
-    const remaining = Math.max(0, minPlaceholderMs - elapsed);
-    if (remaining > 0) {
-      setTimeout(() => setImgLoaded(true), remaining);
-    } else {
-      setImgLoaded(true);
-    }
+    setImgLoaded(true);
   };
 
   const handleImgError = () => {
@@ -195,9 +186,11 @@ const RecipeCard = memo(function RecipeCard({
             disabled={opLoading}
             aria-label="favorite"
           >
-            <FaRegHeart
-              className={`favorities ${recipie.favorite ? "Favorated" : ""}`}
-            />
+            {recipie.favorite ? (
+              <FaHeart style={{ color: "red" }} />
+            ) : (
+              <FaRegHeart />
+            )}
           </IconButton>
 
           <UpdateReceipe receipe={recipie} disabled={opLoading} />
@@ -235,6 +228,7 @@ function ReceipeCards({ recipes: propsRecipes }) {
     setSelectedRecipie,
     deleteRecipe,
     updateRecipe,
+    loading,
   } = useContext(ReceipeContext);
 
   const [deleteReceipe, setDeleteReceipe] = useState(null);
@@ -245,7 +239,7 @@ function ReceipeCards({ recipes: propsRecipes }) {
 
   // Use context data (always available from mock data) or fallback to props
   const recipes = propsRecipes !== undefined ? propsRecipes : recipies;
-  const pageLoading = false; // Never show loading since mock data loads instantly
+  const pageLoading = loading;
 
   useEffect(() => {
     if (selectedRecipie) {

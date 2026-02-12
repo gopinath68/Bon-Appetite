@@ -11,6 +11,7 @@ export const ReceipeContextProvider = (props) => {
   const [filteredCatogerys, setFilteredCatogerys] = useState([]);
   const [pageSize] = useState(12);
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [addReceipe, setAddReceipe] = useState({
     name: "",
     category: [""],
@@ -23,22 +24,29 @@ export const ReceipeContextProvider = (props) => {
     steps: [],
     favorite: false,
     nutrition: {
-      calories: "",
-      protein: "",
-      carbs: "",
-      fat: "",
+        calories: "",
+        protein: "",
+        carbs: "",
+        fat: "",
     },
   });
 
   useEffect(() => {
-    // Use mock data during development / offline mode
-    // mockData may be either an array or an object with a `receipes` key
-    const initial = Array.isArray(mockData)
-      ? mockData
-      : mockData.receipes || [];
-    masterRef.current = initial;
-    // visible list starts as the full master list
-    setRecipiesState(initial);
+    // Simulate API fetch
+    const fetchRecipes = async () => {
+        setLoading(true);
+        // Simulate network delay
+        await new Promise(resolve => setTimeout(resolve, 800));
+        
+        const initial = Array.isArray(mockData)
+          ? mockData
+          : mockData.receipes || [];
+        masterRef.current = initial;
+        setRecipiesState(initial);
+        setLoading(false);
+    };
+    
+    fetchRecipes();
   }, []);
   // visible setter (for filtering etc.)
   const setRecipies = (next) => {
@@ -87,6 +95,7 @@ export const ReceipeContextProvider = (props) => {
         deleteRecipe,
         isSidePanelOpen,
         setIsSidePanelOpen,
+        loading,
       }}
     >
       {props.children}

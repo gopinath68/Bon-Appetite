@@ -204,7 +204,7 @@ function NewReceipe({ catogeries }) {
         onHide={() => setIsSidePanelOpen(false)}
         className="sidePanel"
         content={() => (
-          <div>
+          <div className="sidePanelContainer">
             <div className="sidePanelHeader">
               <h5>{addReceipe.id ? "Update Receipe" : "Add New Receipe"}</h5>
               <IconButton onClick={() => setIsSidePanelOpen(false)}>

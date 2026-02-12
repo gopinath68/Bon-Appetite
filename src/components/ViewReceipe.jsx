@@ -38,10 +38,13 @@ function ViewReceipe() {
   return (
     <>
       <div className="viewBody">
-        <div
-          className="header"
-          style={{ backgroundImage: `url(${selectedRecipie.image})` }}
-        >
+        <div className="header">
+          <img 
+            src={selectedRecipie.image} 
+            alt={selectedRecipie.name} 
+            className="header-bg-img"
+            fetchPriority="high"
+          />
           <div className="header-overlay">
             <div className="header-content">
               <IconButton
@@ -107,12 +110,12 @@ function ViewReceipe() {
         </div>
 
         {similarRecipes.length > 0 && (
-          <div className="similar-recipes-section" style={{padding: '2rem 3rem', background: '#fafafa'}}>
+          <div className="similar-recipes-section" style={{padding: '3rem 2rem', background: '#fafafa'}}>
             <h3 className="section-title">You Might Also Like</h3>
             <div className="similar-grid">
               {similarRecipes.map((recipe) => (
                 <div key={recipe.id} className="similar-card" onClick={() => handleSimilarClick(recipe)}>
-                  <div style={{overflow: 'hidden'}}>
+                  <div className="similar-card-img-container">
                      <img src={recipe.image} alt={recipe.name} />
                   </div>
                   <div className="similar-card-content">
