@@ -144,7 +144,7 @@ const RecipeCard = memo(function RecipeCard({
             <img
               key={`${recipie.id}-${recipie.image}`}
               src={recipie.image}
-              loading="lazy"
+              decoding="async"
               alt={recipie.name || "Recipe image"}
               onClick={() => onView(recipie)}
               onLoad={handleImgLoad}
@@ -152,7 +152,7 @@ const RecipeCard = memo(function RecipeCard({
               style={{
                 cursor: opLoading ? "not-allowed" : "pointer",
                 opacity: imgLoaded ? 1 : 0,
-                transition: "opacity 0.28s ease",
+                transition: "opacity 0.15s ease",
                 width: "100%",
                 height: 180,
                 objectFit: "cover",
