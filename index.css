@@ -38,6 +38,24 @@
     border: 1px solid #ccc;
 }
 
+#sortSelect {
+    height: 2.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+#sortSelect:focus {
+    outline: none;
+    border-color: #ff6f00;
+}
+
 #appName {
     padding-left: 0.625rem;
     font-size: 1.5rem;
@@ -157,68 +175,6 @@
     flex-direction: column;
     justify-content: space-between;
     background: white;
-}
-
-/* Sidebar & Favorites */
-.sideBarContainer {
-    padding: 2rem;
-    min-width: 250px;
-}
-
-.sideBar {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0,0,0,0.05);
-    height: fit-content;
-}
-
-.favorate {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #ffefe0;
-}
-
-#favorateReceipes {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 400px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #ffb74d transparent;
-}
-
-#favorateReceipes::-webkit-scrollbar {
-    width: 4px;
-}
-
-#favorateReceipes::-webkit-scrollbar-thumb {
-    background-color: #ffb74d;
-    border-radius: 4px;
-}
-
-.receipeFavorate {
-    padding: 0.8rem 1rem;
-    margin-bottom: 0.5rem;
-    background: #fafafa;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 500;
-    color: #555;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-}
-
-.receipeFavorate:hover {
-    background: #d4e2fa;
-    color: #ff6f00;
-    transform: translateX(4px);
-    border-color: rgba(255, 111, 0, 0.2);
 }
 
 .receipesCatogery {
@@ -723,10 +679,6 @@
         max-width: 400px;
         margin: 0 auto;
     }
-
-    .sideBarContainer {
-        padding: 1rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -965,6 +917,26 @@
     border-color: #ff6f00;
     background: #fff;
     box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.1);
+}
+
+/* Form Validation Errors */
+.form-error {
+    color: #e53935;
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-top: -0.4rem;
+    animation: shake 0.3s ease;
+}
+
+.form-error-input {
+    border-color: #e53935 !important;
+    background: #fff5f5 !important;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
 }
 
 /* Editor Override */

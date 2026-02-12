@@ -1,20 +1,21 @@
-import { StrictMode } from "react";
+import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./index.css";
 
-import Home from "./src/components/Home.jsx";
+// Eager-load shared layout components
 import ErrorBoundary from "./src/components/ErrorBoundary.jsx";
 import NotFound from "./src/components/NotFound.jsx";
-
-import Recents from "./src/components/Recents.jsx";
-import NewReceipe from "./src/components/NewReceipe.jsx";
-import ViewReceipe from "./src/components/ViewReceipe.jsx";
-import ReceipeCards from "./src/components/ReceipeCards.jsx";
-import FavorateReceipes from "./src/components/FavorateReceipes.jsx";
-
 import { ReceipeContextProvider } from "./src/context/ReceipeContext.jsx";
 import { PrimeReactProvider } from "primereact/api";
+
+// Lazy-load route components for code splitting
+const Home = lazy(() => import("./src/components/Home.jsx"));
+const Recents = lazy(() => import("./src/components/Recents.jsx"));
+const ViewReceipe = lazy(() => import("./src/components/ViewReceipe.jsx"));
+const ReceipeCards = lazy(() => import("./src/components/ReceipeCards.jsx"));
+const FavorateReceipes = lazy(() => import("./src/components/FavorateReceipes.jsx"));
+const NewReceipe = lazy(() => import("./src/components/NewReceipe.jsx"));
 
 /* =====================================================
    APP LAYOUT
@@ -23,7 +24,9 @@ function AppLayout() {
   return (
     <PrimeReactProvider>
       <ReceipeContextProvider>
-        <Outlet />
+        <Suspense fallback={<div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60vh',fontSize:'1.2rem',color:'#888'}}>Loading…</div>}>
+          <Outlet />
+        </Suspense>
       </ReceipeContextProvider>
     </PrimeReactProvider>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, { useState, useEffect, useContext, useRef, useMemo } from "react";
 import mockData from "../mocks/recipies.json";
 import { TbFilter } from "react-icons/tb";
 import { ReceipeContext } from "../context/ReceipeContext";
@@ -26,11 +26,11 @@ function Home() {
   const [click, setClick] = useState(true);
   const [slicedCatogerys, setSlicedCatogerys] = useState([]);
   const [selectedCategoryId, setSelectedCategoryId] = useState(null);
-  // loading / error / more states not currently required
+  const [sortBy, setSortBy] = useState("name");
+  const debounceRef = useRef(null);
 
   const start = pageAt * pageSize;
   const end = start + pageSize;
-  const paginatedRecipes = recipies.slice(start, end);
 
   useEffect(() => {
     // Read categories from mock data (offline friendly)
@@ -81,19 +81,46 @@ function Home() {
   function handleSearch(e) {
     const value = e.target.value;
     setSearchData(value);
-    if (value.length > 2) {
-      const SearchedRecipes = recipesRef.filter(
-        (recipe) =>
-          recipe.name.toLowerCase().includes(value.toLowerCase()) ||
-          recipe.category[0].toLowerCase().includes(value.toLowerCase()),
-      );
-      setRecipies(SearchedRecipes);
-    } else if (value.length < 2) {
-      setRecipies(recipesRef);
-    }
-    setPageAt(0);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      if (value.length > 0) {
+        const q = value.toLowerCase();
+        const SearchedRecipes = recipesRef.filter(
+          (recipe) =>
+            recipe.name.toLowerCase().includes(q) ||
+            recipe.category[0]?.toLowerCase().includes(q) ||
+            recipe.tags?.some((t) => t.toLowerCase().includes(q)) ||
+            recipe.ingredients?.some((ing) =>
+              (typeof ing === "string" ? ing : "").toLowerCase().includes(q)
+            ),
+        );
+        setRecipies(SearchedRecipes);
+      } else {
+        setRecipies(recipesRef);
+      }
+      setPageAt(0);
+    }, 300);
   }
-  // togglebutton not used — keep for future UI hook
+
+  // Sort recipes before pagination
+  const sortedRecipes = useMemo(() => {
+    const list = [...recipies];
+    switch (sortBy) {
+      case "name":
+        return list.sort((a, b) => a.name.localeCompare(b.name));
+      case "prepTime":
+        return list.sort((a, b) => (a.prepTime || 0) - (b.prepTime || 0));
+      case "calories":
+        return list.sort(
+          (a, b) =>
+            (a.nutrition?.calories || 0) - (b.nutrition?.calories || 0)
+        );
+      default:
+        return list;
+    }
+  }, [recipies, sortBy]);
+
+  const paginatedRecipes = sortedRecipes.slice(start, end);
 
   return (
     <div className="home">
@@ -105,9 +132,17 @@ function Home() {
             id="searchBar"
             value={searchData}
             onChange={handleSearch}
-            placeholder="Search Recipe"
+            placeholder="Search by name, tag, or ingredient…"
           />
-          {/* <TbFilter id="filter" /> */}
+          <select
+            id="sortSelect"
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+          >
+            <option value="name">Sort: Name (A-Z)</option>
+            <option value="prepTime">Sort: Prep Time</option>
+            <option value="calories">Sort: Calories</option>
+          </select>
           <NewReceipe catogeries={catogoriesData} />
 
         </div>

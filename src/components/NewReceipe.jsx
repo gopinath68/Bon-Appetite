@@ -13,6 +13,26 @@ import { ConfirmDialog } from "primereact/confirmdialog";
 import { isEquals } from "../utils/comparison";
 import { useEffect } from "react";
 
+// --- Validation helpers ---
+const isValidUrl = (str) => {
+  try { new URL(str); return true; } catch { return false; }
+};
+
+const validateRecipe = (recipe) => {
+  const errs = {};
+  if (!recipe.name?.trim()) errs.name = "Recipe name is required";
+  if (!recipe.image?.trim()) errs.image = "Image URL is required";
+  else if (!isValidUrl(recipe.image)) errs.image = "Please enter a valid URL";
+  if (!recipe.category?.[0]) errs.category = "Please select a category";
+  if (!recipe.prepTime || isNaN(recipe.prepTime) || Number(recipe.prepTime) <= 0)
+    errs.prepTime = "Enter a positive number";
+  if (!recipe.cookTime || isNaN(recipe.cookTime) || Number(recipe.cookTime) <= 0)
+    errs.cookTime = "Enter a positive number";
+  if (!recipe.servings || isNaN(recipe.servings) || Number(recipe.servings) <= 0)
+    errs.servings = "Enter a positive number";
+  return errs;
+};
+
 function NewReceipe({ catogeries }) {
   const navigate = useNavigate();
   // ingredient/steps editor text state removed (unused)
@@ -40,6 +60,7 @@ function NewReceipe({ catogeries }) {
     isCancalChangesConfirmDialogOpen,
     setIsCancalChangesConfirmDialogOpen,
   ] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const {
     addReceipe,
@@ -82,6 +103,9 @@ function NewReceipe({ catogeries }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const validationErrors = validateRecipe(addReceipe);
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length > 0) return;
 
     const formatted = {
       ...addReceipe,
@@ -217,14 +241,18 @@ function NewReceipe({ catogeries }) {
                 name="name"
                 value={addReceipe.name}
                 onChange={handleChange}
+                className={errors.name ? "form-error-input" : ""}
               />
+              {errors.name && <span className="form-error">{errors.name}</span>}
 
               <label>Image URL</label>
               <input
                 name="image"
                 value={addReceipe.image}
                 onChange={handleImagePreview}
+                className={errors.image ? "form-error-input" : ""}
               />
+              {errors.image && <span className="form-error">{errors.image}</span>}
 
               <label>Category</label>
               <select
@@ -232,6 +260,7 @@ function NewReceipe({ catogeries }) {
                 onChange={(e) =>
                   setAddReceipe({ ...addReceipe, category: [e.target.value] })
                 }
+                className={errors.category ? "form-error-input" : ""}
               >
                 <option value="">Select a category</option>
                 {catogeries?.map((cat) => (
@@ -240,27 +269,40 @@ function NewReceipe({ catogeries }) {
                   </option>
                 ))}
               </select>
+              {errors.category && <span className="form-error">{errors.category}</span>}
 
-              <label>Preparation Time</label>
+              <label>Preparation Time (mins)</label>
               <input
                 name="prepTime"
+                type="number"
+                min="1"
                 value={addReceipe.prepTime}
                 onChange={handleChange}
+                className={errors.prepTime ? "form-error-input" : ""}
               />
+              {errors.prepTime && <span className="form-error">{errors.prepTime}</span>}
 
-              <label>Cooking Time</label>
+              <label>Cooking Time (mins)</label>
               <input
                 name="cookTime"
+                type="number"
+                min="1"
                 value={addReceipe.cookTime}
                 onChange={handleChange}
+                className={errors.cookTime ? "form-error-input" : ""}
               />
+              {errors.cookTime && <span className="form-error">{errors.cookTime}</span>}
 
               <label>Servings</label>
               <input
                 name="servings"
+                type="number"
+                min="1"
                 value={addReceipe.servings}
                 onChange={handleChange}
+                className={errors.servings ? "form-error-input" : ""}
               />
+              {errors.servings && <span className="form-error">{errors.servings}</span>}
 
               <label>Tags (comma separated)</label>
               <input

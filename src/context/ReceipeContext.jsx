@@ -3,9 +3,36 @@ import mockData from "../mocks/recipies.json";
 
 export const ReceipeContext = createContext();
 
+const STORAGE_KEY = "bon_appetite_recipes";
+
+// --- localStorage helpers ---
+const loadRecipes = () => {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) return JSON.parse(saved);
+  } catch { /* corrupted data → fall through to seed */ }
+  return null;
+};
+
+const saveRecipes = (recipes) => {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(recipes));
+  } catch { /* storage full – silent fail */ }
+};
+
 export const ReceipeContextProvider = (props) => {
-  const masterRef = useRef([]);
-  const [recipies, setRecipiesState] = useState([]);
+  // Seed from localStorage or fall back to mock data
+  const seed = () => {
+    const stored = loadRecipes();
+    if (stored && stored.length > 0) return stored;
+    const initial = Array.isArray(mockData)
+      ? mockData
+      : mockData.receipes || [];
+    return initial;
+  };
+
+  const masterRef = useRef(seed());
+  const [recipies, setRecipiesState] = useState(masterRef.current);
   const [selectedRecipie, setSelectedRecipie] = useState(null);
   const [pageAt, setPageAt] = useState(0);
   const [filteredCatogerys, setFilteredCatogerys] = useState([]);
@@ -32,33 +59,22 @@ export const ReceipeContextProvider = (props) => {
   });
 
   useEffect(() => {
-    // Simulate API fetch
-    const fetchRecipes = async () => {
-        setLoading(true);
-        // Simulate network delay
-        await new Promise(resolve => setTimeout(resolve, 800));
-        
-        const initial = Array.isArray(mockData)
-          ? mockData
-          : mockData.receipes || [];
-        masterRef.current = initial;
-        setRecipiesState(initial);
-        setLoading(false);
-    };
-    
-    fetchRecipes();
+    // Brief loading state for skeleton UI, then mark ready
+    const t = setTimeout(() => setLoading(false), 300);
+    return () => clearTimeout(t);
   }, []);
+
   // visible setter (for filtering etc.)
   const setRecipies = (next) => {
     setRecipiesState(next);
   };
 
   // master operations: add/update/delete keep the master list and the visible
-  // list in sync. These should be used for CRUD operations so the original
-  // full list isn't lost when users filter the visible list.
+  // list in sync and persist to localStorage.
   const addRecipe = (recipe) => {
     masterRef.current = [recipe, ...masterRef.current];
     setRecipiesState((prev) => [recipe, ...prev]);
+    saveRecipes(masterRef.current);
   };
 
   const updateRecipe = (recipe) => {
@@ -68,11 +84,13 @@ export const ReceipeContextProvider = (props) => {
     setRecipiesState((prev) =>
       prev.map((r) => (r.id === recipe.id ? recipe : r)),
     );
+    saveRecipes(masterRef.current);
   };
 
   const deleteRecipe = (id) => {
     masterRef.current = masterRef.current.filter((r) => r.id !== id);
     setRecipiesState((prev) => prev.filter((r) => r.id !== id));
+    saveRecipes(masterRef.current);
   };
 
   return (
